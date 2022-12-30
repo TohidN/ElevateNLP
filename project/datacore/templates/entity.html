@@ -1,0 +1,35 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Entity" %} - {{ entity.text }}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{{ entity.text }}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:entity_edit' entity.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:entity_delete' entity.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
+		</div>
+	</h1>
+
+	<div class="row">
+		<div class="col">
+			<p>Usage Frequency: {{ entity.frequency_distribution }}</p>
+			<p>Type: {{ entity.ne_type }}</p>
+			<hr>
+			<p>Language: {{ entity.language.get_title }}</p>
+		</div>
+	</div>
+{% endblock %}

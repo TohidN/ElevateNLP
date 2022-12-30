@@ -1,0 +1,22 @@
+{% extends base_template %}
+{% load i18n %}
+{% load widget_tweaks %}
+
+{% block title %}{% trans "Add Concept" %}{% endblock %}
+
+{% block content %}
+<form action="{% url 'datacore:domain_ontology' domain.id %}" method="post">
+	{% csrf_token %}
+	<div class="modal-header">
+		<h1 class="modal-title fs-5" id="modal-label">{% trans "Add Concept" %}</h1>
+		{% if base_template != 'base.html' %}<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>{% endif %}
+	</div>
+	<div class="modal-body">
+		{% include 'modal-form.html' %}
+	</div>
+	<div class="modal-footer gap-2">
+		<a href="{% url 'datacore:domain_ontology' domain.id %}" class="btn btn-secondary" {% if base_template != 'base.html' %} data-bs-dismiss="modal"{% endif %}>Back</a>
+		<button type="submit" class="btn btn-primary" namve="save" value="1">Save</button>
+	</div>
+</form>
+{% endblock %}

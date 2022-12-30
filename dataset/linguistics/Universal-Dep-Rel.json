@@ -1,0 +1,380 @@
+{
+  "acl": {
+    "ud-code": "acl",
+    "title": "clausal modifier of noun (adnominal clause)",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/acl.html"
+  },
+  "acl:relcl": {
+    "ud-code": "acl:relcl",
+    "title": "relative clause modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/acl-relcl.html"
+  },
+  "advcl": {
+    "ud-code": "advcl",
+    "title": "adverbial clause modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/advcl.html"
+  },
+  "advmod": {
+    "ud-code": "advmod",
+    "title": "adverbial modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/advmod.html"
+  },
+  "advmod:emph": {
+    "ud-code": "advmod:emph",
+    "title": "emphasizing word, intensifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/advmod-emph.html"
+  },
+  "advmod:lmod": {
+    "ud-code": "advmod:lmod",
+    "title": "locative adverbial modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/advmod-lmod.html"
+  },
+  "amod": {
+    "ud-code": "amod",
+    "title": "adjectival modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/amod.html"
+  },
+  "appos": {
+    "ud-code": "appos",
+    "title": "appositional modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/appos.html"
+  },
+  "aux": {
+    "ud-code": "aux",
+    "title": "auxiliary",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/aux_.html"
+  },
+  "aux:pass": {
+    "ud-code": "aux:pass",
+    "title": "passive auxiliary",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/aux-pass.html"
+  },
+  "case": {
+    "ud-code": "case",
+    "title": "case marking",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/case.html"
+  },
+  "cc": {
+    "ud-code": "cc",
+    "title": "coordinating conjunction",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/cc.html"
+  },
+  "cc:preconj": {
+    "ud-code": "cc:preconj",
+    "title": "preconjunct",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/cc-preconj.html"
+  },
+  "ccomp": {
+    "ud-code": "ccomp",
+    "title": "clausal complement",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/ccomp.html"
+  },
+  "clf": {
+    "ud-code": "clf",
+    "title": "classifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/clf.html"
+  },
+  "compound": {
+    "ud-code": "compound",
+    "title": "compound",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/compound.html"
+  },
+  "compound:lvc": {
+    "ud-code": "compound:lvc",
+    "title": "light verb construction",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/compound-lvc.html"
+  },
+  "compound:prt": {
+    "ud-code": "compound:prt",
+    "title": "phrasal verb particle",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/compound-prt.html"
+  },
+  "compound:redup": {
+    "ud-code": "compound:redup",
+    "title": "reduplicated compounds",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/compound-redup.html"
+  },
+  "compound:svc": {
+    "ud-code": "compound:svc",
+    "title": "serial verb compounds",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/compound-svc.html"
+  },
+  "conj": {
+    "ud-code": "conj",
+    "title": "conjunct",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/conj.html"
+  },
+  "cop": {
+    "ud-code": "cop",
+    "title": "copula",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/cop.html"
+  },
+  "csubj": {
+    "ud-code": "csubj",
+    "title": "clausal subject",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/csubj.html"
+  },
+  "csubj:pass": {
+    "ud-code": "csubj:pass",
+    "title": "clausal passive subject",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/csubj-pass.html"
+  },
+  "dep": {
+    "ud-code": "dep",
+    "title": "unspecified dependency",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/dep.html"
+  },
+  "det": {
+    "ud-code": "det",
+    "title": "determiner",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/det.html"
+  },
+  "det:numgov": {
+    "ud-code": "det:numgov",
+    "title": "pronominal quantifier governing the case of the noun",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/det-numgov.html"
+  },
+  "det:nummod": {
+    "ud-code": "det:nummod",
+    "title": "pronominal quantifier agreeing in case with the noun",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/det-nummod.html"
+  },
+  "det:poss": {
+    "ud-code": "det:poss",
+    "title": "possessive determiner",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/det-poss.html"
+  },
+  "discourse": {
+    "ud-code": "discourse",
+    "title": "discourse element",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/discourse.html"
+  },
+  "dislocated": {
+    "ud-code": "dislocated",
+    "title": "dislocated elements",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/dislocated.html"
+  },
+  "expl": {
+    "ud-code": "expl",
+    "title": "expletive",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/expl.html"
+  },
+  "expl:impers": {
+    "ud-code": "expl:impers",
+    "title": "impersonal expletive",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/expl-impers.html"
+  },
+  "expl:pass": {
+    "ud-code": "expl:pass",
+    "title": "reflexive pronoun used in reflexive passive",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/expl-pass.html"
+  },
+  "expl:pv": {
+    "ud-code": "expl:pv",
+    "title": "reflexive clitic with an inherently reflexive verb",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/expl-pv.html"
+  },
+  "fixed": {
+    "ud-code": "fixed",
+    "title": "fixed multiword expression",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/fixed.html"
+  },
+  "flat": {
+    "ud-code": "flat",
+    "title": "flat multiword expression",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/flat.html"
+  },
+  "flat:foreign": {
+    "ud-code": "flat:foreign",
+    "title": "foreign words",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/flat-foreign.html"
+  },
+  "flat:name": {
+    "ud-code": "flat:name",
+    "title": "names",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/flat-name.html"
+  },
+  "goeswith": {
+    "ud-code": "goeswith",
+    "title": "goes with",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/goeswith.html"
+  },
+  "iobj": {
+    "ud-code": "iobj",
+    "title": "indirect object",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/iobj.html"
+  },
+  "list": {
+    "ud-code": "list",
+    "title": "list",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/list.html"
+  },
+  "mark": {
+    "ud-code": "mark",
+    "title": "marker",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/mark.html"
+  },
+  "nmod": {
+    "ud-code": "nmod",
+    "title": "nominal modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/nmod.html"
+  },
+  "nmod:poss": {
+    "ud-code": "nmod:poss",
+    "title": "possessive nominal modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/nmod-poss.html"
+  },
+  "nmod:tmod": {
+    "ud-code": "nmod:tmod",
+    "title": "temporal modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/nmod-tmod.html"
+  },
+  "nsubj": {
+    "ud-code": "nsubj",
+    "title": "nominal subject",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/nsubj.html"
+  },
+  "nsubj:pass": {
+    "ud-code": "nsubj:pass",
+    "title": "passive nominal subject",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/nsubj-pass.html"
+  },
+  "nummod": {
+    "ud-code": "nummod",
+    "title": "numeric modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/nummod.html"
+  },
+  "nummod:gov": {
+    "ud-code": "nummod:gov",
+    "title": "numeric modifier governing the case of the noun",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/nummod-gov.html"
+  },
+  "obj": {
+    "ud-code": "obj",
+    "title": "object",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/obj.html"
+  },
+  "obl": {
+    "ud-code": "obl",
+    "title": "oblique nominal",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/obl.html"
+  },
+  "obl:agent": {
+    "ud-code": "obl:agent",
+    "title": "agent modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/obl-agent.html"
+  },
+  "obl:arg": {
+    "ud-code": "obl:arg",
+    "title": "oblique argument",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/obl-arg.html"
+  },
+  "obl:lmod": {
+    "ud-code": "obl:lmod",
+    "title": "locative modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/obl-lmod.html"
+  },
+  "obl:tmod": {
+    "ud-code": "obl:tmod",
+    "title": "temporal modifier",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/obl-tmod.html"
+  },
+  "orphan": {
+    "ud-code": "orphan",
+    "title": "orphan",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/orphan.html"
+  },
+  "parataxis": {
+    "ud-code": "parataxis",
+    "title": "parataxis",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/parataxis.html"
+  },
+  "punct": {
+    "ud-code": "punct",
+    "title": "punctuation",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/punct.html"
+  },
+  "reparandum": {
+    "ud-code": "reparandum",
+    "title": "overridden disfluency",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/reparandum.html"
+  },
+  "root": {
+    "ud-code": "root",
+    "title": "root",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/root.html"
+  },
+  "vocative": {
+    "ud-code": "vocative",
+    "title": "vocative",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/vocative.html"
+  },
+  "xcomp": {
+    "ud-code": "xcomp",
+    "title": "open clausal complement",
+    "description": "",
+    "url": "https://universaldependencies.org/u/dep/xcomp.html"
+  }
+}

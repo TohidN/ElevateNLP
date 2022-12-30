@@ -1,0 +1,57 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Word Lists" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{% trans "Word Lists" %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:word_lists_add' %}" class="float-end btn btn-outline-success mx-2 my-2" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+	</h1>
+
+	{% if word_lists|length == 0 %}
+		<div class="content">
+			No Word Lists found!
+		</div>
+	{% else %}
+		<div class="tab-content bg-transparent">
+			<div hx-boost="true" class="note-has-grid row">
+				{% for word_list in word_lists %}
+					<div class="col-md-4 single-note-item">
+						<div class="card card-body">
+							<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word_list' word_list.id %}" class="text-decoration-none">
+								<h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Book a Ticket for Movie">{{ word_list.title }}</h5>
+								<p class="note-date font-12 text-muted">
+									{% if word_list.words.all|length > 0 %}
+										<span class="side-stick"></span>
+										{{ word_list.words.all|length }} Words
+									{% else %}
+										<span class="side-stick red"></span>
+										No words found.
+									{% endif %}
+								</p>
+								<div class="note-content">
+									<p class="note-inner-content text-muted truncate-two-lines">{{ word_list.description|truncatechars:150 }}</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		{% pagination word_lists paginator_range %}
+	{% endif %}
+
+{% endblock %}

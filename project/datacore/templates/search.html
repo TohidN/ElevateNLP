@@ -1,0 +1,86 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Search" %}{% endblock %}
+
+{% block header %}
+<link href="{% static 'css/search.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	<form id="search" action="{% url 'datacore:search' %}" method="get" accept-charset="utf-8">
+		<div class="row">
+			<div class="input-group mb-3">
+				<input type="text" name="query" value="{{ query }}" class="form-control" placeholder="Enter a word" aria-label="Enter a word" aria-describedby="button-addon1">
+				<button class="btn btn-primary" type="submit" id="button-addon1">
+						<span id="loading-indicator" class="htmx-indicator hidden-loading spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+						Search
+				</button>
+			</div>
+		</div>
+	</form>
+	<div class="container">
+		<div class="row">
+			<ul hx-boost="true" class="search-tab nav nav-tabs">
+				<li class="nav-item">
+					<a hx-indicator="#word-loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:search' %}?query={{query}}" class="nav-link {% if type != 'phrase' %}active{% endif %}">
+						Word Search
+						<span id="word-loading-indicator" class="htmx-indicator hidden-loading spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a hx-indicator="#phrase-loading-indicator" hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:search' %}?query={{query}}&type=phrase" class="nav-link {% if type == 'phrase' %}active{% endif %}">
+						Phrase Search
+						<span id="phrase-loading-indicator" class="htmx-indicator hidden-loading spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<h3>
+				Searching for "{{ query }}"
+				<div id="search-loading-indicator" class="htmx-indicator spinner-border" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+			</h3>
+			<div hx-boost="true" class="list-group search-result-list">
+				{% if type == "phrase" %}
+					{% for phrase in phrases %}
+						<div class="list-group-item">
+							<a hx-indicator="#search-loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:phrase' phrase.id %}" class="float-right">{{ phrase.text }}</a>
+						</div>
+					{% empty %}
+						<p>No Phrase with this word was found!</p>
+					{% endfor %}
+				{% else %}
+					{% for concept in concepts %}
+						<div  class="list-group-item">
+							<h4 class="list-group-item-heading">
+								({{ concept.pos.title }})
+								{% for lemma in concept.synonyms.all %}
+									{% if lemma.text|lower == query|lower %}
+										{{lemma.text}}
+									{% else %}
+										<a hx-indicator="#search-loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:search' %}?query={{lemma.text}}">{{ lemma.text }}</a>
+									{% endif %}
+									{% if not forloop.last %},{% endif %}
+								{% endfor %}
+								<a hx-indicator="#search-loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:concept' concept.id %}" class="btn btn-sm btn-info float-end">More about concept</a>
+
+							</h4>
+							<ul class="list-group list-group-flush">
+								{% for definition in concept.definition_set.all %}
+									<li class="list-group-item">{{ definition.text }}</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% empty %}
+						<p>No concepts with this lemma was found!</p>
+					{% endfor %}
+				{% endif %}
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

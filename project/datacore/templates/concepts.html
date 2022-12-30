@@ -1,0 +1,40 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Concepts" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{% trans "Concepts" %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:concepts_add' %}" class="float-end btn btn-outline-success mx-2 my-2" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+	</h1>
+
+	{% if concepts|length == 0 %}
+		<div class="content">
+			No concepts found!
+		</div>
+	{% else %}
+		<div class="row row-margin-bottom">
+			<div class="list-group w-100">
+				{% for concept in concepts %}
+					<a hx-indicator="#loading-indicator" hx-push-url="true" hx-boost="true" hx-target="#main-container" href="{% url 'datacore:concept' concept.id %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+						{{ concept.get_title }}
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+		{% pagination concepts paginator_range %}
+	{% endif %}
+{% endblock %}

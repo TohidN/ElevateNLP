@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Linguistic Component" %}{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div class="content">
+			<h1>{{ component.title }}</h1>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					{% for cat in component.get_ancestors %}
+					<li class="breadcrumb-item"><a href="{% url 'datacore:component' cat.slug %}">{{ cat.title }}</a></li>
+					{% endfor %}
+					<li class="breadcrumb-item active" aria-current="page">
+						<a href="{% url 'datacore:component' component.slug %}">{{ component.title }}</a>
+						{% if  component.children.all %}
+						<div class="dropdown dropend float-end ps-2">
+							<a href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle px-2"></a>
+							<ul aria-labelledby="navbarDarkDropdownMenuLink" style="" class="dropdown-menu">
+								{% for i in component.children.all %}
+									<li><a class="dropdown-item" href="{% url 'datacore:component' i.slug %}">{{ i.title }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+						{% endif %}
+					</li>
+				</ol>
+			</nav>
+			<p><b>Code: {{ component.code }}</b></p>
+			<hr>
+			<p>{{ component.description }}</p>
+
+		</div>
+	</div>
+{% endblock %}

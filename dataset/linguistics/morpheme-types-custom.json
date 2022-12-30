@@ -1,0 +1,47 @@
+{
+  "CommonGender": {
+    "title": "Common",
+    "version": "",
+    "source": "Tohid Nateghian",
+    "url": "https://universaldependencies.org/u/feat/Gender.html#Com",
+    "type": [
+      "Gender"
+    ]
+  },
+  "InverseNumber": {
+    "title": "Inverse",
+    "version": "",
+    "source": "Tohid Nateghian",
+    "url": "https://universaldependencies.org/u/feat/Number.html#Inv",
+    "type": [
+      "Number"
+    ]
+  },
+  "CountPluralNumber": {
+    "title": "Count Plural",
+    "version": "",
+    "source": "Tohid Nateghian",
+    "url": "https://universaldependencies.org/u/feat/Number.html#Count",
+    "type": [
+      "Number"
+    ]
+  },
+  "PluraleTantumNumber": {
+    "title": "Plurale Tantum",
+    "version": "",
+    "source": "Tohid Nateghian",
+    "url": "https://universaldependencies.org/u/feat/Number.html#Ptan",
+    "type": [
+      "Number"
+    ]
+  },
+  "SingulareTantumNumber": {
+    "title": "Singulare Tantum",
+    "version": "",
+    "source": "Tohid Nateghian",
+    "url": "https://universaldependencies.org/u/feat/Number.html#Coll",
+    "type": [
+      "Number"
+    ]
+  }
+}

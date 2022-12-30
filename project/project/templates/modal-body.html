@@ -1,0 +1,29 @@
+{% extends base_template %}
+{% load i18n %}
+{% load widget_tweaks %}
+
+{# don't change page title for loading modals, because it remains when modal is closed #}
+{% block title %}{% if not request.htmx %}{{ title }}{% endif %}{% endblock %}
+
+{% block content %}
+
+<form action="{{ url }}" method="post">
+	{% csrf_token %}
+
+	{% if request.GET.force_url_success_redirect %}
+		<input type="hidden" name="force_url_success_redirect" value="{{ request.GET.force_url_success_redirect }}">
+	{% endif %}
+
+	<div class="modal-header">
+		<h1 class="modal-title fs-5" id="modal-label">{{ title }}</h1>
+		{% if base_template != 'base.html' %}<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>{% endif %}
+	</div>
+	<div class="modal-body">
+		{% include 'modal-form.html' %}
+	</div>
+	<div class="modal-footer gap-2">
+		<a href="{% if back_url %} {{ back_url }} {% else %} {{ item.get_absolute_url }} {% endif %}" class="btn btn-secondary" {% if base_template != 'base.html' %} data-bs-dismiss="modal"{% endif %}>Back</a>
+		<button hx-indicator="#loading-indicator" hx-post="{{ url }}" hx-target="#main-container" hx-push-url="true" type="submit" class="btn btn-primary" name="form-action" value="1" force-refresh="true">{% if action_title %}{{ action_title }}{% else %}{% trans "Save" %}{% endif %}</button>
+	</div>
+</form>
+{% endblock %}

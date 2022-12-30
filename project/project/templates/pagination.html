@@ -1,0 +1,29 @@
+{% load static %}
+{% if query.has_other_pages %}
+	<hr>
+	<nav hx-boost="true" class="Page navigation d-flex justify-content-center">
+		<ul class="pagination">
+			{% if query.has_previous %}
+				<li class="page-item"><a hx-target="#main-container" hx-push-url="true" href="?page=1{{ parameters }}" class="page-link"><i class="fa fa-angle-double-left"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+				<li class="page-item"><a hx-target="#main-container" hx-push-url="true" href="?page={{ query.previous_page_number }}{{ parameters }}" class="page-link"><i class="fa fa-angle-left"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+			{% else %}
+				<li class="page-item disabled"><a hx-target="#main-container" hx-push-url="true" href="?page=1{{ parameters }}" class="page-link"><i class="fa fa-angle-double-left"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+				<li class="page-item disabled"><a hx-target="#main-container" hx-push-url="true" href="?page=1{{ parameters }}" class="page-link"><i class="fa fa-angle-left"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+			{% endif %}
+			{% for i in paginator_range %}
+				{% if query.number == i %}
+					<li class="page-item active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+				{% else %}
+					<li class="page-item"><a hx-target="#main-container" hx-push-url="true" href="?page={{ i }}{{ parameters }}" class="page-link">{{ i }}<img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+				{% endif %}
+			{% endfor %}
+			{% if query.has_next %}
+				<li class="page-item"><a hx-target="#main-container" hx-push-url="true" href="?page={{ query.next_page_number }}{{ parameters }}" class="page-link"><i class="fa fa-angle-right"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+				<li class="page-item"><a hx-target="#main-container" hx-push-url="true" href="?page={{ query.paginator.num_pages }}{{ parameters }}" class="page-link"><i class="fa fa-angle-double-right"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+			{% else %}
+				<li class="page-item disabled"><a hx-target="#main-container" hx-push-url="true" href="?page={{ query.paginator.num_pages }}{{ parameters }}" class="page-link"><i class="fa fa-angle-right"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+				<li class="page-item disabled"><a hx-target="#main-container" hx-push-url="true" href="?page={{ query.paginator.num_pages }}{{ parameters }}" class="page-link"><i class="fa fa-angle-double-right"></i><img class="htmx-indicator pagination-loading" src="{% static '/image/bars.svg' %}"></a></li>
+			{% endif %}
+		</ul>
+	</nav>
+{% endif %}

@@ -1,0 +1,53 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+
+{% block title %}{% trans "Lexical Relation" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{{ relation_type.title }}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:word_relation_type_edit' relation_type.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:word_relation_type_delete' relation_type.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
+		</div>
+	</h1>
+
+	{% if relation_type.description %}<p>{{ relation_type.description }}</p>{% endif %}
+	<p>Descriptor: {{ relation_type.descriptor }}</p>
+	{% if relation_type.direction_type == "u" %}<p>Reverse Descriptor: {{ relation_type.reverse_descriptor }}</p>{% endif %}
+	<hr>
+	{% if relations|length == 0 %}
+		<div class="content">
+			No Lexical Relation Types found!
+		</div>
+	{% else %}
+		<div class="row row-margin-bottom">
+				{% for relation in relations %}
+					{% if forloop.first %}<div class="col"><ul class="list-group">{% endif %}
+					{% if forloop.counter0 == 10 %}</ul></div><div class="col"><ul class="list-group">{% endif %}
+					<li hx-boost="true" class="list-group-item">
+					
+						<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word_relation' relation.id %}">{{ relation.word_relation.title }}</a>:
+						<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' relation.words.0 %}">{% get_method_from_list related_words relation.words.0 "text" %}</a>
+						{{ relation.word_relation.descriptor  }}
+						<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' relation.words.1 %}">{% get_method_from_list related_words relation.words.1 "text" %}</a>
+					</li>
+					{% if forloop.last %}</div></ul>{% endif %}
+				{% endfor %}
+		</div>
+		{% pagination relations paginator_range %}
+	{% endif %}
+{% endblock %}

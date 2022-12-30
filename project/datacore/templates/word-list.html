@@ -1,0 +1,47 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+
+{% block title %}{% trans "Word List" %} - {{ word_list.title }}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{{ word_list.title }}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:word_list_word_add' word_list.id %}" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:word_list_edit' word_list.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:word_list_delete' word_list.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
+		</div>
+	</h1>
+
+	<div class="row">
+		<div class="col">
+			{% if word_list.description %}
+				<p>{{ word_list.description }}</p>
+			{% endif %}
+			<hr>
+		   {% if word_list.words.all %}
+			<p>Words in list:</p>
+			   <div hx-boost="true" class="list-group">
+				   {% for word in word_list.words.all %}
+						<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' word.id %}" class="list-group-item list-group-item-action">
+							{{ word.text }}
+						</a>
+				   {% endfor %}
+			   </div >
+		   {% endif %}
+		</div>
+	</div>
+{% endblock %}

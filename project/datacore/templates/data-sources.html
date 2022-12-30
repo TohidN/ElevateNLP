@@ -1,0 +1,40 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Data Sources" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{% trans "Data Sources" %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:data_sources_add' %}" class="float-end btn btn-outline-success mx-2 my-2" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+	</h1>
+
+	{% if data_sources|length == 0 %}
+		<div class="content">
+			No data sources found!
+		</div>
+	{% else %}
+		<div class="row row-margin-bottom">
+			<div hx-boost="true" class="list-group w-100">
+				{% for data_source in data_sources %}
+					<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:data_source' data_source.id %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+						{{ data_source.title }}
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+		{% pagination data_sources paginator_range %}
+	{% endif %}
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Documents" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{% trans "Documents" %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:documents_add' %}" class="float-end btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+	</h1>
+
+	{% if documents|length == 0 %}
+		<div class="content">
+			No documents found!
+		</div>
+	{% else %}
+		<div class="tab-content bg-transparent">
+			<div hx-boost="true" class="note-has-grid row">
+				{% for document in documents %}
+					<div class="col-md-4 single-note-item">
+						<div class="card card-body">
+							<a hx-indicator="#loading-indicator" hx-target="#main-container" href="{% url 'datacore:document' document.id %}" class="text-decoration-none">
+								<h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Book a Ticket for Movie">{{ document.title }}</h5>
+								<p class="note-date font-12 text-muted">
+									{% if document.phrases.all|length > 0 %}
+										<span class="side-stick"></span>
+										{{ document.phrases.all|length }} Phrases
+									{% elif document.content|length > 0 %}
+										<span class="side-stick grey"></span>
+										Not tokenized
+									{% else %}
+										<span class="side-stick red"></span>
+										No Content
+									{% endif %}
+									{% if document.phrase_collections.all|length > 0 %}
+										, {{ document.phrase_collections.all|length }} Phrase Collections
+									{% endif %}
+								</p>
+								<div class="note-content">
+									<p class="note-inner-content text-muted truncate-two-lines">{{ document.content|truncatechars:150 }}</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		{% pagination documents paginator_range %}
+	{% endif %}
+{% endblock %}

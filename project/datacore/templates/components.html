@@ -1,0 +1,40 @@
+{% extends base_template %}
+{% load mptt_tags %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Linguistic Components" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">Linguistic Components</h1>
+	
+	{% if components|length == 0 %}
+		<div class="content">
+			No corpora found!
+		</div>
+	{% else %}
+		<div class="row row-margin-bottom">
+			<ul>
+				{% recursetree components %}
+				<li>
+					<a href="{% url 'datacore:component' node.slug %}">{{ node.title }}</a>
+					{% if not node.is_leaf_node %}
+					<ul class="children">
+						{{ children }}
+					</ul>
+					{% endif %}
+				</li>
+				{% endrecursetree %}
+			</ul>
+		</div>
+	{% endif %}
+{% endblock %}

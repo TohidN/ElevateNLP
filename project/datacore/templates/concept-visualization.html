@@ -1,0 +1,91 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Concept Visualization" %}{% endblock %}
+
+{% block content %}
+	<!-- Page Content -->
+	{% if request.htmx.target != 'tab-container' %}
+		<!-- Modal -->
+		<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+			<div class="modal-dialog">
+				<div id="modal-container" class="modal-content">
+				</div>
+			</div>
+		</div>
+
+		<h1>
+			<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" hx-boost="true" href="{% url 'datacore:concept' concept.id %}">{% trans "Concept" %} #{{ id }}</a>
+			<span class="badge bg-secondary fs-6 align-middle">{{ concept.pos.title }}</span>
+			<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		</h1>
+		{% tabs tab_data tab_active %}
+	{% endif %}
+	
+	<div id="tab-container">
+		<h2>Graphs</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="card">
+						{%if relation_path %}
+							<a href="{% url_or_default relation_path 'concept/default.png' %}" target="_blank">
+								<img src="{% url_or_default relation_path 'concept/default.png' %}" alt="{% trans 'Graph' %}" class="card-img-top">
+							</a>
+						{% else %}
+							<img src="{% url_or_default relation_path 'concept/default.png' %}" alt="{% trans 'Graph' %}" class="card-img-top">
+						{% endif %}
+						<div class="card-body">
+							<h5 class="card-title">Relation</h5>
+							<p class="card-text">Graph of all directly related attributes and relations.</p>
+							<form method="post">
+								{% csrf_token %}
+								<button hx-indicator="#loading-indicator" hx-target="#main-container" hx-post="{% url 'datacore:concept_visualization' concept.id %}" class="btn btn-primary float-end" type="submit" name="regenerate-relation" value="1">Generate new graph</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						{%if hierarchy_path %}
+							<a href="{% url_or_default hierarchy_path 'concept/default.png' %}" target="_blank">
+								<img src="{% url_or_default hierarchy_path 'concept/default.png' %}" alt="{% trans 'Graph' %}" class="card-img-top">
+							</a>
+						{% else %}
+							<img src="{% url_or_default hierarchy_path 'concept/default.png' %}" alt="{% trans 'Graph' %}" class="card-img-top">
+						{% endif %}
+						<div class="card-body">
+							<h5 class="card-title">Hierarchy</h5>
+							<p class="card-text">Graph of this concept and it's hierarchy(Hypernym).</p>
+							<form method="post">
+								{% csrf_token %}
+								<button hx-indicator="#loading-indicator" hx-target="#main-container" hx-post="{% url 'datacore:concept_visualization' concept.id %}" class="btn btn-primary float-end" type="submit" name="regenerate-hierarchy" value="1">Generate new graph</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card">
+						{%if neighborhood_path %}
+							<a href="{% url_or_default neighborhood_path 'concept/default.png' %}" target="_blank">
+								<img src="{% url_or_default neighborhood_path 'concept/default.png' %}" alt="{% trans 'Graph' %}" class="card-img-top">
+							</a>
+						{% else %}
+							<img src="{% url_or_default neighborhood_path 'concept/default.png' %}" alt="{% trans 'Graph' %}" class="card-img-top">
+						{% endif %}
+						<div class="card-body">
+							<h5 class="card-title">Neighborhood</h5>
+							<p class="card-text">Neighborhood of all relations with depth of 2.</p>
+							<form method="post">
+								{% csrf_token %}
+								<button hx-indicator="#loading-indicator" hx-target="#main-container" hx-post="{% url 'datacore:concept_visualization' concept.id %}" class="btn btn-primary float-end" type="submit" name="regenerate-neighborhood" value="1">Generate new graph</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

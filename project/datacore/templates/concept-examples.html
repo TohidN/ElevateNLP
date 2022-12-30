@@ -1,0 +1,58 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Concept Examples" %}{% endblock %}
+
+{% block content %}
+	<!-- Page Content -->
+	{% if request.htmx.target != 'tab-container' %}
+		<!-- Modal -->
+		<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+			<div class="modal-dialog">
+				<div id="modal-container" class="modal-content">
+				</div>
+			</div>
+		</div>
+
+		<h1>
+			<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" hx-boost="true" href="{% url 'datacore:concept' concept.id %}">{% trans "Concept" %} #{{ id }}</a>
+			<span class="badge bg-secondary fs-6 align-middle">{{ concept.pos.title }}</span>
+			<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		</h1>
+		{% tabs tab_data tab_active %}
+	{% endif %}
+	
+	<div id="tab-container">
+		<h4>
+			Examples
+			<a hx-push-url="false" hx-boost="true" hx-target="#modal-container" hx-indicator="#loading-indicator" href="{% url 'datacore:concept_examples_add' concept.id %}" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i> Add Example</a>
+		</h4>
+		{% if concept.examples.all %}
+			<div class="row gy-2 pt-3">
+				{% for example in concept.examples.all %}
+					<div class="col-auto">
+						<div class="input-group">
+							<span class="input-group-text" id="basic-addon1"><abbr title="{{example.language.get_title}}">{{example.language.alpha3b}}</abbr></span>
+							<span class="form-control">{{ example.text }}</span>
+							<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+							<ul class="dropdown-menu">
+								<li><a hx-vals='{"force_url_success_redirect": "{% url "datacore:concept" concept.id %}"}' hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:concept_example_edit' concept.id example.id %}" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i>Edit</a></li>
+								<li>
+									<form method="post" action="{% url 'datacore:concept_examples' concept.id %}">
+										{% csrf_token %}
+										<input type="hidden" name="remove-item" value="{{ example.id }}" >
+										<button hx-indicator="#loading-indicator" hx-target="#main-container" hx-confirm="Are you sure you?" hx-post="{% url 'datacore:concept_examples' concept.id %}" name="remove-example" class="dropdown-item"><i class="fa fa-trash"></i>Remove</button>
+									</form>
+								</li>
+							</ul>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		{% else %}
+			<b>Examples not provided!</b>
+		{% endif %}
+	</div>
+{% endblock %}

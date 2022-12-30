@@ -1,0 +1,106 @@
+{% load account_tags %}
+{% load thumbnail %}
+{% load static %}
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a hx-swap="innerHTML show:window:top" hx-target="#main-container" hx-push-url="true" hx-boost="true" hx-indicator="#navbar-indicator" class="navbar-brand" href="{% url 'datacore:home' %}">{% block title %}ElevateNLP{% endblock %}</a>
+		<div id="navbar-indicator" class="htmx-indicator spinner-border spinner-border-sm text-light" role="status"><span class="visually-hidden">Loading...</span></div>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul hx-swap="innerHTML show:window:top" hx-target="#main-container" hx-push-url="true" hx-boost="true" hx-indicator="#navbar-indicator" class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Data Collections</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><h6 class="dropdown-header">Text Data</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:corpora' %}"><i class="fa fa-book"></i> Corpora</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:documents' %}"><i class="fa fa-file-lines"></i>Documents</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:phrase_collections' %}"><i class="fa fa-rectangle-list"></i>Phrase Collections</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:phrases' %}"><i class="fa fa-quote-left"></i>Phrases</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:words' %}"><i class="fa fa-spell-check"></i>Words</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><h6 class="dropdown-header">Semantic Data</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:domain_ontologies' %}"><i class="fa fa-coins"></i>Domain Ontologies</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:concepts' %}"><i class="fa fa-database"></i>Concepts</a></li>
+						<li><h6 class="dropdown-header">Named Entities</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:entities' %}"><i class="fa fa-coins"></i>Named Entities</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Linguistic Data </a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><h6 class="dropdown-header">Linguistics</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:components' %}"><i class="fa fa-seedling"></i>Linguistic components</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:languages' %}"><i class="fa fa-language"></i>Languages</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><h6 class="dropdown-header">Word Morphologies</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:word_relation_types' %}">Lexical Relationship types</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:word_relations' %}">Relations and Morphologies</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><h6 class="dropdown-header">Word Lists</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:word_lists' %}">Word Lists</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><h6 class="dropdown-header">Analysis Data</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:templates' %}"><i class="fa fa-map"></i> Templates </a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Data Management</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><h6 class="dropdown-header">DataSets</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:data_sources' %}">Data Sources</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><h6 class="dropdown-header">Data Export</h6></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:lexical_data' %}">Lexical Data</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:textual_data' %}">Textual Data</a></li>
+						<li><a class="dropdown-item" href="{% url 'datacore:ontological_data' %}">Ontology Data</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+				{% if request.user.is_authenticated %}
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+								<i class="fa fa-user"></i>
+								{% if request.user.get_full_name %}{{ request.user.get_full_name }}{% else %}{{ request.user.username }}{% endif %}
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+								<div class="nav-user-avatar-username-container">
+									{% logged_in_user_avatar 128 as avatar %}
+									{% if avatar %}
+										<img src="{{ avatar }}" class="rounded-circle mx-auto d-flex nav-avatar">
+									{% endif %}
+									<h5 class="dropdown-item nav-avatar-username">@{{ request.user.username }}</h5>
+								</div>
+								{% if request.user.is_superuser %}
+									<div class="dropdown-divider" role="separator"></div>
+									<a class="dropdown-item" href="{% url 'admin:index' %}">Admin</a>
+								{%  endif %}
+								<div class="dropdown-divider" role="separator"></div>
+								<a hx-swap="innerHTML show:window:top" hx-target="#main-container" hx-push-url="true" hx-boost="true" hx-indicator="#navbar-indicator" class="dropdown-item" href="{% url 'account:profile' user %}">Profile</a>
+								<a hx-swap="innerHTML show:window:top" hx-target="#main-container" hx-push-url="true" hx-boost="true" hx-indicator="#navbar-indicator" class="dropdown-item" href="{% url 'account:user_settings_edit' user %}">Settings</a>
+								<a class="dropdown-item" href="{% url 'account:signout' %}">Logout</a>
+							</ul>
+						</li>
+					</ul>
+				{% else %}
+					<ul hx-target="#user-modal-container" hx-push-url="false" hx-boost="true" hx-indicator="#navbar-indicator" class="navbar-nav">
+						<li class="dropdown"><a class="nav-link" href="{% url 'account:signin' %}" data-bs-toggle="modal" data-bs-target="#user-modal"><i class="fa fa-sign-in"></i> Login</a></li>
+						<li class="dropdown"><a class="nav-link" href="{% url 'account:signup' %}" data-bs-toggle="modal" data-bs-target="#user-modal"><i class="fa fa-user-plus"></i> Sign Up</a></li>
+					</ul>
+				{% endif %}
+			
+		</div>
+	</div>
+</nav>
+
+{% if not request.user.is_authenticated %}
+	<!-- User Modal - for login and signup -->
+	<div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="user-modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+{% endif %}

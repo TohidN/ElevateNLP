@@ -1,0 +1,580 @@
+885,Query Response,,{},{},28,29,8,1,879,,{},{}
+881,Greeting Response,,{},{},8,9,8,1,879,,{},{}
+879,Intent,Used for intent recognition.,{},{},1,32,8,0,,,{},{}
+397,clausal modifier of noun (adnominal clause),"",{https://universaldependencies.org/u/dep/acl.html},{},20,21,4,1,396,acl,{},"{'"ud'": '"acl'"}"
+438,list,"",{https://universaldependencies.org/u/dep/list.html},{},58,59,4,1,396,list,{},"{'"ud'": '"list'"}"
+421,unspecified dependency,"",{https://universaldependencies.org/u/dep/dep.html},{},124,125,4,1,396,dep,{},"{'"ud'": '"dep'"}"
+877,Artifacts,"Man made things, such as statues, devices, even websites and apps",{},{},11,12,10,2,330,ARTIFACT,{},{}
+876,Law,Named documents made into laws.,{},{},9,10,10,2,330,LAW,{},{}
+831,manner,"X is carried out in Y(action, experience or process)",{},{},87,88,10,2,329,manner,{},{}
+870,Documents,"Named documents, treaties, contract, letter.",{},{},17,18,10,2,330,DOCUMENT,{},{}
+109,a work of human intelligence,,{},{},67,68,5,2,91,PROPN.WRK,{},"{'"ud'": '"PROPN.WRK'"}"
+92,An animal,,{},{},71,72,5,2,91,PROPN.ANM,{},"{'"ud'": '"PROPN.ANM'"}"
+623,Continuous Aspect,,{http://purl.org/linguistics/gold/ContinuousAspect},{},19,20,6,2,621,ContinuousAspect,"{'"Morphosemantic Property'"}",{}
+627,Habitual Aspect,,{http://purl.org/linguistics/gold/HabitualAspect},{},29,30,6,2,621,HabitualAspect,"{'"Morphosemantic Property'"}",{}
+637,Terminative Aspect,,{http://purl.org/linguistics/gold/TerminativeAspect},{},61,62,6,2,621,TerminativeAspect,"{'"Morphosemantic Property'"}",{}
+865,Percentage,"Percentages including %, or formats such as 50/50.",{},{},39,40,10,2,330,PERCENT,{},"{'"ud'": '"PERCENT'"}"
+830,state,X is a state of Y,{},{},99,100,10,2,329,state,{},{}
+811,sub-topic,X(synset) is under topic of Y(synset),{},{},101,102,10,2,329,topic_domains,{},{}
+854,Organization,,{},{},37,38,10,2,330,ORGANIZATION,{},"{'"ud'": '"ORG'"}"
+878,Natural Phenomenon,"Storms, Disasters and other natural phenomenon",{},{},33,34,10,2,330,NAT,{},{}
+859,Facility,"buildings, airports, bridges, etc.",{},{},21,22,10,2,330,FACILITY,{},"{'"ud'": '"FAC'"}"
+886,Query Recommendation,Query one or more entities. filterable.,{},{},30,31,8,1,879,,{},{}
+882,Courtesy Greeting,"Questions such as '"how are you?'", and '"how is it going?'".",{},{},16,17,8,1,879,,{},{}
+880,Greeting,,{},{},6,7,8,1,879,,{},{}
+636,Simultaneous Aspect,,{http://purl.org/linguistics/gold/SimultaneousAspect},{},59,60,6,2,621,SimultaneousAspect,"{'"Morphosemantic Property'"}",{}
+684,Malefactive Case,,{http://purl.org/linguistics/gold/MalefactiveCase},{},133,134,6,2,649,MalefactiveCase,"{'"Morphosyntactic Relationship'"}",{}
+699,Superlative Case,,{http://purl.org/linguistics/gold/SuperlativeCase},{},163,164,6,2,649,CASE:SUPERLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+777,Hearsay Evidentiality,,{http://purl.org/linguistics/gold/HearsayEvidentiality},{},223,224,6,2,771,HearsayEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+640,Dubitive Mood,,{http://purl.org/linguistics/gold/DubitiveMood},{},337,338,6,2,165,DubitiveMood,"{'"Morphosemantic Property'"}",{}
+641,Epistemic Modality,,{http://purl.org/linguistics/gold/EpistemicModality},{},339,340,6,2,165,EpistemicModality,"{'"Morphosemantic Property'"}",{}
+176,Prp,,{},{},363,364,6,2,165,Prp,"{'"Morphosemantic Property'"}","{'"ud'": '"Prp'"}"
+177,Qot,,{},{},365,366,6,2,165,Qot,"{'"Morphosemantic Property'"}","{'"ud'": '"Qot'"}"
+739,Plain Middle Voice,,{http://purl.org/linguistics/gold/PlainMiddleVoice},{},676,677,6,3,871,PlainMiddleVoice,"{'"Morphosyntactic Relationship'"}",{}
+887,Thanks,,{},{},24,25,8,1,879,,{},{}
+883,Courtesy Greeting Response,,{},{},18,19,8,1,879,,{},{}
+598,Immediate Past Tense,,{http://purl.org/linguistics/gold/ImmediatePastTense},{},583,584,6,2,589,ImmediatePastTense,"{'"Morphosemantic Property'"}",{}
+602,Past Perfect Tense,,{http://purl.org/linguistics/gold/PastPerfectTense},{},597,598,6,2,589,PastPerfectTense,"{'"Morphosemantic Property'"}",{}
+605,Post Hodiernal Future Tense,,{http://purl.org/linguistics/gold/PostHodiernalFutureTense},{},603,604,6,2,589,PostHodiernalFutureTense,"{'"Morphosemantic Property'"}",{}
+606,Pre Hodiernal Past Tense,,{http://purl.org/linguistics/gold/PreHodiernalPastTense},{},607,608,6,2,589,PreHodiernalPastTense,"{'"Morphosemantic Property'"}",{}
+221,Pres,,{},{},609,610,6,2,589,Pres,"{'"Morphosemantic Property'"}","{'"ud'": '"Pres'"}"
+111,adposition,"Adposition is a cover term for prepositions and postpositions. Adpositions belong to a closed set of items that occur before (preposition) or after (postposition) a complement composed of a noun phrase, noun, pronoun, or clause that functions as a noun phrase, and that form a single structure with the complement to express its grammatical and semantic relation to another unit within a clause.",{https://universaldependencies.org/u/pos/ADP.html},{},4,5,5,1,77,ADP,{},"{'"ud'": '"ADP'"}"
+798,First Person,,"{http://purl.org/linguistics/gold/FirstPerson,https://universaldependencies.org/u/feat/Person.html#1}",{},493,494,6,2,797,1,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"1'"}"
+129,Emp,,{},{},535,536,6,2,126,Emp,"{'"Morphosyntactic Property'"}","{'"ud'": '"Emp'"}"
+607,Present Perfect Tense,,{http://purl.org/linguistics/gold/PresentPerfectTense},{},611,612,6,2,589,PresentPerfectTense,"{'"Morphosemantic Property'"}",{}
+660,Contallative Case,,{http://purl.org/linguistics/gold/ContallativeCase},{},85,86,6,2,649,ContallativeCase,"{'"Morphosyntactic Relationship'"}",{}
+787,Number,,{},{},448,475,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+97,An event,,{},{},73,74,5,2,91,PROPN.EVN,{},"{'"ud'": '"PROPN.EVN'"}"
+625,Durative Aspect,,{http://purl.org/linguistics/gold/DurativeAspect},{},23,24,6,2,621,DurativeAspect,"{'"Morphosemantic Property'"}",{}
+898,Proveb,,{},{},19,20,7,2,851,PRVB,{},{}
+888,Query Understanding,Question asking for whether established parameters in context are underestod.,{},{},20,21,8,1,879,,{},{}
+630,Iterative Aspect,,{http://purl.org/linguistics/gold/IterativeAspect},{},39,40,6,2,621,IterativeAspect,"{'"Morphosemantic Property'"}",{}
+635,Semelfactive Aspect,,{http://purl.org/linguistics/gold/SemelfactiveAspect},{},57,58,6,2,621,SemelfactiveAspect,"{'"Morphosemantic Property'"}",{}
+749,Referential Voice,,{http://purl.org/linguistics/gold/ReferentialVoice},{},703,704,6,2,719,ReferentialVoice,"{'"Morphosyntactic Relationship'"}",{}
+846,Imperative,a command,{},{},8,9,7,1,842,,{},{}
+634,Progressive Aspect,,{http://purl.org/linguistics/gold/ProgressiveAspect},{},51,52,6,2,621,ProgressiveAspect,"{'"Morphosemantic Property'"}",{}
+621,Aspect,"Aspect is a feature that specifies duration of the action in time, whether the action has been completed etc.",{https://universaldependencies.org/u/feat/Aspect.html},{},16,63,6,1,125,Aspect,"{'"Morphosemantic Property'"}","{'"ud'": '"Aspect'"}"
+649,Case,,{},{},64,175,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+875,Geopolitical Entity,"Countries, cities, states",{},{},25,26,10,2,330,GPE,{},"{'"ud'": '"GPE'"}"
+119,punctuation,Punctuation marks are non-alphabetical characters and character groups used in many languages to delimit linguistic units in printed text.,{https://universaldependencies.org/u/pos/PUNCT.html},{},82,83,5,1,77,PUNCT,{},"{'"ud'": '"PUNCT'"}"
+648,Timitive Mood,,{http://purl.org/linguistics/gold/TimitiveMood},{},373,374,6,2,165,TimitiveMood,"{'"Morphosemantic Property'"}",{}
+198,Bantu18,,{},{},395,396,6,2,180,Bantu18,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu18'"}"
+795,General Number,,{http://purl.org/linguistics/gold/GeneralNumber},{},453,454,6,2,787,GeneralNumber,"{'"Morphosyntactic Relationship'"}",{}
+790,Greater Plural Number,,"{http://purl.org/linguistics/gold/GreaterPluralNumber,https://universaldependencies.org/u/feat/Number.html#Grpl}",{},457,458,6,2,787,GreaterPluralNumber,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Grpl'"}"
+593,Future Tense,,{http://purl.org/linguistics/gold/FutureTense},{},573,574,6,2,589,FutureTense,"{'"Morphosemantic Property'"}",{}
+889,Swearing,,{},{},22,23,8,1,879,,{},{}
+899,Idiom,,{},{},17,18,7,2,851,IDM,{},{}
+596,Hodiernal Past Tense,,{http://purl.org/linguistics/gold/HodiernalPastTense},{},579,580,6,2,589,HodiernalPastTense,"{'"Morphosemantic Property'"}",{}
+828,positive beneficiary,X is advantaged  by Y,{},{},97,98,10,2,329,pos-beneficiary,{},{}
+856,Product,Product Name,{},{},43,44,10,2,330,PRODUCT,{},"{'"ud'": '"PRODUCT'"}"
+814,exists/happens in,X(synset) exists/happens in Y(synset) region,{},{},59,60,10,2,329,in_region_domains,{},{}
+839,Must not be,Relation must not be true,{},{},115,116,10,2,837,,{},{}
+133,Neg,,{},{},543,544,6,2,126,Neg,"{'"Morphosyntactic Property'"}","{'"ud'": '"Neg'"}"
+134,Prs,,{},{},545,546,6,2,126,Prs,"{'"Morphosyntactic Property'"}","{'"ud'": '"Prs'"}"
+812,in topic,X(synset) is in topic of Y(synset),{},{},63,64,10,2,329,in_topic_domains,{},{}
+813,is used in,X(synset) is used in Y(synset) region,{},{},83,84,10,2,329,region_domains,{},{}
+815,linguistically is a,X(synset) linguistically is a Y(synset),{},{},85,86,10,2,329,usage_domains,{},{}
+829,negative beneficiary,X is disadvantaged by Y,{},{},91,92,10,2,329,neg-beneficiary,{},{}
+617,Simple Present Tense,,{http://purl.org/linguistics/gold/SimplePresentTense},{},631,632,6,2,589,SimplePresentTense,"{'"Morphosemantic Property'"}",{}
+873,Location-Focus voice,,{https://universaldependencies.org/u/feat/Voice.html#Lfoc},{},669,670,6,2,719,VOICE:LOCATION-FOCUS,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Lfoc'"}"
+744,Reflexive Middle Voice,,{http://purl.org/linguistics/gold/ReflexiveMiddleVoice},{},680,681,6,3,871,ReflexiveMiddleVoice,"{'"Morphosyntactic Relationship'"}",{}
+323,clusivity,"Clusivity is a feature of first-person plural personal pronouns. As such, it can also be reflected by inflection of verbs.",{https://universaldependencies.org/u/feat/Clusivity.html},{},176,181,6,1,125,Clusivity,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Clusivity'"}"
+773,Auditory Evidentiality,,{http://purl.org/linguistics/gold/AuditoryEvidentiality},{},215,216,6,2,771,AuditoryEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+752,Commissive Force,,{http://purl.org/linguistics/gold/CommissiveForce},{},241,242,6,2,750,CommissiveForce,"{'"Morphosyntactic Relationship'"}",{}
+890,GoodBye,,{},{},2,3,8,1,879,,{},{}
+900,Slang,,{},{},23,24,7,2,851,SLNG,{},{}
+643,Irrealis Mood,,{http://purl.org/linguistics/gold/IrrealisMood},{},349,350,6,2,165,IrrealisMood,"{'"Morphosemantic Property'"}",{}
+174,Opt,,{},{},355,356,6,2,165,Opt,"{'"Morphosemantic Property'"}","{'"ud'": '"Opt'"}"
+175,Pot,,{},{},359,360,6,2,165,Pot,"{'"Morphosemantic Property'"}","{'"ud'": '"Pot'"}"
+645,Prohibitive Mood,,{http://purl.org/linguistics/gold/ProhibitiveMood},{},361,362,6,2,165,ProhibitiveMood,"{'"Morphosemantic Property'"}",{}
+646,Realis Mood,,{http://purl.org/linguistics/gold/RealisMood},{},367,368,6,2,165,RealisMood,"{'"Morphosemantic Property'"}",{}
+745,Reflexive Passive Voice,,{http://purl.org/linguistics/gold/ReflexivePassiveVoice},{},698,699,6,3,737,ReflexivePassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+100,An administrative geographic area,,{},{},69,70,5,2,91,PROPN.GEO,{},"{'"ud'": '"PROPN.GEO'"}"
+638,Quantificational Aspect,,{http://purl.org/linguistics/gold/QuantificationalAspect},{},55,56,6,2,621,QuantificationalAspect,"{'"Morphosemantic Property'"}",{}
+688,Perlative Case,,{http://purl.org/linguistics/gold/PerlativeCase},{},141,142,6,2,649,CASE:PERLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Per'"}"
+778,Indirect Evidentiality(None  First-Hand),,"{http://purl.org/linguistics/gold/IndirectEvidentiality,https://universaldependencies.org/u/feat/Evident.html#Nfh}",{},225,226,6,2,771,IndirectEvidentiality,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Nfh'"}"
+781,Other Than Visual Evidentiality,,{http://purl.org/linguistics/gold/OtherThanVisualEvidentiality},{},231,232,6,2,771,OtherThanVisualEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+891,Courtesy GoodBye,Response to goodby.,{},{},14,15,8,1,879,,{},{}
+901,Expression,,{},{},15,16,7,2,851,EXPS,{},{}
+782,Second Hand Evidentiality,,{http://purl.org/linguistics/gold/SecondHandEvidentiality},{},233,234,6,2,771,SecondHandEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+762,Animate Gender,,{http://purl.org/linguistics/gold/AnimateGender},{},279,280,6,2,761,AnimateGender,"{'"Morphosyntactic Relationship'"}",{}
+706,Abilitative Modality,,{http://purl.org/linguistics/gold/AbilitativeModality},{},303,304,6,2,705,AbilitativeModality,"{'"Morphosyntactic Relationship'"}",{}
+709,Epistemic Necessity Modality,,{http://purl.org/linguistics/gold/EpistemicNecessityModality},{},311,312,6,2,705,EpistemicNecessityModality,"{'"Morphosyntactic Relationship'"}",{}
+178,Sub,,{},{},369,370,6,2,165,Sub,"{'"Morphosemantic Property'"}","{'"ud'": '"Sub'"}"
+165,mood,Mood is a feature that expresses modality and subclassifies finite verb forms.,{https://universaldependencies.org/u/feat/Mood.html},{},330,375,6,1,125,Mood,"{'"Morphosemantic Property'"}","{'"ud'": '"Mood'"}"
+792,Plural Number,,"{http://purl.org/linguistics/gold/PluralNumber,https://universaldependencies.org/u/feat/Number.html#Plur}",{},465,466,6,2,787,PluralNumber,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Plur'"}"
+797,Person,,{},{},492,511,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+130,Exc,,{},{},537,538,6,2,126,Exc,"{'"Morphosyntactic Property'"}","{'"ud'": '"Exc'"}"
+401,"emphasizing word, intensifier","",{https://universaldependencies.org/u/dep/advmod-emph.html},{},40,41,4,1,396,advmod:emph,{},"{'"ud'": '"advmod:emph'"}"
+431,reflexive clitic with an inherently reflexive verb,"",{https://universaldependencies.org/u/dep/expl-pv.html},{},110,111,4,1,396,expl:pv,{},"{'"ud'": '"expl:pv'"}"
+398,relative clause modifier,"",{https://universaldependencies.org/u/dep/acl-relcl.html},{},114,115,4,1,396,acl:relcl,{},"{'"ud'": '"acl:relcl'"}"
+892,Compliment,,{},{},12,13,8,1,879,,{},{}
+902,Saying,,{},{},21,22,7,2,851,SYNG,{},{}
+442,temporal modifier,"",{https://universaldependencies.org/u/dep/nmod-tmod.html},{},122,123,4,1,396,nmod:tmod,{},"{'"ud'": '"nmod:tmod'"}"
+867,Quantity,"Measurments including it''s unit. such as weight, lenght.",{},{},47,48,10,2,330,QUANTITY,{},"{'"ud'": '"QUANTITY'"}"
+864,Time,Times of day,{},{},49,50,10,2,330,TIME,{},"{'"ud'": '"TIME'"}"
+857,Versioned Product,Product Name and version,{},{},45,46,10,2,330,PRODUCT.VER,{},{}
+855,Geographical Location,"Geographic locations such as mountains, boddies of water.",{},{},23,24,10,2,330,GEOGRAPHICAL.LOCATION,{},"{'"ud'": '"LOC'"}"
+832,material,X(instance) is made of Y(Synset),{},{},89,90,10,2,329,material,{},{}
+726,Causative Voice,,"{http://purl.org/linguistics/gold/CausativeVoice,https://universaldependencies.org/u/feat/Voice.html#Cau}",{},655,656,6,2,719,VOICE:CAUSATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Cau'"}"
+747,Inverse Voice,,"{http://purl.org/linguistics/gold/InverseVoice,https://universaldependencies.org/u/feat/Voice.html#Inv}",{},659,668,6,2,719,InverseVoice,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Inv'"}"
+840,Can do or be,X can do or be Y,{},{},109,110,10,2,837,can-do,{},{}
+868,Ordinal,"such as 1st, first, 2nd, second.",{},{},35,36,10,2,330,ORDINAL,{},"{'"ud'": '"ORDINAL'"}"
+817,has the attribute,X(synset) has the attribute Y(synset),{},{},61,62,10,2,329,attributes,{},{}
+642,Indicative Mood,,{http://purl.org/linguistics/gold/IndicativeMood},{},345,346,6,2,165,IndicativeMood,"{'"Morphosemantic Property'"}",{}
+834,participant,X is a secondary(non-focused) participant  of Y,{},{},95,96,10,2,329,participant,{},{}
+841,Can't do or be,X can not do or be Y,{},{},107,108,10,2,837,cant,{},{}
+836,is known to be,X is known to be Y - a probability statement,{},{},111,112,10,2,837,is-known,{},{}
+837,Relation Attributes,"Restrictions, rules and conditions which a relation may take on.",{},{},106,117,10,1,327,,{},{}
+825,is a member of,X is a member of Y,{},{},67,68,10,2,329,member holonym,{},{}
+826,is a substance of,X is a substance of Y,{},{},71,72,10,2,329,substance holonym,{},{}
+644,Optative Mood,,{http://purl.org/linguistics/gold/OptativeMood},{},357,358,6,2,165,OptativeMood,"{'"Morphosemantic Property'"}",{}
+866,Money,monetary value including currency unit.,{},{},31,32,10,2,330,MONEY,{},"{'"ud'": '"MONEY'"}"
+410,clausal complement,"",{https://universaldependencies.org/u/dep/ccomp.html},{},18,19,4,1,396,ccomp,{},"{'"ud'": '"ccomp'"}"
+610,Relative Future Tense,,{http://purl.org/linguistics/gold/RelativeFutureTense},{},617,618,6,2,589,RelativeFutureTense,"{'"Morphosemantic Property'"}",{}
+611,Relative Past Tense,,{http://purl.org/linguistics/gold/RelativePastTense},{},619,620,6,2,589,RelativePastTense,"{'"Morphosemantic Property'"}",{}
+728,Focus Antipassive Voice,,{http://purl.org/linguistics/gold/FocusAntipassiveVoice},{},644,645,6,3,724,FocusAntipassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+737,Passive Voice,,"{http://purl.org/linguistics/gold/PassiveVoice,https://universaldependencies.org/u/feat/Voice.html#Pass}",{},683,700,6,2,719,PassiveVoice,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Pass'"}"
+858,Event,"Named hurricanes, battles, wars, sports events, etc.",{},{},19,20,10,2,330,EVENT,{},"{'"ud'": '"EVENT'"}"
+869,Cardinal,Cardinal numbers which don't represent an instance type.,{},{},13,14,10,2,330,CARDINAL,{},"{'"ud'": '"CARDINAL'"}"
+835,causes,X causes Y,{},{},55,56,10,2,329,causes,{},{}
+833,participant,X is a participant in Y,{},{},93,94,10,2,329,participant,{},{}
+816,used in things like,X(synset) used in things like Y(synset),{},{},103,104,10,2,329,in_usage_domains,{},{}
+590,Future In Future Tense,,{http://purl.org/linguistics/gold/FutureInFutureTense},{},567,568,6,2,589,FutureInFutureTense,"{'"Morphosemantic Property'"}",{}
+595,Hodiernal Future Tense,,{http://purl.org/linguistics/gold/HodiernalFutureTense},{},577,578,6,2,589,HodiernalFutureTense,"{'"Morphosemantic Property'"}",{}
+604,Perfect Tense,,{http://purl.org/linguistics/gold/PerfectTense},{},601,602,6,2,589,PerfectTense,"{'"Morphosemantic Property'"}",{}
+884,Query,Question about a fact.,{},{},26,27,8,1,879,,{},{}
+893,Gossip,Irrelevant information provided in conversation.,{},{},4,5,8,1,879,,{},{}
+850,Event,the changing of attributes or relations.,{},{},6,7,10,1,327,,{},{}
+863,Date,Absolute or relative date or time,{},{},15,16,10,2,330,DATE,{},"{'"ud'": '"DATE'"}"
+860,"Group(nationality, religion,...)","Group of people sharing nationality, religion, political party.",{},{},27,28,10,2,330,GROUP,{},"{'"ud'": '"NORP'"}"
+862,Language,,{},{},29,30,10,2,330,LANGUAGE,{},"{'"ud'": '"LANGUAGE'"}"
+853,Person,"People, real or fictional",{},{},41,42,10,2,330,PERSON,{},"{'"ud'": '"PERSON'"}"
+838,Must Be,Relation must be true in concept.,{},{},113,114,10,2,837,must be,{},{}
+894,Command,Run a task or query.,{},{},10,11,8,1,879,,{},{}
+456,overridden disfluency,"",{https://universaldependencies.org/u/dep/reparandum.html},{},86,87,4,1,396,reparandum,{},"{'"ud'": '"reparandum'"}"
+441,possessive nominal modifier,"",{https://universaldependencies.org/u/dep/nmod-poss.html},{},98,99,4,1,396,nmod:poss,{},"{'"ud'": '"nmod:poss'"}"
+662,Contlative Case,,{http://purl.org/linguistics/gold/ContlativeCase},{},89,90,6,2,649,ContlativeCase,"{'"Morphosyntactic Relationship'"}",{}
+707,Conditional Physical Abilitive Modality,,{http://purl.org/linguistics/gold/ConditionalPhysicalAbilitiveModality},{},307,308,6,2,705,ConditionalPhysicalAbilitiveModality,"{'"Morphosyntactic Relationship'"}",{}
+711,Necessity Modality,,{http://purl.org/linguistics/gold/NecessityModality},{},317,318,6,2,705,NecessityModality,"{'"Morphosyntactic Relationship'"}",{}
+619,Close Future Tense,,{http://purl.org/linguistics/gold/CloseFutureTense},{},563,564,6,2,589,CloseFutureTense,"{'"Morphosemantic Property'"}",{}
+895,Word Types,,{},{},2,7,9,1,11,,{},{}
+597,Immediate Future Tense,,{http://purl.org/linguistics/gold/ImmediateFutureTense},{},581,582,6,2,589,ImmediateFutureTense,"{'"Morphosemantic Property'"}",{}
+603,Past Tense,,{http://purl.org/linguistics/gold/PastTense},{},599,600,6,2,589,PastTense,"{'"Morphosemantic Property'"}",{}
+432,fixed multiword expression,"",{https://universaldependencies.org/u/dep/fixed.html},{},44,45,4,1,396,fixed,{},"{'"ud'": '"fixed'"}"
+896,Contractions,shortened form of a word (or group of words) that omits certain letters or sounds,{},{},3,4,9,2,895,,{},{}
+445,numeric modifier,"",{https://universaldependencies.org/u/dep/nummod.html},{},72,73,4,1,396,nummod,{},"{'"ud'": '"nummod'"}"
+91,proper noun,"A proper noun is a noun (or nominal content word) that is the name (or part of the name) of a specific individual, place, or object.",{https://universaldependencies.org/u/pos/PROPN.html},{},44,81,5,1,77,PROPN,{},"{'"ud'": '"PROPN'"}"
+686,Oblique Case,,{http://purl.org/linguistics/gold/ObliqueCase},{},137,138,6,2,649,ObliqueCase,"{'"Morphosyntactic Relationship'"}",{}
+786,Diminuative Size,,{http://purl.org/linguistics/gold/DiminuativeSize},{},559,560,6,2,784,DiminuativeSize,"{'"Morphosyntactic Relationship'"}",{}
+600,Non Past Tense,,{http://purl.org/linguistics/gold/NonPastTense},{},591,592,6,2,589,NonPastTense,"{'"Morphosemantic Property'"}",{}
+601,Past In Past Tense,,{http://purl.org/linguistics/gold/PastInPastTense},{},595,596,6,2,589,PastInPastTense,"{'"Morphosemantic Property'"}",{}
+608,Present Tense,,{http://purl.org/linguistics/gold/PresentTense},{},613,614,6,2,589,PresentTense,"{'"Morphosemantic Property'"}",{}
+160,animacy,"Similarly to Gender (and to the African noun classes), animacy is usually a lexical feature of nouns and inflectional feature of other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",{https://universaldependencies.org/u/feat/Animacy.html},{},6,15,6,1,125,Animacy,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Animacy'"}"
+897,Stop Words,The words don't add meaning to phrase and are generally filtered out before some NLP processes.,{},{},5,6,9,2,895,,{},{}
+424,pronominal quantifier agreeing in case with the noun,"",{https://universaldependencies.org/u/dep/det-nummod.html},{},102,103,4,1,396,det:nummod,{},"{'"ud'": '"det:nummod'"}"
+822,is a kind of,X is a kind of Y,{},{},65,66,10,2,329,hyponym,{},{}
+661,Conterminative Case,,{http://purl.org/linguistics/gold/ConterminativeCase},{},87,88,6,2,649,ConterminativeCase,"{'"Morphosyntactic Relationship'"}",{}
+664,Delative Case,,{http://purl.org/linguistics/gold/DelativeCase},{},93,94,6,2,649,CASE:DELATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Del'"}"
+674,Interablative Case,,{http://purl.org/linguistics/gold/InterablativeCase},{},113,114,6,2,649,InterablativeCase,"{'"Morphosyntactic Relationship'"}",{}
+322,Infm,,{},{},525,526,6,2,318,Infm,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Infm'"}"
+609,Recent Past Tense,,{http://purl.org/linguistics/gold/RecentPastTense},{},615,616,6,2,589,RecentPastTense,"{'"Morphosemantic Property'"}",{}
+613,Remote Future Tense,,{http://purl.org/linguistics/gold/RemoteFutureTense},{},623,624,6,2,589,RemoteFutureTense,"{'"Morphosemantic Property'"}",{}
+861,Work of art,"Title of books, movies, music, etc.",{},{},51,52,10,2,330,ART,{},"{'"ud'": '"WORK_OF_ART'"}"
+824,is a part of,X is a part of Y,{},{},69,70,10,2,329,part holonym,{},{}
+819,is caused by,X(synset) is caused by Y(synset),{},{},77,78,10,2,329,causes,{},{}
+402,locative adverbial modifier,"",{https://universaldependencies.org/u/dep/advmod-lmod.html},{},60,61,4,1,396,advmod:lmod,{},"{'"ud'": '"advmod:lmod'"}"
+409,preconjunct,"",{https://universaldependencies.org/u/dep/cc-preconj.html},{},100,101,4,1,396,cc:preconj,{},"{'"ud'": '"cc:preconj'"}"
+415,reduplicated compounds,"",{https://universaldependencies.org/u/dep/compound-redup.html},{},108,109,4,1,396,compound:redup,{},"{'"ud'": '"compound:redup'"}"
+86,Measure,,{},{},25,26,5,2,81,NOUN.MEA,{},"{'"ud'": '"NOUN.MEA'"}"
+622,Completive Aspect,,{http://purl.org/linguistics/gold/CompletiveAspect},{},17,18,6,2,621,CompletiveAspect,"{'"Morphosemantic Property'"}",{}
+716,Conditional Modality,,{http://purl.org/linguistics/gold/ConditionalModality},{},305,306,6,2,705,ConditionalModality,"{'"Morphosyntactic Relationship'"}",{}
+818,entails,X(synset) is followed by Y(synset),{},{},57,58,10,2,329,entailments,{},{}
+820,is related to,X(synset) is related to Y(synset),{},{},79,80,10,2,329,also_sees,{},{}
+821,is similar to,X(synset) is similar to Y(synset),{},{},81,82,10,2,329,similar_tos,{},{}
+419,clausal subject,"",{https://universaldependencies.org/u/dep/csubj.html},{},24,25,4,1,396,csubj,{},"{'"ud'": '"csubj'"}"
+427,dislocated elements,"",{https://universaldependencies.org/u/dep/dislocated.html},{},38,39,4,1,396,dislocated,{},"{'"ud'": '"dislocated'"}"
+413,light verb construction,"",{https://universaldependencies.org/u/dep/compound-lvc.html},{},56,57,4,1,396,compound:lvc,{},"{'"ud'": '"compound:lvc'"}"
+82,Address,,{},{},17,18,5,2,81,NOUN.ADR,{},"{'"ud'": '"NOUN.ADR'"}"
+626,Frequentive Aspect,,{http://purl.org/linguistics/gold/FrequentiveAspect},{},25,26,6,2,621,FrequentiveAspect,"{'"Morphosemantic Property'"}",{}
+591,Future In Past Tense,,{http://purl.org/linguistics/gold/FutureInPastTense},{},569,570,6,2,589,FutureInPastTense,"{'"Morphosemantic Property'"}",{}
+592,Future Perfect Tense,,{http://purl.org/linguistics/gold/FuturePerfectTense},{},571,572,6,2,589,FuturePerfectTense,"{'"Morphosemantic Property'"}",{}
+594,Hesternal Past Tense,,{http://purl.org/linguistics/gold/HesternalPastTense},{},575,576,6,2,589,HesternalPastTense,"{'"Morphosemantic Property'"}",{}
+823,is a supertype of,X is a supertype of Y,{},{},73,74,10,2,329,Hypernym,{},{}
+396,Universal Dependencies,,{},{},1,128,4,0,,UD,{},{}
+79,adverb,"Adverbs are words that typically modify verbs for such categories as time, place, direction or manner. They may also modify adjectives and other adverbs.",{https://universaldependencies.org/u/pos/ADV.html},{},6,7,5,1,77,ADV,{},"{'"ud'": '"ADV'", '"wn'": '"r'"}"
+624,Distributive Aspect,,{http://purl.org/linguistics/gold/DistributiveAspect},{},21,22,6,2,621,DistributiveAspect,"{'"Morphosemantic Property'"}",{}
+679,Interterminative Case,,{http://purl.org/linguistics/gold/InterterminativeCase},{},123,124,6,2,649,InterterminativeCase,"{'"Morphosyntactic Relationship'"}",{}
+689,Possessed Case,,{http://purl.org/linguistics/gold/PossessedCase},{},143,144,6,2,649,PossessedCase,"{'"Morphosyntactic Relationship'"}",{}
+690,Subablative Case,,{http://purl.org/linguistics/gold/SubablativeCase},{},145,146,6,2,649,CASE:SUBABLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sub'"}"
+620,Near Future Tense,,{http://purl.org/linguistics/gold/NearFutureTense},{},587,588,6,2,589,NearFutureTense,"{'"Morphosemantic Property'"}",{}
+428,expletive,"",{https://universaldependencies.org/u/dep/expl.html},{},42,43,4,1,396,expl,{},"{'"ud'": '"expl'"}"
+85,Email address,,{},{},21,22,5,2,81,NOUN.MAI,{},"{'"ud'": '"NOUN.MAI'"}"
+631,Non Progressive Aspect,,{http://purl.org/linguistics/gold/NonProgressiveAspect},{},41,42,6,2,621,NonProgressiveAspect,"{'"Morphosemantic Property'"}",{}
+632,Perfective Aspect,,{http://purl.org/linguistics/gold/PerfectiveAspect},{},45,46,6,2,621,PerfectiveAspect,"{'"Morphosemantic Property'"}",{}
+633,Phasal Aspect,,{http://purl.org/linguistics/gold/PhasalAspect},{},47,48,6,2,621,PhasalAspect,"{'"Morphosemantic Property'"}",{}
+654,Adessive Case,,{http://purl.org/linguistics/gold/AdessiveCase},{},73,74,6,2,649,CASE:ADESSIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ade'"}"
+666,Ergative Case,,{http://purl.org/linguistics/gold/ErgativeCase},{},97,98,6,2,649,CASE:ERGATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Erg'"}"
+695,Subtranslative Case,,{http://purl.org/linguistics/gold/SubtranslativeCase},{},155,156,6,2,649,CASE:SUBTRANSLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sub'"}"
+696,Superablative Case,,{http://purl.org/linguistics/gold/SuperablativeCase},{},157,158,6,2,649,CASE:SUPERABLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+698,Superessive Case,,{http://purl.org/linguistics/gold/SuperessiveCase},{},161,162,6,2,649,CASE:SUPERESSIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+774,Deductive Evidentiality,,{http://purl.org/linguistics/gold/DeductiveEvidentiality},{},217,218,6,2,771,DeductiveEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+765,Inanimate Gender,,{http://purl.org/linguistics/gold/InanimateGender},{},289,290,6,2,761,InanimateGender,"{'"Morphosyntactic Relationship'"}",{}
+321,Humb,,{},{},523,524,6,2,318,Humb,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Humb'"}"
+827,is an instance,X is an instance of Y,{},{},75,76,10,2,329,instance of,{},{}
+199,Bantu19,,{},{},397,398,6,2,180,Bantu19,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu19'"}"
+202,Bantu22,,{},{},405,406,6,2,180,Bantu22,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu22'"}"
+157,Ord,,{},{},485,486,6,2,152,Ord,"{'"Morphosyntactic Property'"}","{'"ud'": '"Ord'"}"
+159,Sets,,{},{},489,490,6,2,152,Sets,"{'"Morphosyntactic Property'"}","{'"ud'": '"Sets'"}"
+804,First Person Inclusive,,{http://purl.org/linguistics/gold/FirstPersonInclusive},{},497,498,6,2,797,FirstPersonInclusive,"{'"Morphosyntactic Relationship'"}",{}
+743,Reciprocal Middle Voice,,{http://purl.org/linguistics/gold/ReciprocalMiddleVoice},{},678,679,6,3,871,ReciprocalMiddleVoice,"{'"Morphosyntactic Relationship'"}",{}
+88,Percentage,,{},{},29,30,5,2,81,NOUN.PCT,{},"{'"ud'": '"NOUN.PCT'"}"
+763,Arabic Numeral Gender,,{http://purl.org/linguistics/gold/ArabicNumeralGender},{},281,282,6,2,761,ArabicNumeralGender,"{'"Morphosyntactic Relationship'"}",{}
+718,Epistemic Possibility Modality,,{http://purl.org/linguistics/gold/EpistemicPossibilityModality},{},313,314,6,2,705,EpistemicPossibilityModality,"{'"Morphosyntactic Relationship'"}",{}
+710,Mental Abilitive Modality,,{http://purl.org/linguistics/gold/MentalAbilitiveModality},{},315,316,6,2,705,MentalAbilitiveModality,"{'"Morphosyntactic Relationship'"}",{}
+182,Bantu2,,{},{},399,400,6,2,180,Bantu2,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu2'"}"
+212,Wol9,,{},{},445,446,6,2,180,Wol9,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol9'"}"
+153,Card,,{},{},477,478,6,2,152,Card,"{'"Morphosyntactic Property'"}","{'"ud'": '"Card'"}"
+658,Comitative Case,,{http://purl.org/linguistics/gold/ComitativeCase},{},81,82,6,2,649,CASE:COMITATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Com'"}"
+659,Contablative Case,,{http://purl.org/linguistics/gold/ContablativeCase},{},83,84,6,2,649,ContablativeCase,"{'"Morphosyntactic Relationship'"}",{}
+801,Third Person Obviative,,{http://purl.org/linguistics/gold/ThirdPersonObviative},{},505,506,6,2,797,ThirdPersonObviative,"{'"Morphosyntactic Relationship'"}",{}
+802,Third Person Proximative,,{http://purl.org/linguistics/gold/ThirdPersonProximative},{},507,508,6,2,797,ThirdPersonProximative,"{'"Morphosyntactic Relationship'"}",{}
+734,Non Promotional Inverse Voice,,{http://purl.org/linguistics/gold/NonPromotionalInverseVoice},{},660,661,6,3,747,NonPromotionalInverseVoice,"{'"Morphosyntactic Relationship'"}",{}
+843,Interrogative,asking a question(Yes/NO - WH questions),{},{},12,13,7,1,842,,{},{}
+444,passive nominal subject,"",{https://universaldependencies.org/u/dep/nsubj-pass.html},{},92,93,4,1,396,nsubj:pass,{},"{'"ud'": '"nsubj:pass'"}"
+704,Vocative Case,,{http://purl.org/linguistics/gold/VocativeCase},{},173,174,6,2,649,CASE:VOCATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Voc'"}"
+771,Evidentiality,,{},{},212,237,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+754,Hortatory Force,,{http://purl.org/linguistics/gold/HortatoryForce},{},245,246,6,2,750,HortatoryForce,"{'"Morphosyntactic Relationship'"}",{}
+750,Force,,{},{},238,259,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+768,Human Gender,,{http://purl.org/linguistics/gold/HumanGender},{},287,288,6,2,761,HumanGender,"{'"Morphosyntactic Relationship'"}",{}
+767,Vegetable Gender,,{http://purl.org/linguistics/gold/VegetableGender},{},297,298,6,2,761,VegetableGender,"{'"Morphosyntactic Relationship'"}",{}
+306,Equ,,{},{},199,200,6,2,303,Equ,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Equ'"}"
+769,Masculine Gender,,"{http://purl.org/linguistics/gold/MasculineGender,https://universaldependencies.org/u/feat/Gender.html#Masc}",{},291,292,6,2,761,MasculineGender,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Masc'"}"
+721,Active Voice,"The subject of the verb is the doer of the action (agent), the object is affected by the action (patient). This label is also used for the actor-focus voice of Austronesian languages.","{http://purl.org/linguistics/gold/ActiveVoice,https://universaldependencies.org/u/feat/Voice.html#Act}",{},637,638,6,2,719,ActiveVoice,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Act'"}"
+399,adverbial clause modifier,"",{https://universaldependencies.org/u/dep/advcl.html},{},4,5,4,1,396,advcl,{},"{'"ud'": '"advcl'"}"
+404,appositional modifier,"",{https://universaldependencies.org/u/dep/appos.html},{},10,11,4,1,396,appos,{},"{'"ud'": '"appos'"}"
+407,case marking,"",{https://universaldependencies.org/u/dep/case.html},{},14,15,4,1,396,case,{},"{'"ud'": '"case'"}"
+450,oblique argument,"",{https://universaldependencies.org/u/dep/obl-arg.html},{},78,79,4,1,396,obl:arg,{},"{'"ud'": '"obl:arg'"}"
+670,Inablative Case,,{http://purl.org/linguistics/gold/InablativeCase},{},105,106,6,2,649,InablativeCase,"{'"Morphosyntactic Relationship'"}",{}
+190,Bantu10,,{},{},379,380,6,2,180,Bantu10,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu10'"}"
+192,Bantu12,,{},{},383,384,6,2,180,Bantu12,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu12'"}"
+785,Augmentative Size,,{http://purl.org/linguistics/gold/AugmentativeSize},{},557,558,6,2,784,AugmentativeSize,"{'"Morphosyntactic Relationship'"}",{}
+730,Incorporating Antipassive Voice,,{http://purl.org/linguistics/gold/IncorporatingAntipassiveVoice},{},646,647,6,3,724,IncorporatingAntipassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+667,Essive Case,,{http://purl.org/linguistics/gold/EssiveCase},{},99,100,6,2,649,CASE:ESSIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ess'"}"
+668,Genitive Case,,{http://purl.org/linguistics/gold/GenitiveCase},{},101,102,6,2,649,CASE:GENITIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Gen'"}"
+682,Lative Case,,{http://purl.org/linguistics/gold/LativeCase},{},129,130,6,2,649,CASE:LATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Lat'"}"
+731,Locative Passive Voice,,{http://purl.org/linguistics/gold/LocativePassiveVoice},{},688,689,6,3,737,LocativePassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+736,Oblique Passive Voice,,{http://purl.org/linguistics/gold/ObliquePassiveVoice},{},692,693,6,3,737,ObliquePassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+738,Personal Passive Voice,,{http://purl.org/linguistics/gold/PersonalPassiveVoice},{},694,695,6,3,737,PersonalPassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+115,numeral,"A numeral is a word, functioning most typically as a determiner, adjective or pronoun, that expresses a number and a relation to the number, such as quantity, sequence, frequency or fraction.",{https://universaldependencies.org/u/pos/NUM.html},{},36,37,5,1,77,NUM,{},"{'"ud'": '"NUM'"}"
+694,Subterminative Case,,{http://purl.org/linguistics/gold/SubterminativeCase},{},153,154,6,2,649,CASE:SUBTERMINATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sub'"}"
+599,Non Future Tense,,{http://purl.org/linguistics/gold/NonFutureTense},{},589,590,6,2,589,NonFutureTense,"{'"Morphosemantic Property'"}",{}
+735,Nucleonic Middle Voice,,{http://purl.org/linguistics/gold/NucleonicMiddleVoice},{},674,675,6,3,871,NucleonicMiddleVoice,"{'"Morphosyntactic Relationship'"}",{}
+722,Agent Deletion Passive Voice,,{http://purl.org/linguistics/gold/AgentDeletionPassiveVoice},{},684,685,6,3,737,AgentDeletionPassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+417,conjunct,"",{https://universaldependencies.org/u/dep/conj.html},{},28,29,4,1,396,conj,{},"{'"ud'": '"conj'"}"
+448,oblique nominal,"",{https://universaldependencies.org/u/dep/obl.html},{},80,81,4,1,396,obl,{},"{'"ud'": '"obl'"}"
+459,open clausal complement,"",{https://universaldependencies.org/u/dep/xcomp.html},{},82,83,4,1,396,xcomp,{},"{'"ud'": '"xcomp'"}"
+453,orphan,"",{https://universaldependencies.org/u/dep/orphan.html},{},84,85,4,1,396,orphan,{},"{'"ud'": '"orphan'"}"
+414,phrasal verb particle,"",{https://universaldependencies.org/u/dep/compound-prt.html},{},94,95,4,1,396,compound:prt,{},"{'"ud'": '"compound:prt'"}"
+685,Nominative Case,,{http://purl.org/linguistics/gold/NominativeCase},{},135,136,6,2,649,CASE:NOMINATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Nom'"}"
+760,Imperative Force,,{http://purl.org/linguistics/gold/ImperativeForce},{},247,248,6,2,750,ImperativeForce,"{'"Morphosyntactic Relationship'"}",{}
+214,Wol11,,{},{},427,428,6,2,180,Wol11,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol11'"}"
+224,SingulareTantumNumber,,{https://universaldependencies.org/u/feat/Number.html#Coll},{},471,472,6,2,787,Coll,"{'"Morphosyntactic Property'"}","{'"ud'": '"Coll'"}"
+403,adjectival modifier,"",{https://universaldependencies.org/u/dep/amod.html},{},2,3,4,1,396,amod,{},"{'"ud'": '"amod'"}"
+110,verb,"A verb is a member of the syntactic class of words that typically signal events and actions, can constitute a minimal predicate in a clause, and govern the number and types of other constituents which may occur in the clause.",{https://universaldependencies.org/u/pos/VERB.html},{},88,89,5,1,77,VERB,{},"{'"ud'": '"VERB'", '"wn'": '"v'"}"
+128,Dem,,{},{},533,534,6,2,126,Dem,"{'"Morphosyntactic Property'"}","{'"ud'": '"Dem'"}"
+741,Progressive Passive Voice,,{http://purl.org/linguistics/gold/ProgressivePassiveVoice},{},696,697,6,3,737,ProgressivePassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+457,root,"",{https://universaldependencies.org/u/dep/root.html},{},116,117,4,1,396,root,{},"{'"ud'": '"root'"}"
+665,Elative Case,,{http://purl.org/linguistics/gold/ElativeCase},{},95,96,6,2,649,CASE:ELATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ela'"}"
+700,Superterminative Case,,{http://purl.org/linguistics/gold/SuperterminativeCase},{},165,166,6,2,649,CASE:SUPERTERMINATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+701,Supertranslative Case,,{http://purl.org/linguistics/gold/SupertranslativeCase},{},167,168,6,2,649,CASE:SUPERTRANSLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+293,definiteness or state,"Definiteness is typically a feature of nouns, adjectives and articles. Its value distinguishes whether we are talking about something known and concrete, or something general or unknown.",{https://universaldependencies.org/u/feat/Definite.html},{},182,193,6,1,125,Definite,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Definite'"}"
+307,Pos,,{},{},201,202,6,2,303,Pos,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Pos'"}"
+727,Deponent Middle Voice,,{http://purl.org/linguistics/gold/DeponentMiddleVoice},{},672,673,6,3,871,DeponentMiddleVoice,"{'"Morphosyntactic Relationship'"}",{}
+458,vocative,"",{https://universaldependencies.org/u/dep/vocative.html},{},126,127,4,1,396,vocative,{},"{'"ud'": '"vocative'"}"
+101,An extra-terrestrial or imaginary place,,{},{},75,76,5,2,91,PROPN.GEX,{},"{'"ud'": '"PROPN.GEX'"}"
+650,Abessive Case,,{http://purl.org/linguistics/gold/AbessiveCase},{},65,66,6,2,649,CASE:ABESSIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Abe'"}"
+669,Illative Case,,{http://purl.org/linguistics/gold/IllativeCase},{},103,104,6,2,649,CASE:ILLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ill'"}"
+673,Instrumental Case,,{http://purl.org/linguistics/gold/InstrumentalCase},{},111,112,6,2,649,CASE:INSTRUMENTAL,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ins'"}"
+189,Bantu9,,{},{},421,422,6,2,180,Bantu9,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu9'"}"
+131,Ind,,{},{},539,540,6,2,126,Ind,"{'"Morphosyntactic Property'"}","{'"ud'": '"Ind'"}"
+411,classifier,"",{https://universaldependencies.org/u/dep/clf.html},{},16,17,4,1,396,clf,{},"{'"ud'": '"clf'"}"
+433,flat multiword expression,"",{https://universaldependencies.org/u/dep/flat.html},{},46,47,4,1,396,flat,{},"{'"ud'": '"flat'"}"
+677,Interlative Case,,{http://purl.org/linguistics/gold/InterlativeCase},{},119,120,6,2,649,InterlativeCase,"{'"Morphosyntactic Relationship'"}",{}
+808,Evaluative,,{},{},206,211,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+761,Gender,,{},{},278,299,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+615,Simple Future Tense,,{http://purl.org/linguistics/gold/SimpleFutureTense},{},627,628,6,2,589,SimpleFutureTense,"{'"Morphosemantic Property'"}",{}
+616,Simple Past Tense,,{http://purl.org/linguistics/gold/SimplePastTense},{},629,630,6,2,589,SimplePastTense,"{'"Morphosemantic Property'"}",{}
+589,Tense,,{},{},562,635,6,1,125,,"{'"Morphosemantic Property'"}",{}
+871,Middle Voice,"Between active and passive, needed e.g. in Ancient Greek or Sanskrit. The subject is both doer and undergoer in a sense: he is acting upon himself.",{https://universaldependencies.org/u/feat/Voice.html#Mid},{},671,682,6,2,719,Voice:MIDDLE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Mid'"}"
+671,Inallative Case,,{http://purl.org/linguistics/gold/InallativeCase},{},107,108,6,2,649,InallativeCase,"{'"Morphosyntactic Relationship'"}",{}
+194,Bantu14,,{},{},387,388,6,2,180,Bantu14,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu14'"}"
+201,Bantu21,,{},{},403,404,6,2,180,Bantu21,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu21'"}"
+210,Wol7,,{},{},441,442,6,2,180,Wol7,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol7'"}"
+152,numeral type,"It includes almost everything where counting is involved and there are various subtypes and applies to seral part-of-speach tags(NUM, DET, ADJ, ADV).",{https://universaldependencies.org/u/feat/NumType.html},{},476,491,6,1,125,NumType,"{'"Morphosyntactic Property'"}","{'"ud'": '"NumType'"}"
+799,Second Person,,"{http://purl.org/linguistics/gold/SecondPerson,https://universaldependencies.org/u/feat/Person.html#2}",{},501,502,6,2,797,SecondPerson,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"2'"}"
+127,Art,,{},{},531,532,6,2,126,Art,"{'"Morphosyntactic Property'"}","{'"ud'": '"Art'"}"
+756,Interrogative Force,,{http://purl.org/linguistics/gold/InterrogativeForce},{},251,252,6,2,750,InterrogativeForce,"{'"Morphosyntactic Relationship'"}",{}
+757,Jussive Force,,{http://purl.org/linguistics/gold/JussiveForce},{},253,254,6,2,750,JussiveForce,"{'"Morphosyntactic Relationship'"}",{}
+758,Speculative Force,,{http://purl.org/linguistics/gold/SpeculativeForce},{},255,256,6,2,750,SpeculativeForce,"{'"Morphosyntactic Relationship'"}",{}
+712,Obligative Modality,,{http://purl.org/linguistics/gold/ObligativeModality},{},319,320,6,2,705,ObligativeModality,"{'"Morphosyntactic Relationship'"}",{}
+714,Possibility Modality,,{http://purl.org/linguistics/gold/PossibilityModality},{},325,326,6,2,705,PossibilityModality,"{'"Morphosyntactic Relationship'"}",{}
+423,pronominal quantifier governing the case of the noun,"",{https://universaldependencies.org/u/dep/det-numgov.html},{},104,105,4,1,396,det:numgov,{},"{'"ud'": '"det:numgov'"}"
+681,Intranslative Case,,{http://purl.org/linguistics/gold/IntranslativeCase},{},127,128,6,2,649,IntranslativeCase,"{'"Morphosyntactic Relationship'"}",{}
+683,Locative Case,,{http://purl.org/linguistics/gold/LocativeCase},{},131,132,6,2,649,CASE:LOCATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Loc'"}"
+702,Terminative Case,,{http://purl.org/linguistics/gold/TerminativeCase},{},169,170,6,2,649,CASE:TERMINATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ter'"}"
+751,Actional Force,,{http://purl.org/linguistics/gold/ActionalForce},{},239,240,6,2,750,ActionalForce,"{'"Morphosyntactic Relationship'"}",{}
+759,Volitive Force,,{http://purl.org/linguistics/gold/VolitiveForce},{},257,258,6,2,750,VolitiveForce,"{'"Morphosyntactic Relationship'"}",{}
+764,Feminine Gender,,"{http://purl.org/linguistics/gold/FeminineGender,https://universaldependencies.org/u/feat/Gender.html#Fem}",{},285,286,6,2,761,FeminineGender,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Fem'"}"
+717,Physical Abilitive Modality,,{http://purl.org/linguistics/gold/PhysicalAbilitiveModality},{},323,324,6,2,705,PhysicalAbilitiveModality,"{'"Morphosyntactic Relationship'"}",{}
+436,goes with,"",{https://universaldependencies.org/u/dep/goeswith.html},{},50,51,4,1,396,goeswith,{},"{'"ud'": '"goeswith'"}"
+663,Dative Case,,{http://purl.org/linguistics/gold/DativeCase},{},91,92,6,2,649,CASE:DATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Dat'"}"
+324,Ex,,{},{},177,178,6,2,323,Ex,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ex'"}"
+318,politeness,Various languages have various means to express politeness or respect; some of the means are morphological. Three to four dimensions of politeness are distinguished in linguistic literature.,{https://universaldependencies.org/u/feat/Polite.html},{},518,527,6,1,125,Polite,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Polite'"}"
+732,Necessitative Passive Voice,,{http://purl.org/linguistics/gold/NecessitativePassiveVoice},{},690,691,6,3,737,NecessitativePassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+845,declarative,"declare a fact, an event, a state or a case for something.",{},{},2,3,7,1,842,,{},{}
+848,Incomplete,A phrase which is cut off.,{},{},10,11,7,1,842,,{},{}
+851,Proverb,"Idioms, proverbs, slangs, expressions, and sayings",{},{},14,25,7,1,842,PROVERB,{},{}
+405,auxiliary,"",{https://universaldependencies.org/u/dep/aux_.html},{},12,13,4,1,396,aux,{},"{'"ud'": '"aux'"}"
+437,indirect object,"",{https://universaldependencies.org/u/dep/iobj.html},{},54,55,4,1,396,iobj,{},"{'"ud'": '"iobj'"}"
+118,subordinating conjunction,A subordinating conjunction is a conjunction that links constructions by making one of them a constituent of the other. The subordinating conjunction typically marks the incorporated constituent which has the status of a (subordinate) clause.,{https://universaldependencies.org/u/pos/SCONJ.html},{},84,85,5,1,77,SCONJ,{},"{'"ud'": '"SCONJ'"}"
+678,Interminative Case,,{http://purl.org/linguistics/gold/InterminativeCase},{},121,122,6,2,649,InterminativeCase,"{'"Morphosyntactic Relationship'"}",{}
+806,Negative Polarity,,{http://purl.org/linguistics/gold/NegativePolarity},{},513,514,6,2,805,NegativePolarity,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Neg'"}"
+746,Semantic Inverse Voice,,{http://purl.org/linguistics/gold/SemanticInverseVoice},{},666,667,6,3,747,SemanticInverseVoice,"{'"Morphosyntactic Relationship'"}",{}
+655,Allative Case,,{http://purl.org/linguistics/gold/AllativeCase},{},75,76,6,2,649,CASE:ALLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"All'"}"
+810,Preferred Evaluative,,{http://purl.org/linguistics/gold/PreferredEvaluative},{},209,210,6,2,808,PreferredEvaluative,"{'"Morphosyntactic Relationship'"}",{}
+779,Inferential Evidentiality,,{http://purl.org/linguistics/gold/InferentialEvidentiality},{},227,228,6,2,771,InferentialEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+780,Other Source Evidentiality,,{http://purl.org/linguistics/gold/OtherSourceEvidentiality},{},229,230,6,2,771,OtherSourceEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+755,Informational Force,,{http://purl.org/linguistics/gold/InformationalForce},{},249,250,6,2,750,InformationalForce,"{'"Morphosyntactic Relationship'"}",{}
+148,Inf,,{},{},269,270,6,2,143,Inf,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Inf'"}"
+770,Roman Numeral Gender,,{http://purl.org/linguistics/gold/RomanNumeralGender},{},295,296,6,2,761,RomanNumeralGender,"{'"Morphosyntactic Relationship'"}",{}
+789,Greater Paucal Number,,"{http://purl.org/linguistics/gold/GreaterPaucalNumber,https://universaldependencies.org/u/feat/Number.html#Grpa}",{},455,456,6,2,787,GreaterPaucalNumber,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Grpa'"}"
+720,Absolutive Antipassive Voice,,{http://purl.org/linguistics/gold/AbsolutiveAntipassiveVoice},{},642,643,6,3,724,AbsolutiveAntipassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+426,discourse element,"",{https://universaldependencies.org/u/dep/discourse.html},{},36,37,4,1,396,discourse,{},"{'"ud'": '"discourse'"}"
+454,parataxis,"",{https://universaldependencies.org/u/dep/parataxis.html},{},88,89,4,1,396,parataxis,{},"{'"ud'": '"parataxis'"}"
+104,A human being,,{},{},55,56,5,2,91,PROPN.NPH,{},"{'"ud'": '"PROPN.NPH'"}"
+713,Permissive Modality,,{http://purl.org/linguistics/gold/PermissiveModality},{},321,322,6,2,705,PermissiveModality,"{'"Morphosyntactic Relationship'"}",{}
+211,Wol8,,{},{},443,444,6,2,180,Wol8,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol8'"}"
+807,Positive Polarity,,{http://purl.org/linguistics/gold/PositivePolarity},{},515,516,6,2,805,PositivePolarity,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Pos'"}"
+805,Polarity,"Polarity is typically a feature of verbs, adjectives, sometimes also adverbs and nouns in languages that negate using bound morphemes.",{https://universaldependencies.org/u/feat/Polarity.html},{},512,517,6,1,125,POLARITY,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Polarity'"}"
+25,Bound morphemes,"appear only as parts of words, always in conjunction with a root and sometimes with other bound morphemes.",{},{},24,25,9,3,16,bound-morphemes,{},{}
+21,Phrase,A phrase is a group of two or more words functioning as a meaningful unit within a sentence or clause.,{},{},29,30,9,2,12,,{},{}
+20,Term(Constituent),One re more words conveying a meaning.,{},{},33,34,9,2,12,,{},{}
+11,Morphology,Study of words and it's changes.,{},{},1,38,9,0,,,{},{}
+422,determiner,"",{https://universaldependencies.org/u/dep/det.html},{},34,35,4,1,396,det,{},"{'"ud'": '"det'"}"
+105,organization/society/institution,,{},{},79,80,5,2,91,PROPN.ORG,{},"{'"ud'": '"PROPN.ORG'"}"
+687,Partitive Case,,{http://purl.org/linguistics/gold/PartitiveCase},{},139,140,6,2,649,CASE:PARTITIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Par'"}"
+852,Reference,"A pop culture reference or mention of something contemporary from consuming media such as books, movies, comics, etc.",{},{},26,27,7,1,842,reference,{},{}
+446,numeric modifier governing the case of the noun,"",{https://universaldependencies.org/u/dep/nummod-gov.html},{},74,75,4,1,396,nummod:gov,{},"{'"ud'": '"nummod:gov'"}"
+112,auxiliary,"An auxiliary is a function word that accompanies the lexical verb of a verb phrase and expresses grammatical distinctions not carried by the lexical verb, such as person, number, tense, mood, aspect, voice or evidentiality. ",{https://universaldependencies.org/u/pos/AUX_.html},{},8,9,5,1,77,AUX,{},"{'"ud'": '"AUX'"}"
+691,Suballative Case,,{http://purl.org/linguistics/gold/SuballativeCase},{},147,148,6,2,649,CASE:SUBALLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sub'"}"
+692,Subessive Case,,{http://purl.org/linguistics/gold/SubessiveCase},{},149,150,6,2,649,CASE:SUBESSIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sub'"}"
+693,Sublative Case,,{http://purl.org/linguistics/gold/SublativeCase},{},151,152,6,2,649,CASE:SUBLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sub'"}"
+703,Translative Case,,{http://purl.org/linguistics/gold/TranslativeCase},{},171,172,6,2,649,CASE:TRANSLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Tra'"}"
+772,Assumptive Evidentiality,,{http://purl.org/linguistics/gold/AssumptiveEvidentiality},{},213,214,6,2,771,AssumptiveEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+408,coordinating conjunction,"",{https://universaldependencies.org/u/dep/cc.html},{},30,31,4,1,396,cc,{},"{'"ud'": '"cc'"}"
+434,foreign words,"",{https://universaldependencies.org/u/dep/flat-foreign.html},{},48,49,4,1,396,flat:foreign,{},"{'"ud'": '"flat:foreign'"}"
+440,nominal modifier,"",{https://universaldependencies.org/u/dep/nmod.html},{},68,69,4,1,396,nmod,{},"{'"ud'": '"nmod'"}"
+114,determiner,"Determiners are words that modify nouns or noun phrases and express the reference of the noun phrase in context. That is, a determiner may indicate whether the noun is referring to a definite or indefinite element of a class, to a closer or more distant element, to an element belonging to a specified person or thing, to a particular number or quantity, etc. Includes pro-adjectives, indefinite articles, definite articles.",{https://universaldependencies.org/u/pos/DET.html},{},12,13,5,1,77,DET,{},"{'"ud'": '"DET'"}"
+83,Date,,{},{},19,20,5,2,81,NOUN.DAT,{},"{'"ud'": '"NOUN.DAT'"}"
+144,Conv,,{},{},261,262,6,2,143,Conv,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Conv'"}"
+154,Dist,,{},{},479,480,6,2,152,Dist,"{'"Morphosyntactic Property'"}","{'"ud'": '"Dist'"}"
+77,Part Of Speech,,{},{},1,90,5,0,,POS,{},{}
+847,exclamative,Often ending in (!),{},{},4,5,7,1,842,,{},{}
+849,Expressed Condition,Condition expressed by verb first order,{},{},6,7,7,1,842,,{},{}
+412,compound,"",{https://universaldependencies.org/u/dep/compound.html},{},26,27,4,1,396,compound,{},"{'"ud'": '"compound'"}"
+455,punctuation,"",{https://universaldependencies.org/u/dep/punct.html},{},106,107,4,1,396,punct,{},"{'"ud'": '"punct'"}"
+103,A mass media,,{},{},59,60,5,2,91,PROPN.MMD,{},"{'"ud'": '"PROPN.MMD'"}"
+766,Neuter Gender,,"{http://purl.org/linguistics/gold/NeuterGender,https://universaldependencies.org/u/feat/Gender.html#Neut}",{},293,294,6,2,761,NeuterGender,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Neut'"}"
+179,possessive, It tells whether the word is possessive.,{https://universaldependencies.org/u/feat/Poss.html},{},528,529,6,1,125,Poss,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Poss'"}"
+222,reflexive,"It tells whether the word is reflexive, i.e. refers to the subject of its clause.",{https://universaldependencies.org/u/feat/Reflex.html},{},554,555,6,1,125,Reflex,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Reflex'"}"
+729,Impersonal Passive Voice,,{http://purl.org/linguistics/gold/ImpersonalPassiveVoice},{},686,687,6,3,737,ImpersonalPassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+874,Reciprocal Voice,,{https://universaldependencies.org/u/feat/Voice.html#Rcp},{},701,702,6,2,719,VOICE:RECIPROCAL,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Rcp'"}"
+435,names,"",{https://universaldependencies.org/u/dep/flat-name.html},{},66,67,4,1,396,flat:name,{},"{'"ud'": '"flat:name'"}"
+447,object,"",{https://universaldependencies.org/u/dep/obj.html},{},76,77,4,1,396,obj,{},"{'"ud'": '"obj'"}"
+143,form of verb or deverbative,"Some verb forms in some languages actually form a gray zone between verbs and other parts of speech (nouns, adjectives and adverbs).",{https://universaldependencies.org/u/feat/VerbForm.html},{},260,277,6,1,125,VerbForm,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"VerbForm'"}"
+169,Imp,,{},{},341,342,6,2,165,Imp,"{'"Morphosemantic Property'"}","{'"ud'": '"Imp'"}"
+155,Frac,,{},{},481,482,6,2,152,Frac,"{'"Morphosyntactic Property'"}","{'"ud'": '"Frac'"}"
+330,Instance,A named instance(or object). can have a specific type.,{},{},8,53,10,1,327,INSTANCE,{},{}
+451,locative modifier,"",{https://universaldependencies.org/u/dep/obl-lmod.html},{},62,63,4,1,396,obl:lmod,{},"{'"ud'": '"obl:lmod'"}"
+425,possessive determiner,"",{https://universaldependencies.org/u/dep/det-poss.html},{},96,97,4,1,396,det:poss,{},"{'"ud'": '"det:poss'"}"
+416,serial verb compounds,"",{https://universaldependencies.org/u/dep/compound-svc.html},{},118,119,4,1,396,compound:svc,{},"{'"ud'": '"compound:svc'"}"
+80,interjection,"An interjection is a word that is used most often as an exclamation or part of an exclamation. It typically expresses an emotional reaction, is not syntactically related to other accompanying expressions, and may include a combination of sounds not otherwise found in the language.",{https://universaldependencies.org/u/pos/INTJ.html},{},14,15,5,1,77,INTJ,{},"{'"ud'": '"INTJ'"}"
+87,Money,,{},{},27,28,5,2,81,NOUN.MON,{},"{'"ud'": '"NOUN.MON'"}"
+319,Elev,,{},{},519,520,6,2,318,Elev,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Elev'"}"
+740,Pragmatic Inverse Voice,,{http://purl.org/linguistics/gold/PragmaticInverseVoice},{},662,663,6,3,747,PragmaticInverseVoice,"{'"Morphosyntactic Relationship'"}",{}
+719,Voice,,{},{},636,705,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+842,Phrase Types,,{},{},1,28,7,0,,PHRASE,{},{}
+400,adverbial modifier,"",{https://universaldependencies.org/u/dep/advmod.html},{},6,7,4,1,396,advmod,{},"{'"ud'": '"advmod'"}"
+241,Prosp,,{},{},53,54,6,2,621,Prosp,"{'"Morphosemantic Property'"}","{'"ud'": '"Prosp'"}"
+166,Adm,,{},{},331,332,6,2,165,Adm,"{'"Morphosemantic Property'"}","{'"ud'": '"Adm'"}"
+172,Jus,,{},{},351,352,6,2,165,Jus,"{'"Morphosemantic Property'"}","{'"ud'": '"Jus'"}"
+173,Nec,,{},{},353,354,6,2,165,Nec,"{'"Morphosemantic Property'"}","{'"ud'": '"Nec'"}"
+803,First Person Exclusive,,{http://purl.org/linguistics/gold/FirstPersonExclusive},{},495,496,6,2,797,FirstPersonExclusive,"{'"Morphosyntactic Relationship'"}",{}
+872,Beneficiary-Focus Voice,,{https://universaldependencies.org/u/feat/Voice.html#Bfoc},{},653,654,6,2,719,VOICE:BENEFICIARY-FOCUS,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Bfoc'"}"
+748,Direct Voice,,"{http://purl.org/linguistics/gold/DirectVoice,https://universaldependencies.org/u/feat/Voice.html#Dir}",{},657,658,6,2,719,VOICE:DIRECT,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Dir'"}"
+449,agent modifier,"",{https://universaldependencies.org/u/dep/obl-agent.html},{},8,9,4,1,396,obl:agent,{},"{'"ud'": '"obl:agent'"}"
+652,Absolutive Case,,{http://purl.org/linguistics/gold/AbsolutiveCase},{},69,70,6,2,649,CASE:ABSOLUTIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Abs'"}"
+296,Def,,{},{},187,188,6,2,293,Def,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Def'"}"
+647,Subjunctive Mood,,{http://purl.org/linguistics/gold/SubjunctiveMood},{},371,372,6,2,165,SubjunctiveMood,"{'"Morphosemantic Property'"}",{}
+126,pronominal type,"This feature typically applies to pronouns, pronominal adjectives (determiners), pronominal numerals (quantifiers) and pronominal adverbs.",{https://universaldependencies.org/u/feat/PronType.html},{},530,553,6,1,125,PronType,"{'"Morphosyntactic Property'"}","{'"ud'": '"PronType'"}"
+784,Size,,{},{},556,561,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+724,Anti Passive Voice,,"{http://purl.org/linguistics/gold/AntiPassiveVoice,https://universaldependencies.org/u/feat/Voice.html#Antip}",{},641,650,6,2,719,AntiPassiveVoice,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Antip'"}"
+429,impersonal expletive,"",{https://universaldependencies.org/u/dep/expl-impers.html},{},52,53,4,1,396,expl:impers,{},"{'"ud'": '"expl:impers'"}"
+439,marker,"",{https://universaldependencies.org/u/dep/mark.html},{},64,65,4,1,396,mark,{},"{'"ud'": '"mark'"}"
+170,Ind,,{},{},343,344,6,2,165,Ind,"{'"Morphosemantic Property'"}","{'"ud'": '"Ind'"}"
+213,Wol10,,{},{},425,426,6,2,180,Wol10,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol10'"}"
+791,Multal Number,,{http://purl.org/linguistics/gold/MultalNumber},{},461,462,6,2,787,MultalNumber,"{'"Morphosyntactic Relationship'"}",{}
+796,Paucal Number,,{http://purl.org/linguistics/gold/PaucalNumber},{},463,464,6,2,787,PaucalNumber,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Pauc'"}"
+794,Singular Number,,{http://purl.org/linguistics/gold/SingularNumber},{},469,470,6,2,787,SingularNumber,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sing'"}"
+793,Trial Number,,{http://purl.org/linguistics/gold/TrialNumber},{},473,474,6,2,787,TrialNumber,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Tri'"}"
+725,Applicative Voice,,{http://purl.org/linguistics/gold/ApplicativeVoice},{},651,652,6,2,719,ApplicativeVoice,"{'"Morphosyntactic Relationship'"}",{}
+418,copula,"",{https://universaldependencies.org/u/dep/cop.html},{},32,33,4,1,396,cop,{},"{'"ud'": '"cop'"}"
+452,temporal modifier,"",{https://universaldependencies.org/u/dep/obl-tmod.html},{},120,121,4,1,396,obl:tmod,{},"{'"ud'": '"obl:tmod'"}"
+656,Aversive Case,,{http://purl.org/linguistics/gold/AversiveCase},{},77,78,6,2,649,AversiveCase,"{'"Morphosyntactic Relationship'"}",{}
+715,Weak Obligative Modality,,{http://purl.org/linguistics/gold/WeakObligativeModality},{},327,328,6,2,705,WeakObligativeModality,"{'"Morphosyntactic Relationship'"}",{}
+800,Third Person,,"{http://purl.org/linguistics/gold/ThirdPerson,https://universaldependencies.org/u/feat/Person.html#3}",{},503,504,6,2,797,ThirdPerson,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"3'"}"
+723,Anti Causative Voice,,{http://purl.org/linguistics/gold/AntiCausativeVoice},{},639,640,6,2,719,AntiCausativeVoice,"{'"Morphosyntactic Relationship'"}",{}
+733,Non Absolutive Antipassive Voice,,{http://purl.org/linguistics/gold/NonAbsolutiveAntipassiveVoice},{},648,649,6,3,724,NonAbsolutiveAntipassiveVoice,"{'"Morphosyntactic Relationship'"}",{}
+406,passive auxiliary,"",{https://universaldependencies.org/u/dep/aux-pass.html},{},90,91,4,1,396,aux:pass,{},"{'"ud'": '"aux:pass'"}"
+121,other,The tag X is used for words that for some reason cannot be assigned a real part-of-speech category. It should be used very restrictively.,{https://universaldependencies.org/u/pos/X.html},{},38,39,5,1,77,X,{},"{'"ud'": '"X'"}"
+238,Iter,,{},{},37,38,6,2,621,Iter,"{'"Morphosemantic Property'"}","{'"ud'": '"Iter'"}"
+676,Interessive Case,,{http://purl.org/linguistics/gold/InteressiveCase},{},117,118,6,2,649,InteressiveCase,"{'"Morphosyntactic Relationship'"}",{}
+219,Past,,{},{},593,594,6,2,589,Past,"{'"Morphosemantic Property'"}","{'"ud'": '"Past'"}"
+612,Relative Present Tense,,{http://purl.org/linguistics/gold/RelativePresentTense},{},621,622,6,2,589,RelativePresentTense,"{'"Morphosemantic Property'"}",{}
+614,Remote Past Tense,,{http://purl.org/linguistics/gold/RemotePastTense},{},625,626,6,2,589,RemotePastTense,"{'"Morphosemantic Property'"}",{}
+618,Still Tense,,{http://purl.org/linguistics/gold/StillTense},{},633,634,6,2,589,StillTense,"{'"Morphosemantic Property'"}",{}
+628,Imperfective Aspect,,{http://purl.org/linguistics/gold/ImperfectiveAspect},{},33,34,6,2,621,ImperfectiveAspect,"{'"Morphosemantic Property'"}",{}
+629,Inceptive Aspect,,{http://purl.org/linguistics/gold/InceptiveAspect},{},35,36,6,2,621,InceptiveAspect,"{'"Morphosemantic Property'"}",{}
+697,Superallative Case,,{http://purl.org/linguistics/gold/SuperallativeCase},{},159,160,6,2,649,CASE:SUPERALLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+809,Pejorative Evaluative,,{http://purl.org/linguistics/gold/PejorativeEvaluative},{},207,208,6,2,808,PejorativeEvaluative,"{'"Morphosyntactic Relationship'"}",{}
+783,Visual Evidentiality,,{http://purl.org/linguistics/gold/VisualEvidentiality},{},235,236,6,2,771,VisualEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+753,Declarative Force,,{http://purl.org/linguistics/gold/DeclarativeForce},{},243,244,6,2,750,DeclarativeForce,"{'"Morphosyntactic Relationship'"}",{}
+708,Deontic Modality,,{http://purl.org/linguistics/gold/DeonticModality},{},309,310,6,2,705,DeonticModality,"{'"Morphosyntactic Relationship'"}",{}
+705,Modality,,{},{},302,329,6,1,125,,"{'"Morphosyntactic Relationship'"}",{}
+788,Dual Number,,{http://purl.org/linguistics/gold/DualNumber},{},451,452,6,2,787,DualNumber,"{'"Morphosyntactic Relationship'"}",{}
+675,Interallative Case,,{http://purl.org/linguistics/gold/InterallativeCase},{},115,116,6,2,649,InterallativeCase,"{'"Morphosyntactic Relationship'"}",{}
+775,Direct Evidentiality(First Hand),,"{http://purl.org/linguistics/gold/DirectEvidentiality,https://universaldependencies.org/u/feat/Evident.html#Fh}",{},219,220,6,2,771,DirectEvidentiality,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Fh'"}"
+191,Bantu11,,{},{},381,382,6,2,180,Bantu11,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu11'"}"
+197,Bantu17,,{},{},393,394,6,2,180,Bantu17,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu17'"}"
+742,Promotional Inverse Voice,,{http://purl.org/linguistics/gold/PromotionalInverseVoice},{},664,665,6,3,747,PromotionalInverseVoice,"{'"Morphosyntactic Relationship'"}",{}
+420,clausal passive subject,"",{https://universaldependencies.org/u/dep/csubj-pass.html},{},22,23,4,1,396,csubj:pass,{},"{'"ud'": '"csubj:pass'"}"
+443,nominal subject,"",{https://universaldependencies.org/u/dep/nsubj.html},{},70,71,4,1,396,nsubj,{},"{'"ud'": '"nsubj'"}"
+430,reflexive pronoun used in reflexive passive,"",{https://universaldependencies.org/u/dep/expl-pass.html},{},112,113,4,1,396,expl:pass,{},"{'"ud'": '"expl:pass'"}"
+651,Ablative Case,,{http://purl.org/linguistics/gold/AblativeCase},{},67,68,6,2,649,CASE:ABLATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Abl'"}"
+653,Accusative Case,,{http://purl.org/linguistics/gold/AccusativeCase},{},71,72,6,2,649,CASE:ACCUSATIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Acc'"}"
+657,Benefactive Case,,{http://purl.org/linguistics/gold/BenefactiveCase},{},79,80,6,2,649,CASE:BENEFACTIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ben'"}"
+672,Inessive Case,,{http://purl.org/linguistics/gold/InessiveCase},{},109,110,6,2,649,CASE:INESSIVE,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ine'"}"
+680,Intertranslative Case,,{http://purl.org/linguistics/gold/IntertranslativeCase},{},125,126,6,2,649,IntertranslativeCase,"{'"Morphosyntactic Relationship'"}",{}
+776,Folklore Evidentiality,,{http://purl.org/linguistics/gold/FolkloreEvidentiality},{},221,222,6,2,771,FolkloreEvidentiality,"{'"Morphosyntactic Relationship'"}",{}
+12,Units,,{},{},8,37,9,1,11,,{},{}
+132,Int,,{},{},541,542,6,2,126,Int,"{'"Morphosyntactic Property'"}","{'"ud'": '"Int'"}"
+305,Cmp,,{},{},197,198,6,2,303,Cmp,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Cmp'"}"
+196,Bantu16,,{},{},391,392,6,2,180,Bantu16,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu16'"}"
+204,Wol1,,{},{},423,424,6,2,180,Wol1,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol1'"}"
+208,Wol5,,{},{},437,438,6,2,180,Wol5,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol5'"}"
+209,Wol6,,{},{},439,440,6,2,180,Wol6,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol6'"}"
+93,A building,,{},{},45,46,5,2,91,PROPN.BLD,{},"{'"ud'": '"PROPN.BLD'"}"
+325,In,,{},{},179,180,6,2,323,In,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"In'"}"
+147,Ger,,{},{},267,268,6,2,143,Ger,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ger'"}"
+28,Infix,,{},{},17,18,9,4,26,infix,{},{}
+89,Phone number,,{},{},31,32,5,2,81,NOUN.PHO,{},"{'"ud'": '"NOUN.PHO'"}"
+117,pronoun,"Pronouns are words that substitute for nouns or noun phrases, whose meaning is recoverable from the linguistic or extralinguistic context.",{https://universaldependencies.org/u/pos/PRON.html},{},42,43,5,1,77,PRON,{},"{'"ud'": '"PRON'"}"
+120,symbol,"A symbol is a word-like entity that differs from ordinary words by form, function, or both.",{https://universaldependencies.org/u/pos/SYM.html},{},86,87,5,1,77,SYM,{},"{'"ud'": '"SYM'"}"
+2,Properties,The class of properties used to describe speech sounds.,{},{},2,3,11,1,1,,{},{}
+8,Foot,,{},{},5,6,11,2,3,,{},{}
+9,Mora,,{},{},7,8,11,2,3,,{},{}
+4,Segment,,{},{},11,12,11,2,3,,{},{}
+5,Suprasegmental,,{},{},13,14,11,2,3,,{},{}
+3,units,,{},{},4,19,11,1,1,,{},{}
+1,Phonology,"The study of speech structure within a language, including both the patterns of basic speech units and the accepted rules of pronunciation, is known as phonology.",{},{},1,20,11,0,,,{},{}
+327,Ontology,,{},{},1,118,10,0,,onto,{},{}
+99,A physical geographic feature,,{},{},61,62,5,2,91,PROPN.GEA,{},"{'"ud'": '"PROPN.GEA'"}"
+183,Bantu3,,{},{},409,410,6,2,180,Bantu3,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu3'"}"
+26,Affix,,{},{},14,23,9,3,16,affix,{},{}
+24,Free Morpheme,can function independently as words and can appear within lexemes.,{},{},26,27,9,3,16,free-morpheme,{},{}
+22,Clause,Groups of words that contain both a subject and a predicate. a clause has all the components of a potentially independent sentence.,{},{},9,10,9,2,12,,{},{}
+17,Letter,,{},{},11,12,9,2,12,,{},{}
+29,Circumfix,,{},{},15,16,9,4,26,circumfix,{},{}
+30,Prefix,,{},{},19,20,9,4,26,prefix,{},{}
+27,Suffix,,{},{},21,22,9,4,26,suffix,{},{}
+16,Morpheme,,{},{},13,28,9,2,12,morpheme,{},{}
+320,Form,,{},{},521,522,6,2,318,Form,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Form'"}"
+81,noun,"Nouns are a part of speech typically denoting a person, place, thing, animal or idea.",{https://universaldependencies.org/u/pos/NOUN.html},{},16,35,5,1,77,NOUN,{},"{'"ud'": '"NOUN'", '"wn'": '"n'"}"
+98,A food/beverage,,{},{},53,54,5,2,91,PROPN.FDD,{},"{'"ud'": '"PROPN.FDD'"}"
+108,A vehicle,,{},{},65,66,5,2,91,PROPN.VCL,{},"{'"ud'": '"PROPN.VCL'"}"
+294,Com,,{},{},183,184,6,2,293,Com,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Com'"}"
+295,Cons,,{},{},185,186,6,2,293,Cons,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Cons'"}"
+205,Wol2,,{},{},431,432,6,2,180,Wol2,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol2'"}"
+217,Fut,,{},{},565,566,6,2,589,Fut,"{'"Morphosemantic Property'"}","{'"ud'": '"Fut'"}"
+107,A product,,{},{},63,64,5,2,91,PROPN.PRD,{},"{'"ud'": '"PROPN.PRD'"}"
+150,Sup,,{},{},273,274,6,2,143,Sup,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+151,Vnoun,,{},{},275,276,6,2,143,Vnoun,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Vnoun'"}"
+139,Common Gender,,{https://universaldependencies.org/u/feat/Gender.html#Com},{},283,284,6,2,761,Com,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Com'"}"
+313,Zero person,"Zero person is for impersonal statements, appears in Finnish as well as in Santa Ana Pueblo Keres.",{https://universaldependencies.org/u/feat/Person.html#0},{},509,510,6,2,797,0,"{'"Morphosyntactic Property'"}","{'"ud'": '"0'"}"
+136,Rel,,{},{},549,550,6,2,126,Rel,"{'"Morphosyntactic Property'"}","{'"ud'": '"Rel'"}"
+135,Rcp,,{},{},547,548,6,2,126,Rcp,"{'"Morphosyntactic Property'"}","{'"ud'": '"Rcp'"}"
+149,Part,,{},{},271,272,6,2,143,Part,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Part'"}"
+206,Wol3,,{},{},433,434,6,2,180,Wol3,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol3'"}"
+207,Wol4,,{},{},435,436,6,2,180,Wol4,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol4'"}"
+156,Mult,,{},{},483,484,6,2,152,Mult,"{'"Morphosyntactic Property'"}","{'"ud'": '"Mult'"}"
+328,Concept,,{},{},4,5,10,1,327,,{},{}
+23,Sentence,,{},{},31,32,9,2,12,,{},{}
+19,Word,A meaningfull collection of letters.,{},{},35,36,9,2,12,,{},{}
+116,particle,"Particles are function words that must be associated with another word or phrase to impart meaning and that do not satisfy definitions of other universal parts of speech (e.g. adpositions, coordinating conjunctions, subordinating conjunctions or auxiliary verbs). Particles may encode grammatical categories such as negation, mood, tense etc. Particles are normally not inflected, although exceptions may occur.",{https://universaldependencies.org/u/pos/PART.html},{},40,41,5,1,77,PART,{},"{'"ud'": '"PART'"}"
+102,A legal/fiscal entity,,{},{},57,58,5,2,91,PROPN.LEN,{},"{'"ud'": '"PROPN.LEN'"}"
+239,Perf,,{},{},43,44,6,2,621,Perf,"{'"Morphosemantic Property'"}","{'"ud'": '"Perf'"}"
+168,Des,,{},{},335,336,6,2,165,Des,"{'"Morphosemantic Property'"}","{'"ud'": '"Des'"}"
+181,Bantu1,,{},{},377,378,6,2,180,Bantu1,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu1'"}"
+193,Bantu13,,{},{},385,386,6,2,180,Bantu13,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu13'"}"
+203,Bantu23,,{},{},407,408,6,2,180,Bantu23,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu23'"}"
+185,Bantu5,,{},{},413,414,6,2,180,Bantu5,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu5'"}"
+215,Wol12,,{},{},429,430,6,2,180,Wol12,"{'"Morphosyntactic Property'"}","{'"ud'": '"Wol12'"}"
+232,Plurale Tantum Number,,{https://universaldependencies.org/u/feat/Number.html#Ptan},{},467,468,6,2,787,Ptan,"{'"Morphosyntactic Property'"}","{'"ud'": '"Ptan'"}"
+158,Range,,{},{},487,488,6,2,152,Range,"{'"Morphosyntactic Property'"}","{'"ud'": '"Range'"}"
+113,coordinating conjunction,A coordinating conjunction is a word that links words or larger constituents without syntactically subordinating one to the other and expresses a semantic relationship between them.,{https://universaldependencies.org/u/pos/CCONJ.html},{},10,11,5,1,77,CCONJ,{},"{'"ud'": '"CCONJ'"}"
+200,Bantu20,,{},{},401,402,6,2,180,Bantu20,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu20'"}"
+137,Tot,,{},{},551,552,6,2,126,Tot,"{'"Morphosyntactic Property'"}","{'"ud'": '"Tot'"}"
+304,Abs,,{},{},195,196,6,2,303,Abs,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Abs'"}"
+145,Fin,,{},{},263,264,6,2,143,Fin,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Fin'"}"
+10,Phoneme,,{},{},9,10,11,2,3,,{},{}
+6,Syllable,,{},{},15,16,11,2,3,,{},{}
+7,Toneme,,{},{},17,18,11,2,3,,{},{}
+236,Hab,,{},{},27,28,6,2,621,Hab,"{'"Morphosemantic Property'"}","{'"ud'": '"Hab'"}"
+106,An physical phenomena,,{},{},77,78,5,2,91,PROPN.PPH,{},"{'"ud'": '"PROPN.PPH'"}"
+146,Gdv,,{},{},265,266,6,2,143,Gdv,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Gdv'"}"
+184,Bantu4,,{},{},411,412,6,2,180,Bantu4,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu4'"}"
+188,Bantu8,,{},{},419,420,6,2,180,Bantu8,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu8'"}"
+186,Bantu6,,{},{},415,416,6,2,180,Bantu6,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu6'"}"
+180,noun class,"NounClass is similar to Gender and Animacy because it is to a large part a lexical category of nouns and other parts of speech inflect for it to show agreement (pronouns, adjectives, determiners, numerals, verbs).",{https://universaldependencies.org/u/feat/NounClass.html},{},376,447,6,1,125,NounClass,"{'"Morphosyntactic Property'"}","{'"ud'": '"NounClass'"}"
+329,Relation,"Relations, Classes, Attributes of concepts",{},{},54,105,10,1,327,,{},{}
+94,A business/company,,{},{},47,48,5,2,91,PROPN.COM,{},"{'"ud'": '"PROPN.COM'"}"
+95,A device,,{},{},49,50,5,2,91,PROPN.DEV,{},"{'"ud'": '"PROPN.DEV'"}"
+96,A document,,{},{},51,52,5,2,91,PROPN.DOC,{},"{'"ud'": '"PROPN.DOC'"}"
+302,misspelled word,"Indicates bad spelling, grammatical error etc.",{https://universaldependencies.org/u/feat/Typo.html},{},300,301,6,1,125,Typo,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Typo'"}"
+167,Cnd,,{},{},333,334,6,2,165,Cnd,"{'"Morphosemantic Property'"}","{'"ud'": '"Cnd'"}"
+171,Irr,,{},{},347,348,6,2,165,Irr,"{'"Morphosemantic Property'"}","{'"ud'": '"Irr'"}"
+195,Bantu15,,{},{},389,390,6,2,180,Bantu15,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu15'"}"
+218,Imp,,{},{},585,586,6,2,589,Imp,"{'"Morphosemantic Property'"}","{'"ud'": '"Imp'"}"
+220,Pqp,,{},{},605,606,6,2,589,Pqp,"{'"Morphosemantic Property'"}","{'"ud'": '"Pqp'"}"
+84,Hour,,{},{},23,24,5,2,81,NOUN.HOU,{},"{'"ud'": '"NOUN.HOU'"}"
+162,Human,,{https://universaldependencies.org/u/feat/Animacy.html#Hum},{},9,10,6,2,160,Hum,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Hum'"}"
+297,Ind,,{},{},189,190,6,2,293,Ind,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Ind'"}"
+303,degree of comparison,Degree of comparison is typically an inflectional feature of some adjectives and adverbs.,{https://universaldependencies.org/u/feat/Degree.html},{},194,205,6,1,125,Degree,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Degree'"}"
+229,Inverse Number,,{https://universaldependencies.org/u/feat/Number.html#Inv},{},459,460,6,2,787,Inv,"{'"Morphosyntactic Property'"}","{'"ud'": '"Inv'"}"
+317,Fourth person,,{https://universaldependencies.org/u/feat/Person.html#4},{},499,500,6,2,797,4,"{'"Morphosyntactic Property'"}","{'"ud'": '"4'"}"
+298,Spec,,{},{},191,192,6,2,293,Spec,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Spec'"}"
+331,Axiom,Axiom are the properties of relations used for constrain values for classes or instances.,{},{},2,3,10,1,327,,{},{}
+237,Imp,,{},{},31,32,6,2,621,Imp,"{'"Morphosemantic Property'"}","{'"ud'": '"Imp'"}"
+240,Prog,,{},{},49,50,6,2,621,Prog,"{'"Morphosemantic Property'"}","{'"ud'": '"Prog'"}"
+308,Sup,,{},{},203,204,6,2,303,Sup,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Sup'"}"
+187,Bantu7,,{},{},417,418,6,2,180,Bantu7,"{'"Morphosyntactic Property'"}","{'"ud'": '"Bantu7'"}"
+225,Count Plural,,{},{},449,450,6,2,787,Count,{https://universaldependencies.org/u/feat/Number.html#Count},"{'"ud'": '"Count'"}"
+242,a foreign word,"Is this a foreign word? Not a loan word and not a foreign name but a genuinely foreign word appearing inside native text, e.g. inside direct speech, titles of books etc.",{https://universaldependencies.org/u/feat/Foreign.html},{},2,3,6,1,125,Foreign,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Foreign'"}"
+163,Inan,,{https://universaldependencies.org/u/feat/Animacy.html#Inan},{},11,12,6,2,160,Inan,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Inan'"}"
+164,Non-human,,{https://universaldependencies.org/u/feat/Animacy.html#Nhum},{},13,14,6,2,160,Nhum,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Nhum'"}"
+78,adjective,Adjectives are words that typically modify nouns and specify their properties or attributes.,{https://universaldependencies.org/u/pos/ADJ.html},{},2,3,5,1,77,ADJ,{},"{'"ud'": '"ADJ'", '"wn'": ['"a'", '"s'"]}"
+90,Web address,,{},{},33,34,5,2,81,NOUN.WEB,{},"{'"ud'": '"NOUN.WEB'"}"
+292,abbreviation,Is this an abbreviation? Note that the abbreviated word(s) typically belongs to a part of speech other than X.,{https://universaldependencies.org/u/feat/Abbr.html},{},4,5,6,1,125,Abbr,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Abbr'"}"
+161,Animate,,{https://universaldependencies.org/u/feat/Animacy.html#Anim},{},7,8,6,2,160,Anim,"{'"Morphosyntactic Relationship'"}","{'"ud'": '"Anim'"}"
+125,Features,Universal Morphological Features (UFeats),{},{},1,706,6,0,,FEATURE,{},{}

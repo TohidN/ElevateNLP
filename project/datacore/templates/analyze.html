@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% load visualizer_tags %}
+
+{% block title %}{% trans "Analyze Phrase" %}{% endblock %}
+
+{% block content %}
+	{% if document %}
+		<h1>Document Analysis</h1>
+		<ul>
+			{% for phrase in document.phrases.all %}
+				<li>
+				<a href="{% url 'datacore:phrase' phrase.id %}">{{ phrase.text }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<h1>Phrase Analysis</h1>
+		<p>{{ phrase.text }}</p>
+		<p>Phrase Type: {{ analysis.template.get_phrase_type_display }}</p>
+		{% if analysis.analyzer.title %}<p>Analyzer: {{ analysis.analyzer.title }}</p>{% endif %}
+		{% if analysis.sentiment %}<p>Sentiment: {{ analysis.sentiment }}</p>{% endif %}
+		{% if analysis.words.all %}
+			<hr><p>Tokenized Words:
+				{% for word in analysis.words.all %}
+					{% if forloop.last %}<a href="{% url 'datacore:word' word.id %}">{{ word }}</a> {% else %}<a href="{% url 'datacore:word' word.id %}">{{ word }}</a>, {% endif %}
+				{% endfor %}
+			</p>
+		{% endif %}
+		{% if analysis.entities.all %}
+			<hr><p>Named Entities:
+				{% for entity in analysis.entities.all %}
+					{{ entity.text }}:{{entity.ne_type}}{% if not forloop.last %}, {% endif %}
+				{% endfor %}
+			</p>
+			{% autoescape off %}{{ analysis|visualize_displacy_ent }}{% endautoescape %}
+		{% endif %}
+		<hr>
+		<h2>Template:</h2>
+		<p>POS: {{ analysis.template.pos }}</p>
+		<p>XPOS: {{ analysis.template.xpos }}</p>
+		<p>Ufeature: {{ analysis.template.feats }}</p>
+		<p>Dependency: {{ analysis.template.dep }}</p>
+		<p>Constituency: {{ analysis.template.constituency }}</p>
+		<a href="{% url 'datacore:template' analysis.template.id %}" class="btn btn-outline-secondary">More info on template</a>
+		<hr>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Word</th>
+					<th scope="col">Lemma</th>
+					<th scope="col">POS</th>
+					<th scope="col">XPOS</th>
+					<th scope="col">Feats</th>
+					<th scope="col">DepRel</th>
+					<th scope="col">Parent Token</th>
+				</tr>
+			</thead>
+			<tbody>
+			{% for key, word in analysis.data.words.items  %}
+				<tr>
+					<th scope="row">{{ key }}</th>
+					<td>{{ word.text }}</td>
+					<td>{{ word.lemma }}</td>
+					<td>{{ word.upos }}</td>
+					<td>{{ word.xpos }}</td>
+					<td>{{ word.feats }}</td>
+					<td>{{ word.dep_rel }}</td>
+					<td>{{ word.dep_parent }}</td>
+				</tr>
+			{% endfor %}
+			</tbody>
+		</table>
+	{% endif %}
+
+{% endblock %}

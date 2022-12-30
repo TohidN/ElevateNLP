@@ -1,0 +1,28 @@
+{% extends base_template %}
+{% load static %}
+{% load thumbnail %}
+{% load widget_tweaks %}
+{% load i18n %}
+
+{% block title %}{% trans "Edit Profile" %}{% endblock %}
+
+{% block content %}
+	<main class="container profile">
+		<div class="row">
+			<div class="col-md-3 profile-sidebar-container">
+				{% include "profile-sidebar.html" %}
+			</div>
+			<div class="col-md-9">
+				<div class="row profile-body">
+					<div class="content clearfix">
+						<form action="" enctype="multipart/form-data" method="post">
+							{% csrf_token %}
+							{% include 'modal-form.html' %}
+							<input class="btn btn-primary pull-right" value="{% trans 'Save changes' %}" type="submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}

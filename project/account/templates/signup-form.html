@@ -1,0 +1,31 @@
+{% extends base_template %}
+{% load static %}
+{% load thumbnail %}
+{% load widget_tweaks %}
+{% load i18n %}
+
+
+{% block title %}{% trans "SignUp" %}{% endblock %}
+
+{% block content %}
+<form action="{{ url }}" method="post">
+	{% csrf_token %}
+	<div class="text-center">
+		<h3><a class="navbar-brand" href="{% url 'datacore:home' %}">{% block title %}ElevateNLP{% endblock %}</a></h3>
+	</div>
+
+	<div class="modal-header">
+		<h1 class="modal-title fs-5" id="modal-label">{{ title }}</h1>
+		{% if base_template != 'base.html' %}<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>{% endif %}
+	</div>
+	<div class="modal-body">
+		{% include 'modal-form.html' %}
+	</div>
+	<div class="modal-footer gap-2">
+		<div class="p-2 flex-fill">
+			Already have an account? <a hx-target="#user-modal-container" hx-push-url="false" hx-boost="true" hx-indicator="#navbar-indicator" href="{% url 'account:signin' %}">Login</a>
+		</div>
+		<input type="submit" value="SignUp" class="btn btn-lg btn-primary pull-right" />
+	</div>
+</form>
+{% endblock %}

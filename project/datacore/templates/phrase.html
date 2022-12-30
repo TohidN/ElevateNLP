@@ -1,0 +1,130 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load visualizer_tags %}
+
+{% block title %}{% trans "Phrase" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{% trans "Phrase" %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:phrase_edit' phrase.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:phrase_delete' phrase.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
+		</div>
+		<form method="post" class="float-end">
+			{% csrf_token %}
+			<div class="btn-group float-end">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-success dropdown-toggle float-end mt-0 me-3" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-lightbulb"></i> Analyze Phrase</button>
+					<ul class="dropdown-menu">
+						<li><button type="submit" value="StanzaAnalyze" name="phrase_analysis_stanza" class="dropdown-item m-0" title="Analyze Phrase">Stanza Analysis</button></li>
+						<li><button type="submit" value="SpacyAnalyze" name="phrase_analysis_spacy" class="dropdown-item m-0" title="Analyze Phrase">Spacy Analysis</button></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</h1>
+
+	<p>{{ phrase.text }}</p>
+
+	{% if documents %}
+		<p>Documents containing phrase:
+			<ul hx-boost="true">
+				{% for document in documents.all %}
+					<li><a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:document' document.id %}?">{{ document }}</a></li>
+				{% endfor %}
+			</ul>
+		</p>
+	{% endif %}
+				
+	{% if analysis_results %}
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link disabled">Analysis Results: </a>
+			</li>
+			{% for analysis in analysis_results %}
+			<li class="nav-item" role="presentation">
+				<button class="nav-link{% if forloop.first %} active{% endif %}" id="{{ analysis.analyzer.get_slugified_title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ analysis.analyzer.get_slugified_title }}-content" type="button" role="tab" aria-controls="{{ analysis.analyzer.get_slugified_title }}"{% if forloop.first %} aria-selected="true"{% else %}  aria-selected="false"{% endif %}>{{ analysis.analyzer.title }}</button>
+			</li>
+			{% endfor %}
+		</ul>
+		<div class="tab-content" id="myTabContent">
+			{% for analysis in analysis_results %}
+				<div class="tab-pane fade {% if forloop.first %} show active{% endif %}" id="{{ analysis.analyzer.get_slugified_title }}-content" role="tabpanel" aria-labelledby="{{ analysis.analyzer.get_slugified_title }}-tab">
+					<div class="container">
+						<div class="col-md-10 offset-md-1">
+							{% if analysis.template.get_phrase_type_display %}<p>Phrase Type: {{ analysis.template.get_phrase_type_display }}</p><hr>{% endif %}
+							{% if analysis.sentiment %}<p>Sentiment: {{ analysis.sentiment }}</p><hr>{% endif %}
+							{% if analysis.words.all %}
+								<p hx-boost="true">Tokenized Words:
+									{% for word in analysis.words.all|dictsort:"text" %}
+										{% if forloop.last %}<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' word.id %}">{{ word }}</a> {% else %}<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' word.id %}">{{ word }}</a>, {% endif %}
+									{% endfor %}
+								</p>
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Word</th>
+											<th scope="col">Lemma</th>
+											<th scope="col">POS</th>
+											<th scope="col">XPOS</th>
+											<th scope="col">Feats</th>
+											<th scope="col">DepRel</th>
+											<th scope="col">Parent Token</th>
+										</tr>
+									</thead>
+									<tbody>
+										{% for key, word in analysis.data.words.items  %}
+											<tr>
+												<th scope="row">{{ key }}</th>
+												<td>{{ word.text }}</td>
+												<td>{{ word.lemma }}</td>
+												<td>{{ word.upos }}</td>
+												<td>{{ word.xpos }}</td>
+												<td>{{ word.feats }}</td>
+												<td>{{ word.dep_rel }}</td>
+												<td>{{ word.dep_parent }}</td>
+											</tr>
+										{% endfor %}
+									</tbody>
+								</table>
+							{% endif %}
+							{% if analysis.entities.all %}
+								<hr>
+								<p hx-boost="true">Named Entities:
+									{% for entity in analysis.entities.all %}
+										<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:entity' entity.id %}">{{ entity.text }}:{{entity.ne_type}}</a>{% if not forloop.last %}, {% endif %}
+									{% endfor %}
+								</p>
+								{% autoescape off %}{{ analysis|visualize_displacy_ent }}{% endautoescape %}
+							{% endif %}
+							<hr>
+							<h3>Template:</h3>
+							<div class="overflow-auto">
+								{% autoescape off %}{{ analysis|visualize_displacy_dep }}{% endautoescape %}
+							</div>
+							{% if analysis.template.pos %}<p>POS: {{ analysis.template.pos }}</p>{% endif %}
+							<div hx-boost="true">
+								<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:template' analysis.template.id %}" class="btn btn-outline-secondary">More info on template</a>
+							</div>
+							<hr>
+							{{data}}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+{% endblock %}

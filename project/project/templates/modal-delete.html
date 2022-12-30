@@ -1,0 +1,24 @@
+{% extends base_template %}
+{% load i18n %}
+{% load widget_tweaks %}
+{# don't change page title for loading modals, because it remains when modal is closed #}
+{% block title %}{% if not request.htmx %}{% if title %} {{ title }} {% else %} {% trans "Alert" %} {% endif %}{% endif %}{% endblock %}
+
+{% block content %}
+<form action="{{ url }}" method="delete">
+	{% csrf_token %}
+	<div class="modal-header">
+		<h1 class="modal-title fs-5" id="modal-label">{% if title %} {{ title }} {% else %} {% trans "Alert" %} {% endif %}</h1>
+		{% if base_template != 'base.html' %}<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>{% endif %}
+	</div>
+	<div class="modal-body">
+		<p>{% if message %} {{ message }} {% else %} {% trans "Are You Sure?" %} {% endif %}</p>
+		{% if item %}<p>{% trans "Object:" %} <a href="{{ item.get_absolute_url }}">{{ item }}</a></p>{% endif %}
+
+	</div>
+	<div class="modal-footer gap-2">
+		<a href="{% if back_url %} {{ back_url }} {% else %} {{ item.get_absolute_url }} {% endif %}" class="btn btn-secondary" {% if base_template != 'base.html' %} data-bs-dismiss="modal"{% endif %}>Back</a>
+		<button hx-push-url="true" hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}' hx-indicator="#loading-indicator" hx-delete="{{ url }}" hx-target="#main-container" type="submit" name="delete" value="1" class="btn btn-danger">{% trans "Delete" %}</button>
+	</div>
+</form>
+{% endblock %}

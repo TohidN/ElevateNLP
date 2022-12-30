@@ -1,0 +1,454 @@
+{
+  "PronType": {
+    "ud-code": "PronType",
+    "title": "pronominal type",
+    "description": "This feature typically applies to pronouns, pronominal adjectives (determiners), pronominal numerals (quantifiers) and pronominal adverbs.",
+    "url": "https://universaldependencies.org/u/feat/PronType.html",
+    "types": [
+      "Lexical"
+    ],
+    "values": [
+      "Art",
+      "Dem",
+      "Emp",
+      "Exc",
+      "Ind",
+      "Int",
+      "Neg",
+      "Prs",
+      "Rcp",
+      "Rel",
+      "Tot"
+    ]
+  },
+  "Gender": {
+    "ud-code": "Gender",
+    "title": "gender",
+    "description": "Gender is usually a lexical feature of nouns and inflectional feature of other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",
+    "url": "https://universaldependencies.org/u/feat/Gender.html",
+    "types": [
+      "Inflectional",
+      "Nominal"
+    ],
+    "values": [
+      "Com",
+      "Fem",
+      "Masc",
+      "Neut"
+    ]
+  },
+  "VerbForm": {
+    "ud-code": "VerbForm",
+    "title": "form of verb or deverbative",
+    "description": "Some verb forms in some languages actually form a gray zone between verbs and other parts of speech (nouns, adjectives and adverbs).",
+    "url": "https://universaldependencies.org/u/feat/VerbForm.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Conv",
+      "Fin",
+      "Gdv",
+      "Ger",
+      "Inf",
+      "Part",
+      "Sup",
+      "Vnoun"
+    ]
+  },
+  "NumType": {
+    "ud-code": "NumType",
+    "title": "numeral type",
+    "description": "It includes almost everything where counting is involved and there are various subtypes and applies to seral part-of-speach tags(NUM, DET, ADJ, ADV).",
+    "url": "https://universaldependencies.org/u/feat/NumType.html",
+    "types": [
+      "Lexical"
+    ],
+    "values": [
+      "Card",
+      "Dist",
+      "Frac",
+      "Mult",
+      "Ord",
+      "Range",
+      "Sets"
+    ]
+  },
+  "Animacy": {
+    "ud-code": "Animacy",
+    "title": "animacy",
+    "description": "Similarly to Gender (and to the African noun classes), animacy is usually a lexical feature of nouns and inflectional feature of other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",
+    "url": "https://universaldependencies.org/u/feat/Animacy.html",
+    "types": [
+      "Inflectional",
+      "Nominal"
+    ],
+    "values": [
+      "Anim",
+      "Hum",
+      "Inan",
+      "Nhum"
+    ]
+  },
+  "Mood": {
+    "ud-code": "Mood",
+    "title": "mood",
+    "description": "Mood is a feature that expresses modality and subclassifies finite verb forms.",
+    "url": "https://universaldependencies.org/u/feat/Mood.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Adm",
+      "Cnd",
+      "Des",
+      "Imp",
+      "Ind",
+      "Irr",
+      "Jus",
+      "Nec",
+      "Opt",
+      "Pot",
+      "Prp",
+      "Qot",
+      "Sub"
+    ]
+  },
+  "Poss": {
+    "ud-code": "Poss",
+    "title": "possessive",
+    "description": " It tells whether the word is possessive.",
+    "url": "https://universaldependencies.org/u/feat/Poss.html",
+    "types": [
+      "Lexical"
+    ],
+    "values": []
+  },
+  "NounClass": {
+    "ud-code": "NounClass",
+    "title": "noun class",
+    "description": "NounClass is similar to Gender and Animacy because it is to a large part a lexical category of nouns and other parts of speech inflect for it to show agreement (pronouns, adjectives, determiners, numerals, verbs).",
+    "url": "https://universaldependencies.org/u/feat/NounClass.html",
+    "types": [
+      "Inflectional",
+      "Nominal"
+    ],
+    "values": [
+      "Bantu1",
+      "Bantu2",
+      "Bantu3",
+      "Bantu4",
+      "Bantu5",
+      "Bantu6",
+      "Bantu7",
+      "Bantu8",
+      "Bantu9",
+      "Bantu10",
+      "Bantu11",
+      "Bantu12",
+      "Bantu13",
+      "Bantu14",
+      "Bantu15",
+      "Bantu16",
+      "Bantu17",
+      "Bantu18",
+      "Bantu19",
+      "Bantu20",
+      "Bantu21",
+      "Bantu22",
+      "Bantu23",
+      "Wol1",
+      "Wol2",
+      "Wol3",
+      "Wol4",
+      "Wol5",
+      "Wol6",
+      "Wol7",
+      "Wol8",
+      "Wol9",
+      "Wol10",
+      "Wol11",
+      "Wol12"
+    ]
+  },
+  "Tense": {
+    "ud-code": "Tense",
+    "title": "tense",
+    "description": "Tense is typically a feature of verbs. It may also occur with other parts of speech (nouns, adjectives, adverbs), depending on whether borderline word forms such as participles are classified as verbs or as the other category.",
+    "url": "https://universaldependencies.org/u/feat/Tense.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Fut",
+      "Imp",
+      "Past",
+      "Pqp",
+      "Pres"
+    ]
+  },
+  "Reflex": {
+    "ud-code": "Reflex",
+    "title": "reflexive",
+    "description": "It tells whether the word is reflexive, i.e. refers to the subject of its clause.",
+    "url": "https://universaldependencies.org/u/feat/Reflex.html",
+    "types": [
+      "Lexical"
+    ],
+    "values": []
+  },
+  "Number": {
+    "ud-code": "Number",
+    "title": "number",
+    "description": "Number is usually an inflectional feature of nouns and, depending on language, other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",
+    "url": "https://universaldependencies.org/u/feat/Number.html",
+    "types": [
+      "Inflectional",
+      "Nominal"
+    ],
+    "values": [
+      "Coll",
+      "Count",
+      "Dual",
+      "Grpa",
+      "Grpl",
+      "Inv",
+      "Pauc",
+      "Plur",
+      "Ptan",
+      "Sing",
+      "Tri"
+    ]
+  },
+  "Aspect": {
+    "ud-code": "Aspect",
+    "title": "aspect",
+    "description": "Aspect is a feature that specifies duration of the action in time, whether the action has been completed etc. ",
+    "url": "https://universaldependencies.org/u/feat/Aspect.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Hab",
+      "Imp",
+      "Iter",
+      "Perf",
+      "Prog",
+      "Prosp"
+    ]
+  },
+  "Foreign": {
+    "ud-code": "Foreign",
+    "title": "a foreign word",
+    "description": "Is this a foreign word? Not a loan word and not a foreign name but a genuinely foreign word appearing inside native text, e.g. inside direct speech, titles of books etc.",
+    "url": "https://universaldependencies.org/u/feat/Foreign.html",
+    "types": [
+      "Lexical"
+    ],
+    "values": []
+  },
+  "Case": {
+    "ud-code": "Case",
+    "title": "case",
+    "description": "Case is usually an inflectional feature of nouns and, depending on language, other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",
+    "url": "https://universaldependencies.org/u/feat/Case.html",
+    "types": [
+      "Inflectional",
+      "Nominal"
+    ],
+    "values": [
+      "Abs",
+      "Acc",
+      "Erg",
+      "Nom",
+      "Abe",
+      "Ben",
+      "Cau",
+      "Cmp",
+      "Cns",
+      "Com",
+      "Dat",
+      "Dis",
+      "Equ",
+      "Gen",
+      "Ins",
+      "Par",
+      "Tem",
+      "Tra",
+      "Voc",
+      "Abl",
+      "Add",
+      "Ade",
+      "All",
+      "Del",
+      "Ela",
+      "Ess",
+      "Ill",
+      "Ine",
+      "Lat",
+      "Loc",
+      "Per",
+      "Sbe",
+      "Sbl",
+      "Spl",
+      "Sub",
+      "Sup",
+      "Ter"
+    ]
+  },
+  "Voice": {
+    "ud-code": "Voice",
+    "title": "voice",
+    "description": "Voice is typically a feature of verbs. It may also occur with other parts of speech (nouns, adjectives, adverbs), depending on whether borderline word forms such as gerunds and participles are classified as verbs or as the other category.",
+    "url": "https://universaldependencies.org/u/feat/Voice.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Act",
+      "Antip",
+      "Bfoc",
+      "Cau",
+      "Dir",
+      "Inv",
+      "Lfoc",
+      "Mid",
+      "Pass",
+      "Rcp"
+    ]
+  },
+  "Abbr": {
+    "ud-code": "Abbr",
+    "title": "abbreviation",
+    "description": "Is this an abbreviation? Note that the abbreviated word(s) typically belongs to a part of speech other than X.",
+    "url": "https://universaldependencies.org/u/feat/Abbr.html",
+    "types": [
+      "Lexical"
+    ],
+    "values": []
+  },
+  "Definite": {
+    "ud-code": "Definite",
+    "title": "definiteness or state",
+    "description": "Definiteness is typically a feature of nouns, adjectives and articles. Its value distinguishes whether we are talking about something known and concrete, or something general or unknown.",
+    "url": "https://universaldependencies.org/u/feat/Definite.html",
+    "types": [
+      "Inflectional",
+      "Nominal"
+    ],
+    "values": [
+      "Com",
+      "Cons",
+      "Def",
+      "Ind",
+      "Spec"
+    ]
+  },
+  "Evident": {
+    "ud-code": "Evident",
+    "title": "evidentiality",
+    "description": "Evidentiality is the morphological marking of a speaker’s source of information (Aikhenvald, 2004). It is sometimes viewed as a category of mood and modality.",
+    "url": "https://universaldependencies.org/u/feat/Evident.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Fh",
+      "Nfh"
+    ]
+  },
+  "Typo": {
+    "ud-code": "Typo",
+    "title": "is this a misspelled word?",
+    "description": "Indicates bad spelling, grammatical error etc.",
+    "url": "https://universaldependencies.org/u/feat/Typo.html",
+    "types": [
+      "Lexical"
+    ],
+    "values": []
+  },
+  "Degree": {
+    "ud-code": "Degree",
+    "title": "degree of comparison",
+    "description": "Degree of comparison is typically an inflectional feature of some adjectives and adverbs.",
+    "url": "https://universaldependencies.org/u/feat/Degree.html",
+    "types": [
+      "Inflectional",
+      "Nominal"
+    ],
+    "values": [
+      "Abs",
+      "Cmp",
+      "Equ",
+      "Pos",
+      "Sup"
+    ]
+  },
+  "Polarity": {
+    "ud-code": "Polarity",
+    "title": "polarity",
+    "description": "Polarity is typically a feature of verbs, adjectives, sometimes also adverbs and nouns in languages that negate using bound morphemes.",
+    "url": "https://universaldependencies.org/u/feat/Polarity.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Neg",
+      "Pos"
+    ]
+  },
+  "Person": {
+    "ud-code": "Person",
+    "title": "person",
+    "description": "Person is typically feature of personal and possessive pronouns / determiners, and of verbs. On verbs it is in fact an agreement feature that marks the person of the verb’s subject.",
+    "url": "https://universaldependencies.org/u/feat/Person.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  "Polite": {
+    "ud-code": "Polite",
+    "title": "politeness",
+    "description": "Various languages have various means to express politeness or respect; some of the means are morphological. Three to four dimensions of politeness are distinguished in linguistic literature.",
+    "url": "https://universaldependencies.org/u/feat/Polite.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Elev",
+      "Form",
+      "Humb",
+      "Infm"
+    ]
+  },
+  "Clusivity": {
+    "ud-code": "Clusivity",
+    "title": "clusivity",
+    "description": "Clusivity is a feature of first-person plural personal pronouns. As such, it can also be reflected by inflection of verbs.",
+    "url": "https://universaldependencies.org/u/feat/Clusivity.html",
+    "types": [
+      "Inflectional",
+      "Verbal"
+    ],
+    "values": [
+      "Ex",
+      "In"
+    ]
+  }
+}

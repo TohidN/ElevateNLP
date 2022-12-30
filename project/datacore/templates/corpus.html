@@ -1,0 +1,65 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Corpus" %} - {{ corpus.title }}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{{ corpus.title }}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:corpus_edit' corpus.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:corpus_delete' corpus.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
+		</div>
+	</h1>
+
+	{% if corpus.description %}
+		<p>{{ corpus.description }}</p>
+	{% endif %}
+   <hr>
+
+	{% if corpus.data_sources.all|length > 0 %}
+		<div class="mb-3 row">
+			<label class="col-sm-2 col-form-label">Sources:</label>
+			<div class="col-sm-10">
+				<ul hx-boost="true" class="list-group list-group-flush">
+					{% for data_source in corpus.data_sources.all %}
+						<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:data_source' data_source.id %}" class="list-group-item">
+							{{ data_source.title }}{% if not forloop.last %}, {% endif %}
+						</a>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<hr>
+	{% endif %}
+
+	<ul hx-boost="true" class="list-group">
+		<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:corpus_documents' corpus.id %}" class="list-group-item d-flex justify-content-between align-items-start">
+			<div class="ms-2 me-auto">
+				<div class="fw-bold">Documents</div>
+				{# TODO: load links to last few edided documents, instead of following#}
+				{% if corpus.documents.count == 0 %}No documents found!{% else %}{{ corpus.documents.count }} Corpus Documents Found{% endif %}
+			</div>
+			<span class="badge bg-primary rounded-pill">{{ corpus.documents.count }}</span>
+		</a>
+		<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:corpus_phrase_collections' corpus.id %}" class="list-group-item d-flex justify-content-between align-items-start">
+			<div class="ms-2 me-auto">
+				<div class="fw-bold">Phrase Collections</div>
+				{% if corpus.phrase_collections.count == 0 %}No Phrase Collections found!{% else %}{{ corpus.phrase_collections.count }} Corpus Phrase Collections.{% endif %}
+			</div>
+			<span class="badge bg-primary rounded-pill">{{ corpus.phrase_collections.count }}</span>
+		</a>
+	</ul>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Data Source" %} - {{ data_source.title }}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{{ data_source.title }}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:data_source_edit' data_source.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:data_source_delete' data_source.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
+		</div>
+	</h1>
+
+	<div class="row">
+		<div class="content">
+			{% if data_source.version %}
+				<p><b>Version:</b> {{ data_source.version }}</p>
+			{% endif %}
+			{% if data_source.description %}
+				<p><b>Description:</b> {{ data_source.description }}</p>
+			{% endif %}
+			<hr>
+			<h2 class="pb-3">
+				{% trans "References" %}
+				<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:data_source_add_references' data_source.id %}" class="btn btn-outline-success float-end" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+			</h2>
+			{% if data_source.references.all|length > 0 %}
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					{% for ref in data_source.references.all %}
+						<div class="col">
+							<div class="card h-100">
+								<div class="card-body">
+									<h5 class="card-title">{{ ref.title }}</h5>
+									{% if ref.url %}
+										<p class="card-text">{{ ref.description }}</p>
+									{% endif %}
+								</div>
+								<div class="card-footer">
+									{% if ref.url %}
+										<a href="{{ ref.url }}" target="_blank" class="btn btn-primary">{% trans "Visit" %}</a>
+									{% endif %}
+									<form method="post" class="float-end">
+										{% csrf_token %}
+										<input type="hidden" name="ref-id" value="{{ ref.id }}">
+										<button hx-indicator="#loading-indicator" hx-post="{% url 'datacore:data_source' data_source.id %}" hx-target="#main-container" hx-confirm="Are you sure you?" class="btn btn-outline-danger" type="submit" name="remove_reference" value="1"><i class="fa fa-trash"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}

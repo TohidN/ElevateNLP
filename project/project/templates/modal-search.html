@@ -1,0 +1,33 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load widget_tweaks %}
+
+{# don't change page title for loading modals, because it remains when modal is closed #}
+{% block title %}{% if not request.htmx %}{% if title %} {{ title }} {% else %} {% trans "Search" %} {% endif %}{% endif %}{% endblock %}
+
+{% block content %}
+	<div class="modal-header">
+		<h1 class="modal-title fs-5" id="modal-label">{% if title %} {{ title }} {% else %} {% trans "Search" %} {% endif %}</h1>
+		{% if base_template != 'base.html' %}<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>{% endif %}
+	</div>
+	<div class="modal-body">
+		<div class="container mt-3">
+			<form action="{{ url }}" method="post">
+				{% csrf_token %}
+				<div class="form-floating mb-3">
+					<input type="hidden" name="relation-type" value="{{ relation }}" >
+					<input hx-post="{{ url }}" hx-trigger="keyup changed delay:500ms, search" hx-target="#search-results" hx-indicator="#search-indicator" id="search" name="search" type="search" class="form-control" placeholder="{% trans 'Enter query' %}" value="{{ search_term }}">
+					<label for="search">{% trans "Enter query" %}</label>
+				</div>
+			</form>
+	 	</div>
+		<div class="container mt-3 mb-2">
+			<div class="htmx-indicator text-center" id="search-indicator"><img src="{% static '/image/bars.svg' %}"/>{% trans "Searching..." %}</div> 
+			<div id="search-results">{% include 'modal-item-search.html' %}</div>
+		</div>
+	</div>
+	<div class="modal-footer gap-2">
+		<a href="{% if back_url %} {{ back_url }} {% else %} {{ item.get_absolute_url }} {% endif %}" class="btn btn-secondary" {% if base_template != 'base.html' %} data-bs-dismiss="modal"{% endif %}>Back</a>
+	</div>
+{% endblock %}

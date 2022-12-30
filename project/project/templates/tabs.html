@@ -1,0 +1,13 @@
+{% load static %}
+
+<ul class="nav nav-tabs" hx-push-url="true" hx-boost="true" hx-indicator="closest a" hx-target="#tab-container">
+	{% for tab in tabs %}
+		<li class="nav-item">
+			<a class="nav-link{% if tab_active == tab.0 %} active{% endif %}" href="{{tab.0}}">
+				{{ tab.1 }}
+				<img class="htmx-indicator hidden-loading" src="{% static '/image/bars.svg' %}"/>
+			</a>
+		</li>
+	{% endfor %}
+</ul>
+

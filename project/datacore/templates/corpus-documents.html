@@ -1,0 +1,69 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Corpus" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		<a hx-boost="true" hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:corpus' corpus.id %}">{{ corpus.title }}</a>
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:corpus_documents_add' corpus.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+		</div>
+	</h1>
+	<hr>
+	<div class="tab-content bg-transparent">
+		<div class="note-has-grid row">
+			{% for document in documents %}
+					<div class="col-md-4 single-note-item">
+						<div class="card card-body">
+							<a hx-boost="true" hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:document' document.id %}" class="text-decoration-none">
+								<h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Book a Ticket for Movie">{{ document.title }}</h5>
+								<p class="note-date font-12 text-muted">
+									{% if document.phrases.all|length > 0 %}
+										<span class="side-stick"></span>
+										{{ document.phrases.all|length }} Phrases
+									{% elif document.content|length > 0 %}
+										<span class="side-stick grey"></span>
+										Not tokenized
+									{% else %}
+										<span class="side-stick red"></span>
+										No Content
+									{% endif %}
+									{% if document.phrase_collections.all|length > 0 %}
+										, {{ document.phrase_collections.all|length }} Phrase Collections
+									{% endif %}
+								</p>
+								<div class="note-content">
+									<p class="note-inner-content text-muted truncate-two-lines">{{ document.content|truncatechars:150 }}</p>
+								</div>
+							</a>
+							<div class="dropdown">
+								<form method="post">
+									{% csrf_token %}
+									<input type="hidden" name="id" value="{{ document.id }}">
+									<button class="btn btn-danger dropdown-toggle float-end" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-trash-can"></i></button>
+									<ul class="dropdown-menu dropdown-menu-end">
+										<li><button hx-indicator="#loading-indicator" hx-post="{% url 'datacore:corpus_documents' corpus.id %}" hx-target="#main-container" hx-confirm="Are you sure you?" class="dropdown-item" type="submit" name="remove" value="1">Remove from corpus</button></li>
+										<li><button hx-indicator="#loading-indicator" hx-post="{% url 'datacore:corpus_documents' corpus.id %}" hx-target="#main-container" hx-confirm="Are you sure you?" class="dropdown-item" type="submit" name="delete" value="1">Delete document</button></li>
+									</ul>
+								</form>
+							</div>						   
+						</div>
+					</div>
+			{% endfor %}
+		</div>
+	</div>
+	{% pagination documents paginator_range %}
+{% endblock %}

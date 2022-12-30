@@ -1,0 +1,35 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+
+{% block title %}{% trans "Concept" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="row">
+		<div class="content">
+			<h1>
+				{% trans "Concept" %} #{{ id }}
+				<span class="badge bg-secondary fs-6 align-middle">{{ concept.pos.title }}</span>
+				<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+			</h1>
+
+
+			{% tabs tab_data tab_active %}
+			<div id="tab-container" hx-get="{{ tab_active }}" hx-trigger="load">
+				<div class="text-center"><span>{% trans "Loading Content" %} </span><img class="htmx-indicator hidden-loading" src="{% static '/image/bars.svg' %}"/></div>
+			</div>
+
+		</div>
+	</div>
+{% endblock %}

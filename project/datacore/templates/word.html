@@ -1,0 +1,71 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+
+{% block title %}{% trans "Word" %} - {{ word.text }}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{{ word.text }}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<div class="btn-group float-end">
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:word_edit' word.id %}" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-pen"></i></a>
+			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:word_delete' word.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
+		</div>
+	</h1>
+
+	<p>Word usage frequency: {{ word.frequency_distribution }}</p>
+	{% if word.lemma_frequency_distribution > 0 %}
+		<p>Word is a lemma, Lemma usage frequency: {{ word.lemma_frequency_distribution }}</p>
+	{% endif %}
+	<p>Language: {{ word.language.get_title }}</p>
+	{% if relations %}
+		<p>Lexical Relationships</p>
+		<ul hx-boost="true">
+			{% for relation in relations %}
+				<li>
+					<b>{{ relation.word_relation.title }}</b>: <a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' relation.words.0 %}">{% get_method_from_list related_words relation.words.0 "text" %}</a> {{ relation.word_relation.descriptor  }} <a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' relation.words.1 %}">{% get_method_from_list related_words relation.words.1 "text" %}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+	{% if concepts|length > 0 %}
+		<div class="list-group search-result-list">
+			<h2 class="list-group-item-heading">Concepts:</h2>
+			{% for concept in concepts %}
+				<div hx-boost="true" class="list-group-item">
+					<h4 class="list-group-item-heading">
+						({{ concept.pos.title }})
+						{% for lemma in concept.synonyms.all %}
+							{% if lemma.text|lower == query|lower %}
+								{{lemma.text}}
+							{% else %}
+								<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:search' %}?query={{lemma.text}}">{{ lemma.text }}</a>
+							{% endif %}
+							{% if not forloop.last %},{% endif %}
+						{% endfor %}
+					</h4>
+					<ul class="list-group list-group-flush">
+						{% for definition in concept.definition_set.all %}
+							<li class="list-group-item">{{ definition.text }}</li>
+						{% endfor %}
+					</ul>
+					<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:concept' concept.id %}" class="btn btn-sm btn-info float-right">More about concept</a>
+				</div>
+			{% endfor %}
+		</div>
+	{% else %}
+		<p>No concepts for this word was found!</p>
+	{% endif %}
+{% endblock %}

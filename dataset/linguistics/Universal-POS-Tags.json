@@ -1,0 +1,202 @@
+{
+  "ADJ": {
+    "title": "adjective",
+    "ud-code": "ADJ",
+    "description": "Adjectives are words that typically modify nouns and specify their properties or attributes.",
+    "type": "Open Class",
+    "url": "https://universaldependencies.org/u/pos/ADJ.html"
+  },
+  "ADV": {
+    "title": "adverb",
+    "ud-code": "ADV",
+    "description": "Adverbs are words that typically modify verbs for such categories as time, place, direction or manner. They may also modify adjectives and other adverbs.",
+    "type": "Open Class",
+    "url": "https://universaldependencies.org/u/pos/ADV.html"
+  },
+  "INTJ": {
+    "title": "interjection",
+    "ud-code": "INTJ",
+    "description": "An interjection is a word that is used most often as an exclamation or part of an exclamation. It typically expresses an emotional reaction, is not syntactically related to other accompanying expressions, and may include a combination of sounds not otherwise found in the language.",
+    "type": "Open Class",
+    "url": "https://universaldependencies.org/u/pos/INTJ.html"
+  },
+  "NOUN": {
+    "title": "noun",
+    "ud-code": "NOUN",
+    "description": "Nouns are a part of speech typically denoting a person, place, thing, animal or idea.",
+    "type": "Open Class",
+    "url": "https://universaldependencies.org/u/pos/NOUN.html"
+  },
+  "NOUN.ADR": {
+    "title": "Address"
+  },
+  "NOUN.DAT": {
+    "title": "Date"
+  },
+  "NOUN.HOU": {
+    "title": "Hour"
+  },
+  "NOUN.MAI": {
+    "title": "Email address"
+  },
+  "NOUN.MEA": {
+    "title": "Measure"
+  },
+  "NOUN.MON": {
+    "title": "Money"
+  },
+  "NOUN.PCT": {
+    "title": "Percentage"
+  },
+  "NOUN.PHO": {
+    "title": "Phone number"
+  },
+  "NOUN.WEB": {
+    "title": "Web address"
+  },
+  "PROPN": {
+    "title": "proper noun",
+    "ud-code": "PROPN",
+    "description": "A proper noun is a noun (or nominal content word) that is the name (or part of the name) of a specific individual, place, or object.",
+    "type": "Open Class",
+    "url": "https://universaldependencies.org/u/pos/PROPN.html"
+  },
+  "PROPN.ANM": {
+    "title": "An animal"
+  },
+  "PROPN.BLD": {
+    "title": "A building"
+  },
+  "PROPN.COM": {
+    "title": "A business/company"
+  },
+  "PROPN.DEV": {
+    "title": "A device"
+  },
+  "PROPN.DOC": {
+    "title": "A document"
+  },
+  "PROPN.EVN": {
+    "title": "An event"
+  },
+  "PROPN.FDD": {
+    "title": "A food/beverage"
+  },
+  "PROPN.GEA": {
+    "title": "A physical geographic feature"
+  },
+  "PROPN.GEO": {
+    "title": "An administrative geographic area"
+  },
+  "PROPN.GEX": {
+    "title": "An extra-terrestrial or imaginary place"
+  },
+  "PROPN.LEN": {
+    "title": "A legal/fiscal entity"
+  },
+  "PROPN.MMD": {
+    "title": "A mass media"
+  },
+  "PROPN.NPH": {
+    "title": "A human being"
+  },
+  "PROPN.ORG": {
+    "title": "Sn organization/society/institution"
+  },
+  "PROPN.PPH": {
+    "title": "An physical phenomena"
+  },
+  "PROPN.PRD": {
+    "title": "A product"
+  },
+  "PROPN.VCL": {
+    "title": "A vehicle"
+  },
+  "PROPN.WRK": {
+    "title": "a work of human intelligence"
+  },
+  "VERB": {
+    "title": "verb",
+    "ud-code": "VERB",
+    "description": "A verb is a member of the syntactic class of words that typically signal events and actions, can constitute a minimal predicate in a clause, and govern the number and types of other constituents which may occur in the clause.",
+    "type": "Open Class",
+    "url": "https://universaldependencies.org/u/pos/VERB.html"
+  },
+  "ADP": {
+    "title": "adposition",
+    "ud-code": "ADP",
+    "description": "Adposition is a cover term for prepositions and postpositions. Adpositions belong to a closed set of items that occur before (preposition) or after (postposition) a complement composed of a noun phrase, noun, pronoun, or clause that functions as a noun phrase, and that form a single structure with the complement to express its grammatical and semantic relation to another unit within a clause.",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/ADP.html"
+  },
+  "AUX": {
+    "title": "auxiliary",
+    "ud-code": "AUX",
+    "description": "An auxiliary is a function word that accompanies the lexical verb of a verb phrase and expresses grammatical distinctions not carried by the lexical verb, such as person, number, tense, mood, aspect, voice or evidentiality. ",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/AUX_.html"
+  },
+  "CCONJ": {
+    "title": "coordinating conjunction",
+    "ud-code": "CCONJ",
+    "description": "A coordinating conjunction is a word that links words or larger constituents without syntactically subordinating one to the other and expresses a semantic relationship between them.",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/CCONJ.html"
+  },
+  "DET": {
+    "title": "determiner",
+    "ud-code": "DET",
+    "description": "Determiners are words that modify nouns or noun phrases and express the reference of the noun phrase in context. That is, a determiner may indicate whether the noun is referring to a definite or indefinite element of a class, to a closer or more distant element, to an element belonging to a specified person or thing, to a particular number or quantity, etc. Includes pro-adjectives, indefinite articles, definite articles.",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/DET.html"
+  },
+  "NUM": {
+    "title": "numeral",
+    "ud-code": "NUM",
+    "description": "A numeral is a word, functioning most typically as a determiner, adjective or pronoun, that expresses a number and a relation to the number, such as quantity, sequence, frequency or fraction.",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/NUM.html"
+  },
+  "PART": {
+    "title": "particle",
+    "ud-code": "PART",
+    "description": "Particles are function words that must be associated with another word or phrase to impart meaning and that do not satisfy definitions of other universal parts of speech (e.g. adpositions, coordinating conjunctions, subordinating conjunctions or auxiliary verbs). Particles may encode grammatical categories such as negation, mood, tense etc. Particles are normally not inflected, although exceptions may occur.",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/PART.html"
+  },
+  "PRON": {
+    "title": "pronoun",
+    "ud-code": "PRON",
+    "description": "Pronouns are words that substitute for nouns or noun phrases, whose meaning is recoverable from the linguistic or extralinguistic context.",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/PRON.html"
+  },
+  "SCONJ": {
+    "title": "subordinating conjunction",
+    "ud-code": "SCONJ",
+    "description": "A subordinating conjunction is a conjunction that links constructions by making one of them a constituent of the other. The subordinating conjunction typically marks the incorporated constituent which has the status of a (subordinate) clause.",
+    "type": "Close Class",
+    "url": "https://universaldependencies.org/u/pos/SCONJ.html"
+  },
+  "PUNCT": {
+    "title": "punctuation",
+    "ud-code": "PUNCT",
+    "description": "Punctuation marks are non-alphabetical characters and character groups used in many languages to delimit linguistic units in printed text.",
+    "type": "Other",
+    "url": "https://universaldependencies.org/u/pos/PUNCT.html"
+  },
+  "SYM": {
+    "title": "symbol",
+    "ud-code": "SYM",
+    "description": "A symbol is a word-like entity that differs from ordinary words by form, function, or both.",
+    "type": "Other",
+    "url": "https://universaldependencies.org/u/pos/SYM.html"
+  },
+  "X": {
+    "title": "other",
+    "ud-code": "X",
+    "description": "The tag X is used for words that for some reason cannot be assigned a real part-of-speech category. It should be used very restrictively.",
+    "type": "Other",
+    "url": "https://universaldependencies.org/u/pos/X.html"
+  }
+}

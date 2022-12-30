@@ -1,0 +1,27 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Export Lexical Data" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{% trans "Export Lexical Data" %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+		<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:lexical_data_export' %}" class="float-end btn btn-outline-success mx-2 my-2" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-file-export"></i>Export</a>
+	</h1>
+	<div class="list-group">
+		{% for file, url in files.items  %}
+			<a href="{{ url }}" class="list-group-item list-group-item-action">{{ file }}</a>
+		{% endfor %}
+	</div>
+{% endblock %}

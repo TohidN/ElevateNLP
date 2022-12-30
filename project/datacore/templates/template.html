@@ -1,0 +1,77 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Template" %}{% endblock %}
+
+{% block content %}
+	<h1>
+		{% if template.title %}{{ template.title }}{% else %}Template #{{ template.id }}{% endif %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</h1>
+	
+	{% if template.parent %}
+			<div class="d-flex flex-row">
+				<h3 class="p-0 pe-2">Parent: </h3>
+				<div class="flex-md-column w100">
+					<div hx-boost="true" class="list-group">
+						<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:template' template.parent.id %}" class="list-group-item list-group-item-action">
+							{% if template.parent.title %} {{ template.parent.title }}{% else %}{{ template.parent.pos }}{% endif %}
+							<span class="badge bg-primary rounded-pill float-end">{{ template.parent.phrase_count }}</span>
+						</a>
+					</div>
+				</div>
+			</div>
+	{% endif %}
+	{% if template_children %}
+		<h3>Sub-Templates:</h3>
+		<div hx-boost="true" class="list-group w-100">
+			{% for template in template_children %}
+				<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:template' template.id %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+					{{template.pos}}<span class="badge bg-primary rounded-pill">{{ template.phrase_count }}</span>
+				</a>
+			{% endfor %}
+		</div>
+		<hr>
+	{% endif %}
+	{% if template.pos %}<p>POS: {{ template.pos }}</p>{% endif %}
+	{% if template.xpos %}<p>XPOS: {{ template.xpos }}</p>{% endif %}
+	{% if template.feats %}<p>Feats: {{ template.feats }}</p>{% endif %}
+	{% if template.dep %}<p>Dependency: {{ template.dep }}</p>{% endif %}
+	{% if template.constituency %}<p>Constituency: {{ template.constituency }}</p>{% endif %}
+	{% if template.phrase_type %}<p>Sentence Type: {{ template.get_phrase_type_display }}</p>{% endif %}
+	<hr>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">POS</th>
+				<th scope="col">XPOS</th>
+				<th scope="col">DEP</th>
+				<th scope="col">GOV</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for key, data in template.data.structure.items  %}
+			<tr>
+				<th scope="row">{{ data.id }}</th>
+				<td>{{ data.upos }}</td>
+				<td>{{ data.xpos }}</td>
+				<td>{{ data.dep_rel }}</td>
+				<td>{{ data.dep_parent }}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	{% if phrases.all|length > 0 %}
+		<hr>
+		<h1>Phrases</h1>
+		<div hx-boost="true" class="list-group">
+			{% for phrase in phrases %}
+				<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:phrase' phrase.id %}" class="list-group-item list-group-item-action">{{phrase.text}}</a>
+			{% endfor %}
+		</div>
+	{% endif %}
+{% endblock %}

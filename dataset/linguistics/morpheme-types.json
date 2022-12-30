@@ -1,0 +1,2082 @@
+{
+  "FutureInFutureTense": {
+    "title": "Future In Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FutureInFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "FutureInPastTense": {
+    "title": "Future In Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FutureInPastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "FuturePerfectTense": {
+    "title": "Future Perfect Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FuturePerfectTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "FutureTense": {
+    "title": "Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "HesternalPastTense": {
+    "title": "Hesternal Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/HesternalPastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "HodiernalFutureTense": {
+    "title": "Hodiernal Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/HodiernalFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "HodiernalPastTense": {
+    "title": "Hodiernal Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/HodiernalPastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "ImmediateFutureTense": {
+    "title": "Immediate Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ImmediateFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "ImmediatePastTense": {
+    "title": "Immediate Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ImmediatePastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "NonFutureTense": {
+    "title": "Non Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NonFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "NonPastTense": {
+    "title": "Non Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NonPastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PastInPastTense": {
+    "title": "Past In Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PastInPastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PastPerfectTense": {
+    "title": "Past Perfect Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PastPerfectTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PastTense": {
+    "title": "Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PerfectTense": {
+    "title": "Perfect Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PerfectTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PostHodiernalFutureTense": {
+    "title": "Post Hodiernal Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PostHodiernalFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PreHodiernalPastTense": {
+    "title": "Pre Hodiernal Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PreHodiernalPastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PresentPerfectTense": {
+    "title": "Present Perfect Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PresentPerfectTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "PresentTense": {
+    "title": "Present Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PresentTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "RecentPastTense": {
+    "title": "Recent Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RecentPastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "RelativeFutureTense": {
+    "title": "Relative Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RelativeFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "RelativePastTense": {
+    "title": "Relative Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RelativePastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "RelativePresentTense": {
+    "title": "Relative Present Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RelativePresentTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "RemoteFutureTense": {
+    "title": "Remote Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RemoteFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "RemotePastTense": {
+    "title": "Remote Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RemotePastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "SimpleFutureTense": {
+    "title": "Simple Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SimpleFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "SimplePastTense": {
+    "title": "Simple Past Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SimplePastTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "SimplePresentTense": {
+    "title": "Simple Present Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SimplePresentTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "StillTense": {
+    "title": "Still Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/StillTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "CloseFutureTense": {
+    "title": "Close Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/CloseFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "NearFutureTense": {
+    "title": "Near Future Tense",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NearFutureTense",
+    "type": [
+      "Morphosemantic",
+      "Tense"
+    ]
+  },
+  "CompletiveAspect": {
+    "title": "Completive Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/CompletiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "ContinuousAspect": {
+    "title": "Continuous Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ContinuousAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "DistributiveAspect": {
+    "title": "Distributive Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DistributiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "DurativeAspect": {
+    "title": "Durative Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DurativeAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "FrequentiveAspect": {
+    "title": "Frequentive Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FrequentiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "HabitualAspect": {
+    "title": "Habitual Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/HabitualAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "ImperfectiveAspect": {
+    "title": "Imperfective Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ImperfectiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "InceptiveAspect": {
+    "title": "Inceptive Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InceptiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "IterativeAspect": {
+    "title": "Iterative Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IterativeAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "NonProgressiveAspect": {
+    "title": "Non Progressive Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NonProgressiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "PerfectiveAspect": {
+    "title": "Perfective Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PerfectiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "PhasalAspect": {
+    "title": "Phasal Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PhasalAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "ProgressiveAspect": {
+    "title": "Progressive Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ProgressiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "SemelfactiveAspect": {
+    "title": "Semelfactive Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SemelfactiveAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "SimultaneousAspect": {
+    "title": "Simultaneous Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SimultaneousAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "TerminativeAspect": {
+    "title": "Terminative Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/TerminativeAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "QuantificationalAspect": {
+    "title": "Quantificational Aspect",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/QuantificationalAspect",
+    "type": [
+      "Morphosemantic",
+      "Aspect"
+    ]
+  },
+  "DubitiveMood": {
+    "title": "Dubitive Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DubitiveMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "EpistemicModality": {
+    "title": "Epistemic Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/EpistemicModality",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "IndicativeMood": {
+    "title": "Indicative Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IndicativeMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "IrrealisMood": {
+    "title": "Irrealis Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IrrealisMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "OptativeMood": {
+    "title": "Optative Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/OptativeMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "ProhibitiveMood": {
+    "title": "Prohibitive Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ProhibitiveMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "RealisMood": {
+    "title": "Realis Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RealisMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "SubjunctiveMood": {
+    "title": "Subjunctive Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SubjunctiveMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "TimitiveMood": {
+    "title": "Timitive Mood",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/TimitiveMood",
+    "type": [
+      "Morphosemantic",
+      "Mood"
+    ]
+  },
+  "AbessiveCase": {
+    "title": "Abessive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AbessiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "AblativeCase": {
+    "title": "Ablative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AblativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "AbsolutiveCase": {
+    "title": "Absolutive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AbsolutiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "AccusativeCase": {
+    "title": "Accusative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AccusativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "AdessiveCase": {
+    "title": "Adessive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AdessiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "AllativeCase": {
+    "title": "Allative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AllativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "AversiveCase": {
+    "title": "Aversive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AversiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "BenefactiveCase": {
+    "title": "Benefactive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/BenefactiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ComitativeCase": {
+    "title": "Comitative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ComitativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ContablativeCase": {
+    "title": "Contablative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ContablativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ContallativeCase": {
+    "title": "Contallative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ContallativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ConterminativeCase": {
+    "title": "Conterminative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ConterminativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ContlativeCase": {
+    "title": "Contlative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ContlativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "DativeCase": {
+    "title": "Dative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "DelativeCase": {
+    "title": "Delative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DelativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ElativeCase": {
+    "title": "Elative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ElativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ErgativeCase": {
+    "title": "Ergative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ErgativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "EssiveCase": {
+    "title": "Essive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/EssiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "GenitiveCase": {
+    "title": "Genitive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/GenitiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "IllativeCase": {
+    "title": "Illative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IllativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InablativeCase": {
+    "title": "Inablative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InablativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InallativeCase": {
+    "title": "Inallative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InallativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InessiveCase": {
+    "title": "Inessive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InessiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InstrumentalCase": {
+    "title": "Instrumental Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InstrumentalCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InterablativeCase": {
+    "title": "Interablative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InterablativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InterallativeCase": {
+    "title": "Interallative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InterallativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InteressiveCase": {
+    "title": "Interessive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InteressiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InterlativeCase": {
+    "title": "Interlative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InterlativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InterminativeCase": {
+    "title": "Interminative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InterminativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "InterterminativeCase": {
+    "title": "Interterminative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InterterminativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "IntertranslativeCase": {
+    "title": "Intertranslative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IntertranslativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "IntranslativeCase": {
+    "title": "Intranslative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IntranslativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "LativeCase": {
+    "title": "Lative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/LativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "LocativeCase": {
+    "title": "Locative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/LocativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "MalefactiveCase": {
+    "title": "Malefactive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/MalefactiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "NominativeCase": {
+    "title": "Nominative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NominativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "ObliqueCase": {
+    "title": "Oblique Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ObliqueCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "PartitiveCase": {
+    "title": "Partitive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PartitiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "PerlativeCase": {
+    "title": "Perlative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PerlativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "PossessedCase": {
+    "title": "Possessed Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PossessedCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SubablativeCase": {
+    "title": "Subablative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SubablativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SuballativeCase": {
+    "title": "Suballative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SuballativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SubessiveCase": {
+    "title": "Subessive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SubessiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SublativeCase": {
+    "title": "Sublative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SublativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SubterminativeCase": {
+    "title": "Subterminative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SubterminativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SubtranslativeCase": {
+    "title": "Subtranslative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SubtranslativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SuperablativeCase": {
+    "title": "Superablative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SuperablativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SuperallativeCase": {
+    "title": "Superallative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SuperallativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SuperessiveCase": {
+    "title": "Superessive Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SuperessiveCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SuperlativeCase": {
+    "title": "Superlative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SuperlativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SuperterminativeCase": {
+    "title": "Superterminative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SuperterminativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "SupertranslativeCase": {
+    "title": "Supertranslative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SupertranslativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "TerminativeCase": {
+    "title": "Terminative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/TerminativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "TranslativeCase": {
+    "title": "Translative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/TranslativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "VocativeCase": {
+    "title": "Vocative Case",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/VocativeCase",
+    "type": [
+      "Morphosyntactic",
+      "Case"
+    ]
+  },
+  "AbilitativeModality": {
+    "title": "Abilitative Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AbilitativeModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "ConditionalPhysicalAbilitiveModality": {
+    "title": "Conditional Physical Abilitive Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ConditionalPhysicalAbilitiveModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "DeonticModality": {
+    "title": "Deontic Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DeonticModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "EpistemicNecessityModality": {
+    "title": "Epistemic Necessity Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/EpistemicNecessityModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "MentalAbilitiveModality": {
+    "title": "Mental Abilitive Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/MentalAbilitiveModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "NecessityModality": {
+    "title": "Necessity Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NecessityModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "ObligativeModality": {
+    "title": "Obligative Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ObligativeModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "PermissiveModality": {
+    "title": "Permissive Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PermissiveModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "PossibilityModality": {
+    "title": "Possibility Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PossibilityModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "WeakObligativeModality": {
+    "title": "Weak Obligative Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/WeakObligativeModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "ConditionalModality": {
+    "title": "Conditional Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ConditionalModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "PhysicalAbilitiveModality": {
+    "title": "Physical Abilitive Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PhysicalAbilitiveModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "EpistemicPossibilityModality": {
+    "title": "Epistemic Possibility Modality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/EpistemicPossibilityModality",
+    "type": [
+      "Morphosyntactic",
+      "Modality"
+    ]
+  },
+  "AbsolutiveAntipassiveVoice": {
+    "title": "Absolutive Antipassive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AbsolutiveAntipassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ActiveVoice": {
+    "title": "Active Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ActiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "AgentDeletionPassiveVoice": {
+    "title": "Agent Deletion Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AgentDeletionPassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "AntiCausativeVoice": {
+    "title": "Anti Causative Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AntiCausativeVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "AntiPassiveVoice": {
+    "title": "Anti Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AntiPassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ApplicativeVoice": {
+    "title": "Applicative Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ApplicativeVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "CausativeVoice": {
+    "title": "Causative Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/CausativeVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "DeponentMiddleVoice": {
+    "title": "Deponent Middle Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DeponentMiddleVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "FocusAntipassiveVoice": {
+    "title": "Focus Antipassive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FocusAntipassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ImpersonalPassiveVoice": {
+    "title": "Impersonal Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ImpersonalPassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "IncorporatingAntipassiveVoice": {
+    "title": "Incorporating Antipassive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IncorporatingAntipassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "LocativePassiveVoice": {
+    "title": "Locative Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/LocativePassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "NecessitativePassiveVoice": {
+    "title": "Necessitative Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NecessitativePassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "NonAbsolutiveAntipassiveVoice": {
+    "title": "Non Absolutive Antipassive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NonAbsolutiveAntipassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "NonPromotionalInverseVoice": {
+    "title": "Non Promotional Inverse Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NonPromotionalInverseVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "NucleonicMiddleVoice": {
+    "title": "Nucleonic Middle Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NucleonicMiddleVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ObliquePassiveVoice": {
+    "title": "Oblique Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ObliquePassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "PassiveVoice": {
+    "title": "Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "PersonalPassiveVoice": {
+    "title": "Personal Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PersonalPassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "PlainMiddleVoice": {
+    "title": "Plain Middle Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PlainMiddleVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "PragmaticInverseVoice": {
+    "title": "Pragmatic Inverse Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PragmaticInverseVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ProgressivePassiveVoice": {
+    "title": "Progressive Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ProgressivePassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "PromotionalInverseVoice": {
+    "title": "Promotional Inverse Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PromotionalInverseVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ReciprocalMiddleVoice": {
+    "title": "Reciprocal Middle Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ReciprocalMiddleVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ReflexiveMiddleVoice": {
+    "title": "Reflexive Middle Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ReflexiveMiddleVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ReflexivePassiveVoice": {
+    "title": "Reflexive Passive Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ReflexivePassiveVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "SemanticInverseVoice": {
+    "title": "Semantic Inverse Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SemanticInverseVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "InverseVoice": {
+    "title": "Inverse Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InverseVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "DirectVoice": {
+    "title": "Direct Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DirectVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ReferentialVoice": {
+    "title": "Referential Voice",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ReferentialVoice",
+    "type": [
+      "Morphosyntactic",
+      "Voice"
+    ]
+  },
+  "ActionalForce": {
+    "title": "Actional Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ActionalForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "CommissiveForce": {
+    "title": "Commissive Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/CommissiveForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "DeclarativeForce": {
+    "title": "Declarative Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DeclarativeForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "HortatoryForce": {
+    "title": "Hortatory Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/HortatoryForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "InformationalForce": {
+    "title": "Informational Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InformationalForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "InterrogativeForce": {
+    "title": "Interrogative Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InterrogativeForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "JussiveForce": {
+    "title": "Jussive Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/JussiveForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "SpeculativeForce": {
+    "title": "Speculative Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SpeculativeForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "VolitiveForce": {
+    "title": "Volitive Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/VolitiveForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "ImperativeForce": {
+    "title": "Imperative Force",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ImperativeForce",
+    "type": [
+      "Morphosyntactic",
+      "Force"
+    ]
+  },
+  "AnimateGender": {
+    "title": "Animate Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AnimateGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "ArabicNumeralGender": {
+    "title": "Arabic Numeral Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ArabicNumeralGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "FeminineGender": {
+    "title": "Feminine Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FeminineGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "InanimateGender": {
+    "title": "Inanimate Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InanimateGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "NeuterGender": {
+    "title": "Neuter Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NeuterGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "VegetableGender": {
+    "title": "Vegetable Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/VegetableGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "HumanGender": {
+    "title": "Human Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/HumanGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "MasculineGender": {
+    "title": "Masculine Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/MasculineGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "RomanNumeralGender": {
+    "title": "Roman Numeral Gender",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/RomanNumeralGender",
+    "type": [
+      "Morphosyntactic",
+      "Gender"
+    ]
+  },
+  "AssumptiveEvidentiality": {
+    "title": "Assumptive Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AssumptiveEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "AuditoryEvidentiality": {
+    "title": "Auditory Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AuditoryEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "DeductiveEvidentiality": {
+    "title": "Deductive Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DeductiveEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "DirectEvidentiality": {
+    "title": "Direct Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DirectEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "FolkloreEvidentiality": {
+    "title": "Folklore Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FolkloreEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "HearsayEvidentiality": {
+    "title": "Hearsay Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/HearsayEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "IndirectEvidentiality": {
+    "title": "Indirect Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/IndirectEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "InferentialEvidentiality": {
+    "title": "Inferential Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/InferentialEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "OtherSourceEvidentiality": {
+    "title": "Other Source Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/OtherSourceEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "OtherThanVisualEvidentiality": {
+    "title": "Other Than Visual Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/OtherThanVisualEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "SecondHandEvidentiality": {
+    "title": "Second Hand Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SecondHandEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "VisualEvidentiality": {
+    "title": "Visual Evidentiality",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/VisualEvidentiality",
+    "type": [
+      "Morphosyntactic",
+      "Evidentiality"
+    ]
+  },
+  "AugmentativeSize": {
+    "title": "Augmentative Size",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/AugmentativeSize",
+    "type": [
+      "Morphosyntactic",
+      "Size"
+    ]
+  },
+  "DiminuativeSize": {
+    "title": "Diminuative Size",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DiminuativeSize",
+    "type": [
+      "Morphosyntactic",
+      "Size"
+    ]
+  },
+  "DualNumber": {
+    "title": "Dual Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/DualNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "GreaterPaucalNumber": {
+    "title": "Greater Paucal Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/GreaterPaucalNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "GreaterPluralNumber": {
+    "title": "Greater Plural Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/GreaterPluralNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "MultalNumber": {
+    "title": "Multal Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/MultalNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "PluralNumber": {
+    "title": "Plural Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PluralNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "TrialNumber": {
+    "title": "Trial Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/TrialNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "SingularNumber": {
+    "title": "Singular Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SingularNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "GeneralNumber": {
+    "title": "General Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/GeneralNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "PaucalNumber": {
+    "title": "Paucal Number",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PaucalNumber",
+    "type": [
+      "Morphosyntactic",
+      "Number"
+    ]
+  },
+  "FirstPerson": {
+    "title": "First Person",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FirstPerson",
+    "type": [
+      "Morphosyntactic",
+      "Person"
+    ]
+  },
+  "SecondPerson": {
+    "title": "Second Person",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/SecondPerson",
+    "type": [
+      "Morphosyntactic",
+      "Person"
+    ]
+  },
+  "ThirdPerson": {
+    "title": "Third Person",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ThirdPerson",
+    "type": [
+      "Morphosyntactic",
+      "Person"
+    ]
+  },
+  "ThirdPersonObviative": {
+    "title": "Third Person Obviative",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ThirdPersonObviative",
+    "type": [
+      "Morphosyntactic",
+      "Person"
+    ]
+  },
+  "ThirdPersonProximative": {
+    "title": "Third Person Proximative",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/ThirdPersonProximative",
+    "type": [
+      "Morphosyntactic",
+      "Person"
+    ]
+  },
+  "FirstPersonExclusive": {
+    "title": "First Person Exclusive",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FirstPersonExclusive",
+    "type": [
+      "Morphosyntactic",
+      "Person"
+    ]
+  },
+  "FirstPersonInclusive": {
+    "title": "First Person Inclusive",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/FirstPersonInclusive",
+    "type": [
+      "Morphosyntactic",
+      "Person"
+    ]
+  },
+  "NegativePolarity": {
+    "title": "Negative Polarity",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/NegativePolarity",
+    "type": [
+      "Morphosyntactic",
+      "Polarity"
+    ]
+  },
+  "PositivePolarity": {
+    "title": "Positive Polarity",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PositivePolarity",
+    "type": [
+      "Morphosyntactic",
+      "Polarity"
+    ]
+  },
+  "PejorativeEvaluative": {
+    "title": "Pejorative Evaluative",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PejorativeEvaluative",
+    "type": [
+      "Morphosyntactic",
+      "Evaluative"
+    ]
+  },
+  "PreferredEvaluative": {
+    "title": "Preferred Evaluative",
+    "version": 2010,
+    "source": "GOLD",
+    "url": "http://purl.org/linguistics/gold/PreferredEvaluative",
+    "type": [
+      "Morphosyntactic",
+      "Evaluative"
+    ]
+  }
+}

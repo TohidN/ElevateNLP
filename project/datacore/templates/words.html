@@ -1,0 +1,143 @@
+{% extends base_template %}
+{% load static %}
+{% load i18n %}
+{% load general_tags %}
+{% load widget_tweaks %}
+
+
+{% block title %}{% trans "Words" %}{% endblock %}
+
+{% block content %}
+	<!-- Modal -->
+	<div class="modal fade" id="page-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div id="modal-container" class="modal-content">
+			</div>
+		</div>
+	</div>
+
+	<!-- offcanvas used for word filtering -->
+	<div class="offcanvas offcanvas-top" tabindex="-1" id="filter-offcanvas" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasRightLabel">Filter Words</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<form action = "" method = "get">
+				{% if form.non_field_errors %}
+					<div class="alert alert-danger" role="alert">
+						{% for error in form.non_field_errors %}
+							{{ error }}
+						{% endfor %}
+					</div>
+				{% endif %}
+
+
+				<div class="row">
+					<div class="col">
+						{{ filter_form.start.errors }} 
+						<label for="{{ filter_form.start.id_for_label }}" class="form-label">{{ filter_form.start.label }}</label>
+						<input name="{{ filter_form.start.html_name }}" type="text" class="form-control" id="{{ filter_form.start.id_for_label }}" aria-describedby="{{ filter_form.start.id_for_label }}-help" value="{% if filter_form.start.value %}{{ filter_form.start.value }}{% endif %}">
+						{% if filter_form.start.help_text %}
+							<div id="{{ filter_form.start.id_for_label }}-help" class="form-text">{{ filter_form.start.help_text|safe }}</div>
+						{% endif %}
+					</div>
+					<div class="col">
+						{{ filter_form.contain.errors }} 
+						<label for="{{ filter_form.contain.id_for_label }}" class="form-label">{{ filter_form.contain.label }}</label>
+						<input name="{{ filter_form.contain.html_name }}" type="text" class="form-control" id="{{ filter_form.contain.id_for_label }}" aria-describedby="{{ filter_form.contain.id_for_label }}-help" value="{% if filter_form.contain.value %}{{ filter_form.contain.value }}{% endif %}">
+						{% if filter_form.contain.help_text %}
+							<div id="{{ filter_form.contain.id_for_label }}-help" class="form-text">{{ filter_form.contain.help_text|safe }}</div>
+						{% endif %}
+					</div>
+					<div class="col">
+						{{ filter_form.end.errors }} 
+						<label for="{{ filter_form.end.id_for_label }}" class="form-label">{{ filter_form.end.label }}</label>
+						<input name="{{ filter_form.end.html_name }}" type="text" class="form-control" id="{{ filter_form.end.id_for_label }}" aria-describedby="{{ filter_form.end.id_for_label }}-help" value="{% if filter_form.end.value %}{{ filter_form.end.value }}{% endif %}">
+						{% if filter_form.end.help_text %}
+							<div id="{{ filter_form.end.id_for_label }}-help" class="form-text">{{ filter_form.end.help_text|safe }}</div>
+						{% endif %}
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-4">
+						<div class="row">
+							{{ filter_form.sort_type.errors }}
+							<div class="col-auto">
+								<label class="col-form-label">{{ filter_form.sort_type.label }}</label>
+							</div>
+							<fieldset id="{{ filter_form.sort_type.html_name }}" class="col-auto">
+								{% for radio in filter_form.sort_type %}
+									<div class="form-check form-check-inline pt-2">
+										<input class="form-check-input" type="radio" name="{{ filter_form.sort_type.html_name }}" id="{{ radio.id_for_label }}" value="{% if radio.data.value %}{{ radio.data.value }}{% endif %}"{% if radio.data.selected %} checked{% endif %}>
+										<label class="form-check-label" for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
+									</div>
+								{% endfor %}
+							</fieldset>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="row">
+							{{ filter_form.sort_by.errors }}
+							<div class="col-auto">
+								<label class="col-form-label">{{ filter_form.sort_by.label }}</label>
+							</div>
+							<fieldset id="{{ filter_form.sort_by.html_name }}" class="col-auto">
+								{% for radio in filter_form.sort_by %}
+									<div class="form-check form-check-inline pt-2">
+										<input class="form-check-input" type="radio" name="{{ filter_form.sort_by.html_name }}" id="{{ radio.id_for_label }}" value="{% if radio.data.value %}{{ radio.data.value }}{% endif %}"{% if radio.data.selected %} checked{% endif %}>
+										<label class="form-check-label" for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
+									</div>
+								{% endfor %}
+							</fieldset>
+						</div>
+					</div>
+					<div class="col-1 d-flex align-items-end">
+						<input type="submit" name="filter-submit" value="Filter" class="btn btn-primary ms-auto">
+					</div>
+				</div>
+				{% csrf_token %}
+			</form>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<h1 class="page-header">
+		{% trans "Words" %}
+		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+
+			<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:words_add' %}" class="float-end btn btn-outline-success mx-2 my-2" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
+			<button class="btn btn-primary float-end my-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter-offcanvas" aria-controls="filter-offcanvas">Filters</button>
+	</h1>
+	
+	{% if words|length == 0 %}
+		<div class="content">
+			No words found!
+		</div>
+	{% else %}
+		<div class="tab-content bg-transparent">
+			<div hx-boost="true" class="note-has-grid row">
+				{% for word in words %}
+						<div class="col-md-4 single-note-item">
+							<div class="card card-body">
+								<a hx-indicator="#loading-indicator" hx-target="#main-container" hx-push-url="true" href="{% url 'datacore:word' word.id %}" class="text-decoration-none">
+									<h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Book a Ticket for Movie">{{ word.text }}</h5>
+									{% if word.frequency_distribution > 0 %}
+										<span class="side-stick"></span>
+										<p class="note-date font-12 text-muted">Frequency Distribution: {{ word.frequency_distribution }}</p>
+									{% else %}
+										<span class="side-stick red"></span>
+										<p class="note-date font-12 text-muted">No mention of word found!</p>
+									{% endif %}
+									<div class="note-content">
+										<p class="note-inner-content text-muted truncate-two-lines">Language: {{ word.language.get_title }}</p>
+									</div>
+								</a>
+							</div>
+						</div>
+				{% endfor %}
+			</div>
+		</div>
+		{% pagination words paginator_range parameters %}
+	{% endif %}
+{% endblock %}

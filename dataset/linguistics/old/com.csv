@@ -1,0 +1,604 @@
+309,polarity,"Polarity is typically a feature of verbs, adjectives, sometimes also adverbs and nouns in languages that negate using bound morphemes.",{https://universaldependencies.org/u/feat/Polarity.html},{},299,304,24,2,125,Polarity,Polarity,{}
+112,auxiliary,"An auxiliary is a function word that accompanies the lexical verb of a verb phrase and expresses grammatical distinctions not carried by the lexical verb, such as person, number, tense, mood, aspect, voice or evidentiality. ",{https://universaldependencies.org/u/pos/AUX_.html},{},789,790,24,2,77,AUX,AUX,{}
+403,adjectival modifier,"",{https://universaldependencies.org/u/dep/amod.html},{},815,816,24,2,396,amod,amod,{}
+399,adverbial clause modifier,"",{https://universaldependencies.org/u/dep/advcl.html},{},817,818,24,2,396,advcl,advcl,{}
+449,agent modifier,"",{https://universaldependencies.org/u/dep/obl-agent.html},{},821,822,24,2,396,obl:agent,obl:agent,{}
+411,classifier,"",{https://universaldependencies.org/u/dep/clf.html},{},829,830,24,2,396,clf,clf,{}
+412,compound,"",{https://universaldependencies.org/u/dep/compound.html},{},839,840,24,2,396,compound,compound,{}
+828,positive beneficiary,X is advantaged  by Y,{},{},220,221,23,3,329,pos-beneficiary,,{}
+623,Continuous Aspect,,{http://purl.org/linguistics/gold/ContinuousAspect},{},6,7,23,3,621,ContinuousAspect,,{}
+417,conjunct,"",{https://universaldependencies.org/u/dep/conj.html},{},841,842,24,2,396,conj,conj,{}
+627,Habitual Aspect,,{http://purl.org/linguistics/gold/HabitualAspect},{},16,17,23,3,621,HabitualAspect,,{}
+598,Immediate Past Tense,,{http://purl.org/linguistics/gold/ImmediatePastTense},{},118,119,23,3,589,ImmediatePastTense,,{}
+605,Post Hodiernal Future Tense,,{http://purl.org/linguistics/gold/PostHodiernalFutureTense},{},138,139,23,3,589,PostHodiernalFutureTense,,{}
+607,Present Perfect Tense,,{http://purl.org/linguistics/gold/PresentPerfectTense},{},146,147,23,3,589,PresentPerfectTense,,{}
+850,Event,the changing of attributes or relations.,{},{},241,242,23,2,327,,,{}
+413,light verb construction,"",{https://universaldependencies.org/u/dep/compound-lvc.html},{},869,870,24,2,396,compound:lvc,compound:lvc,{}
+843,Interrogative,asking a question(Yes/NO - WH questions),{},{},7,8,24,2,842,,,{}
+847,exclamative,Often ending in (!),{},{},9,10,24,2,842,,,{}
+432,fixed multiword expression,"",{https://universaldependencies.org/u/dep/fixed.html},{},857,858,24,2,396,fixed,fixed,{}
+202,Bantu22,,{},{},204,205,24,3,180,Bantu22,Bantu22,{}
+849,Expressed Condition,Condition expressed by verb first order,{},{},11,12,24,2,842,,,{}
+414,phrasal verb particle,"",{https://universaldependencies.org/u/dep/compound-prt.html},{},907,908,24,2,396,compound:prt,compound:prt,{}
+415,reduplicated compounds,"",{https://universaldependencies.org/u/dep/compound-redup.html},{},921,922,24,2,396,compound:redup,compound:redup,{}
+659,Contablative Case,,{http://purl.org/linguistics/gold/ContablativeCase},{},386,387,24,3,649,ContablativeCase,,{}
+804,First Person Inclusive,,{http://purl.org/linguistics/gold/FirstPersonInclusive},{},606,607,24,3,797,FirstPersonInclusive,,{}
+806,Negative Polarity,,{http://purl.org/linguistics/gold/NegativePolarity},{},618,619,24,3,805,NegativePolarity,,{}
+276,Sbl,,{},{},92,93,24,3,243,Sbl,Sbl,{}
+194,Bantu14,,{},{},186,187,24,3,180,Bantu14,Bantu14,{}
+322,Infm,,{},{},312,313,24,3,318,Infm,Infm,{}
+264,Add,,{},{},42,43,24,3,243,Add,Add,{}
+277,Spl,,{},{},94,95,24,3,243,Spl,Spl,{}
+280,Ter,,{},{},102,103,24,3,243,Ter,Ter,{}
+138,gender,"Gender is usually a lexical feature of nouns and inflectional feature of other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",{https://universaldependencies.org/u/feat/Gender.html},{},163,172,24,2,125,Gender,Gender,{}
+190,Bantu10,,{},{},178,179,24,3,180,Bantu10,Bantu10,{}
+811,sub-topic,X(synset) is under topic of Y(synset),{},{},224,225,23,3,329,topic_domains,,{}
+829,negative beneficiary,X is disadvantaged by Y,{},{},214,215,23,3,329,neg-beneficiary,,{}
+812,in topic,X(synset) is in topic of Y(synset),{},{},184,185,23,3,329,in_topic_domains,,{}
+813,is used in,X(synset) is used in Y(synset) region,{},{},204,205,23,3,329,region_domains,,{}
+815,linguistically is a,X(synset) linguistically is a Y(synset),{},{},208,209,23,3,329,usage_domains,,{}
+609,Recent Past Tense,,{http://purl.org/linguistics/gold/RecentPastTense},{},150,151,23,3,589,RecentPastTense,,{}
+628,Imperfective Aspect,,{http://purl.org/linguistics/gold/ImperfectiveAspect},{},20,21,23,3,621,ImperfectiveAspect,,{}
+629,Inceptive Aspect,,{http://purl.org/linguistics/gold/InceptiveAspect},{},22,23,23,3,621,InceptiveAspect,,{}
+87,Money,,{},{},774,775,24,3,81,NOUN.MON,,{}
+429,impersonal expletive,"",{https://universaldependencies.org/u/dep/expl-impers.html},{},865,866,24,2,396,expl:impers,expl:impers,{}
+802,Third Person Proximative,,{http://purl.org/linguistics/gold/ThirdPersonProximative},{},614,615,24,3,797,ThirdPersonProximative,,{}
+296,Def,,{},{},120,121,24,3,293,Def,Def,{}
+192,Bantu12,,{},{},182,183,24,3,180,Bantu12,Bantu12,{}
+653,Accusative Case,,{http://purl.org/linguistics/gold/AccusativeCase},{},374,375,24,3,649,AccusativeCase,,{}
+274,Per,,{},{},88,89,24,3,243,Per,Per,{}
+682,Lative Case,,{http://purl.org/linguistics/gold/LativeCase},{},432,433,24,3,649,LativeCase,,{}
+658,Comitative Case,,{http://purl.org/linguistics/gold/ComitativeCase},{},384,385,24,3,649,ComitativeCase,,{}
+197,Bantu17,,{},{},192,193,24,3,180,Bantu17,Bantu17,{}
+799,Second Person,,{http://purl.org/linguistics/gold/SecondPerson},{},608,609,24,3,797,SecondPerson,,{}
+663,Dative Case,,{http://purl.org/linguistics/gold/DativeCase},{},394,395,24,3,649,DativeCase,,{}
+750,Force,,{},{},511,532,24,2,588,,,{}
+670,Inablative Case,,{http://purl.org/linguistics/gold/InablativeCase},{},408,409,24,3,649,InablativeCase,,{}
+689,Possessed Case,,{http://purl.org/linguistics/gold/PossessedCase},{},446,447,24,3,649,PossessedCase,,{}
+657,Benefactive Case,,{http://purl.org/linguistics/gold/BenefactiveCase},{},382,383,24,3,649,BenefactiveCase,,{}
+768,Human Gender,,{http://purl.org/linguistics/gold/HumanGender},{},540,541,24,3,761,HumanGender,,{}
+638,Quantificational Aspect,,{http://purl.org/linguistics/gold/QuantificationalAspect},{},42,43,23,3,621,QuantificationalAspect,,{}
+621,Aspect,"Aspect is a feature that specifies duration of the action in time, whether the action has been completed etc.",{https://universaldependencies.org/u/feat/Aspect.html},{},3,50,23,2,326,Aspect,Aspect,{}
+596,Hodiernal Past Tense,,{http://purl.org/linguistics/gold/HodiernalPastTense},{},114,115,23,3,589,HodiernalPastTense,,{}
+606,Pre Hodiernal Past Tense,,{http://purl.org/linguistics/gold/PreHodiernalPastTense},{},142,143,23,3,589,PreHodiernalPastTense,,{}
+830,state,X is a state of Y,{},{},222,223,23,3,329,state,,{}
+838,Must Be,Relation must be true in concept.,{},{},236,237,23,3,837,must be,,{}
+593,Future Tense,,{http://purl.org/linguistics/gold/FutureTense},{},108,109,23,3,589,FutureTense,,{}
+595,Hodiernal Future Tense,,{http://purl.org/linguistics/gold/HodiernalFutureTense},{},112,113,23,3,589,HodiernalFutureTense,,{}
+614,Remote Past Tense,,{http://purl.org/linguistics/gold/RemotePastTense},{},160,161,23,3,589,RemotePastTense,,{}
+615,Simple Future Tense,,{http://purl.org/linguistics/gold/SimpleFutureTense},{},162,163,23,3,589,SimpleFutureTense,,{}
+616,Simple Past Tense,,{http://purl.org/linguistics/gold/SimplePastTense},{},164,165,23,3,589,SimplePastTense,,{}
+842,Phrase Types,,{},{},2,17,24,1,13,,,{}
+766,Neuter Gender,,{http://purl.org/linguistics/gold/NeuterGender},{},546,547,24,3,761,NeuterGender,,{}
+660,Contallative Case,,{http://purl.org/linguistics/gold/ContallativeCase},{},388,389,24,3,649,ContallativeCase,,{}
+672,Inessive Case,,{http://purl.org/linguistics/gold/InessiveCase},{},412,413,24,3,649,InessiveCase,,{}
+678,Interminative Case,,{http://purl.org/linguistics/gold/InterminativeCase},{},424,425,24,3,649,InterminativeCase,,{}
+409,preconjunct,"",{https://universaldependencies.org/u/dep/cc-preconj.html},{},913,914,24,2,396,cc:preconj,cc:preconj,{}
+100,An administrative geographic area,,{},{},750,751,24,3,91,PROPN.GEO,,{}
+92,An animal,,{},{},752,753,24,3,91,PROPN.ANM,,{}
+97,An event,,{},{},754,755,24,3,91,PROPN.EVN,,{}
+453,orphan,"",{https://universaldependencies.org/u/dep/orphan.html},{},897,898,24,2,396,orphan,orphan,{}
+800,Third Person,,{http://purl.org/linguistics/gold/ThirdPerson},{},610,611,24,3,797,ThirdPerson,,{}
+671,Inallative Case,,{http://purl.org/linguistics/gold/InallativeCase},{},410,411,24,3,649,InallativeCase,,{}
+801,Third Person Obviative,,{http://purl.org/linguistics/gold/ThirdPersonObviative},{},612,613,24,3,797,ThirdPersonObviative,,{}
+759,Volitive Force,,{http://purl.org/linguistics/gold/VolitiveForce},{},530,531,24,3,750,VolitiveForce,,{}
+662,Contlative Case,,{http://purl.org/linguistics/gold/ContlativeCase},{},392,393,24,3,649,ContlativeCase,,{}
+673,Instrumental Case,,{http://purl.org/linguistics/gold/InstrumentalCase},{},414,415,24,3,649,InstrumentalCase,,{}
+316,3,,{},{},294,295,24,3,312,3,3,{}
+310,Neg,,{},{},300,301,24,3,309,Neg,Neg,{}
+831,manner,"X is carried out in Y(action, experience or process)",{},{},210,211,23,3,329,manner,,{}
+814,exists/happens in,X(synset) exists/happens in Y(synset) region,{},{},180,181,23,3,329,in_region_domains,,{}
+839,Must not be,Relation must not be true,{},{},238,239,23,3,837,,,{}
+457,root,"",{https://universaldependencies.org/u/dep/root.html},{},929,930,24,2,396,root,root,{}
+450,oblique argument,"",{https://universaldependencies.org/u/dep/obl-arg.html},{},891,892,24,2,396,obl:arg,obl:arg,{}
+424,pronominal quantifier agreeing in case with the noun,"",{https://universaldependencies.org/u/dep/det-nummod.html},{},915,916,24,2,396,det:nummod,det:nummod,{}
+416,serial verb compounds,"",{https://universaldependencies.org/u/dep/compound-svc.html},{},931,932,24,2,396,compound:svc,compound:svc,{}
+832,material,X(instance) is made of Y(Synset),{},{},212,213,23,3,329,material,,{}
+840,Can do or be,X can do or be Y,{},{},230,231,23,3,837,can-do,,{}
+427,dislocated elements,"",{https://universaldependencies.org/u/dep/dislocated.html},{},851,852,24,2,396,dislocated,dislocated,{}
+428,expletive,"",{https://universaldependencies.org/u/dep/expl.html},{},855,856,24,2,396,expl,expl,{}
+110,verb,"A verb is a member of the syntactic class of words that typically signal events and actions, can constitute a minimal predicate in a clause, and govern the number and types of other constituents which may occur in the clause.",{https://universaldependencies.org/u/pos/VERB.html},{},811,812,24,2,77,VERB,VERB,{}
+443,nominal subject,"",{https://universaldependencies.org/u/dep/nsubj.html},{},883,884,24,2,396,nsubj,nsubj,{}
+845,declarative,"declare a fact, an event, a state or a case for something.",{},{},5,6,24,2,842,,,{}
+275,Sbe,,{},{},90,91,24,3,243,Sbe,Sbe,{}
+715,Weak Obligative Modality,,{http://purl.org/linguistics/gold/WeakObligativeModality},{},578,579,24,3,705,WeakObligativeModality,,{}
+723,Anti Causative Voice,,{http://purl.org/linguistics/gold/AntiCausativeVoice},{},636,637,24,3,719,AntiCausativeVoice,,{}
+785,Augmentative Size,,{http://purl.org/linguistics/gold/AugmentativeSize},{},624,625,24,3,784,AugmentativeSize,,{}
+677,Interlative Case,,{http://purl.org/linguistics/gold/InterlativeCase},{},422,423,24,3,649,InterlativeCase,,{}
+656,Aversive Case,,{http://purl.org/linguistics/gold/AversiveCase},{},380,381,24,3,649,AversiveCase,,{}
+769,Masculine Gender,,{http://purl.org/linguistics/gold/MasculineGender},{},544,545,24,3,761,MasculineGender,,{}
+761,Gender,,{},{},533,552,24,2,588,,,{}
+679,Interterminative Case,,{http://purl.org/linguistics/gold/InterterminativeCase},{},426,427,24,3,649,InterterminativeCase,,{}
+685,Nominative Case,,{http://purl.org/linguistics/gold/NominativeCase},{},438,439,24,3,649,NominativeCase,,{}
+688,Perlative Case,,{http://purl.org/linguistics/gold/PerlativeCase},{},444,445,24,3,649,PerlativeCase,,{}
+721,Active Voice,,{http://purl.org/linguistics/gold/ActiveVoice},{},632,633,24,3,719,ActiveVoice,,{}
+706,Abilitative Modality,,{http://purl.org/linguistics/gold/AbilitativeModality},{},554,555,24,3,705,AbilitativeModality,,{}
+844,Unknown,Unknown phrase,{},{},3,4,24,2,842,,,{}
+702,Terminative Case,,{http://purl.org/linguistics/gold/TerminativeCase},{},472,473,24,3,649,TerminativeCase,,{}
+708,Deontic Modality,,{http://purl.org/linguistics/gold/DeonticModality},{},560,561,24,3,705,DeonticModality,,{}
+848,Incomplete,A phrase which is cut off.,{},{},15,16,24,2,842,,,{}
+846,Imperative,a command,{},{},13,14,24,2,842,,,{}
+433,flat multiword expression,"",{https://universaldependencies.org/u/dep/flat.html},{},859,860,24,2,396,flat,flat,{}
+833,participant,X is a participant in Y,{},{},216,217,23,3,329,participant,,{}
+816,used in things like,X(synset) used in things like Y(synset),{},{},226,227,23,3,329,in_usage_domains,,{}
+841,Can't do or be,X can not do or be Y,{},{},232,233,23,3,837,cant,,{}
+212,Wol9,,{},{},244,245,24,3,180,Wol9,Wol9,{}
+321,Humb,,{},{},310,311,24,3,318,Humb,Humb,{}
+224,SingulareTantumNumber,,{https://universaldependencies.org/u/feat/Number.html#Coll},{},266,267,24,3,223,Coll,Coll,{}
+199,Bantu19,,{},{},196,197,24,3,180,Bantu19,Bantu19,{}
+182,Bantu2,,{},{},198,199,24,3,180,Bantu2,Bantu2,{}
+259,Par,,{},{},86,87,24,3,243,Par,Par,{}
+430,reflexive pronoun used in reflexive passive,"",{https://universaldependencies.org/u/dep/expl-pass.html},{},925,926,24,2,396,expl:pass,expl:pass,{}
+398,relative clause modifier,"",{https://universaldependencies.org/u/dep/acl-relcl.html},{},927,928,24,2,396,acl:relcl,acl:relcl,{}
+452,temporal modifier,"",{https://universaldependencies.org/u/dep/obl-tmod.html},{},933,934,24,2,396,obl:tmod,obl:tmod,{}
+442,temporal modifier,"",{https://universaldependencies.org/u/dep/nmod-tmod.html},{},935,936,24,2,396,nmod:tmod,nmod:tmod,{}
+421,unspecified dependency,"",{https://universaldependencies.org/u/dep/dep.html},{},937,938,24,2,396,dep,dep,{}
+396,Universal Features,,{},{},814,941,24,1,13,uf,,{}
+836,is known to be,X is known to be Y - a probability statement,{},{},234,235,23,3,837,is-known,,{}
+834,participant,X is a secondary(non-focused) participant  of Y,{},{},218,219,23,3,329,participant,,{}
+817,has the attribute,X(synset) has the attribute Y(synset),{},{},182,183,23,3,329,attributes,,{}
+837,Relation Attributes,"Restrictions, rules and conditions which a relation may take on.",{},{},229,240,23,2,327,,,{}
+617,Simple Present Tense,,{http://purl.org/linguistics/gold/SimplePresentTense},{},166,167,23,3,589,SimplePresentTense,,{}
+602,Past Perfect Tense,,{http://purl.org/linguistics/gold/PastPerfectTense},{},132,133,23,3,589,PastPerfectTense,,{}
+159,Sets,,{},{},284,285,24,3,152,Sets,Sets,{}
+179,possessive, It tells whether the word is possessive.,{https://universaldependencies.org/u/feat/Poss.html},{},315,316,24,2,125,Poss,Poss,{}
+130,Exc,,{},{},324,325,24,3,126,Exc,Exc,{}
+423,pronominal quantifier governing the case of the noun,"",{https://universaldependencies.org/u/dep/det-numgov.html},{},917,918,24,2,396,det:numgov,det:numgov,{}
+439,marker,"",{https://universaldependencies.org/u/dep/mark.html},{},877,878,24,2,396,mark,mark,{}
+435,names,"",{https://universaldependencies.org/u/dep/flat-name.html},{},879,880,24,2,396,flat:name,flat:name,{}
+105,organization/society/institution,,{},{},760,761,24,3,91,PROPN.ORG,,{}
+818,entails,X(synset) is followed by Y(synset),{},{},178,179,23,3,329,entailments,,{}
+835,causes,X causes Y,{},{},196,197,23,3,329,causes,,{}
+589,Tense,,{},{},97,170,23,2,326,,,{}
+669,Illative Case,,{http://purl.org/linguistics/gold/IllativeCase},{},406,407,24,3,649,IllativeCase,,{}
+655,Allative Case,,{http://purl.org/linguistics/gold/AllativeCase},{},378,379,24,3,649,AllativeCase,,{}
+214,Wol11,,{},{},226,227,24,3,180,Wol11,Wol11,{}
+233,Sing,,{},{},264,265,24,3,223,Sing,Sing,{}
+153,Card,,{},{},272,273,24,3,152,Card,Card,{}
+157,Ord,,{},{},280,281,24,3,152,Ord,Ord,{}
+418,copula,"",{https://universaldependencies.org/u/dep/cop.html},{},845,846,24,2,396,cop,cop,{}
+422,determiner,"",{https://universaldependencies.org/u/dep/det.html},{},847,848,24,2,396,det,det,{}
+425,possessive determiner,"",{https://universaldependencies.org/u/dep/det-poss.html},{},909,910,24,2,396,det:poss,det:poss,{}
+109,a work of human intelligence,,{},{},748,749,24,3,91,PROPN.WRK,,{}
+101,An extra-terrestrial or imaginary place,,{},{},756,757,24,3,91,PROPN.GEX,,{}
+819,is caused by,X(synset) is caused by Y(synset),{},{},198,199,23,3,329,causes,,{}
+619,Close Future Tense,,{http://purl.org/linguistics/gold/CloseFutureTense},{},98,99,23,3,589,CloseFutureTense,,{}
+597,Immediate Future Tense,,{http://purl.org/linguistics/gold/ImmediateFutureTense},{},116,117,23,3,589,ImmediateFutureTense,,{}
+600,Non Past Tense,,{http://purl.org/linguistics/gold/NonPastTense},{},126,127,23,3,589,NonPastTense,,{}
+601,Past In Past Tense,,{http://purl.org/linguistics/gold/PastInPastTense},{},130,131,23,3,589,PastInPastTense,,{}
+603,Past Tense,,{http://purl.org/linguistics/gold/PastTense},{},134,135,23,3,589,PastTense,,{}
+608,Present Tense,,{http://purl.org/linguistics/gold/PresentTense},{},148,149,23,3,589,PresentTense,,{}
+612,Relative Present Tense,,{http://purl.org/linguistics/gold/RelativePresentTense},{},156,157,23,3,589,RelativePresentTense,,{}
+654,Adessive Case,,{http://purl.org/linguistics/gold/AdessiveCase},{},376,377,24,3,649,AdessiveCase,,{}
+400,adverbial modifier,"",{https://universaldependencies.org/u/dep/advmod.html},{},819,820,24,2,396,advmod,advmod,{}
+404,appositional modifier,"",{https://universaldependencies.org/u/dep/appos.html},{},823,824,24,2,396,appos,appos,{}
+405,auxiliary,"",{https://universaldependencies.org/u/dep/aux_.html},{},825,826,24,2,396,aux,aux,{}
+407,case marking,"",{https://universaldependencies.org/u/dep/case.html},{},827,828,24,2,396,case,case,{}
+820,is related to,X(synset) is related to Y(synset),{},{},200,201,23,3,329,also_sees,,{}
+613,Remote Future Tense,,{http://purl.org/linguistics/gold/RemoteFutureTense},{},158,159,23,3,589,RemoteFutureTense,,{}
+226,Dual,,{},{},250,251,24,3,223,Dual,Dual,{}
+227,Grpa,,{},{},252,253,24,3,223,Grpa,Grpa,{}
+230,Pauc,,{},{},258,259,24,3,223,Pauc,Pauc,{}
+160,animacy,"Similarly to Gender (and to the African noun classes), animacy is usually a lexical feature of nouns and inflectional feature of other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",{https://universaldependencies.org/u/feat/Animacy.html},{},23,32,24,2,125,Animacy,Animacy,{}
+250,Cau,,{},{},50,51,24,3,243,Cau,Cau,{}
+267,Del,,{},{},60,61,24,3,243,Del,Del,{}
+661,Conterminative Case,,{http://purl.org/linguistics/gold/ConterminativeCase},{},390,391,24,3,649,ConterminativeCase,,{}
+664,Delative Case,,{http://purl.org/linguistics/gold/DelativeCase},{},396,397,24,3,649,DelativeCase,,{}
+674,Interablative Case,,{http://purl.org/linguistics/gold/InterablativeCase},{},416,417,24,3,649,InterablativeCase,,{}
+821,is similar to,X(synset) is similar to Y(synset),{},{},202,203,23,3,329,similar_tos,,{}
+622,Completive Aspect,,{http://purl.org/linguistics/gold/CompletiveAspect},{},4,5,23,3,621,CompletiveAspect,,{}
+642,Indicative Mood,,{http://purl.org/linguistics/gold/IndicativeMood},{},66,67,23,3,165,IndicativeMood,,{}
+590,Future In Future Tense,,{http://purl.org/linguistics/gold/FutureInFutureTense},{},102,103,23,3,589,FutureInFutureTense,,{}
+604,Perfect Tense,,{http://purl.org/linguistics/gold/PerfectTense},{},136,137,23,3,589,PerfectTense,,{}
+306,Equ,,{},{},132,133,24,3,303,Equ,Equ,{}
+284,Bfoc,,{},{},348,349,24,3,281,Bfoc,Bfoc,{}
+676,Interessive Case,,{http://purl.org/linguistics/gold/InteressiveCase},{},420,421,24,3,649,InteressiveCase,,{}
+684,Malefactive Case,,{http://purl.org/linguistics/gold/MalefactiveCase},{},436,437,24,3,649,MalefactiveCase,,{}
+420,clausal passive subject,"",{https://universaldependencies.org/u/dep/csubj-pass.html},{},835,836,24,2,396,csubj:pass,csubj:pass,{}
+419,clausal subject,"",{https://universaldependencies.org/u/dep/csubj.html},{},837,838,24,2,396,csubj,csubj,{}
+822,is a kind of,X is a kind of Y,{},{},186,187,23,3,329,hyponym,,{}
+591,Future In Past Tense,,{http://purl.org/linguistics/gold/FutureInPastTense},{},104,105,23,3,589,FutureInPastTense,,{}
+592,Future Perfect Tense,,{http://purl.org/linguistics/gold/FuturePerfectTense},{},106,107,23,3,589,FuturePerfectTense,,{}
+594,Hesternal Past Tense,,{http://purl.org/linguistics/gold/HesternalPastTense},{},110,111,23,3,589,HesternalPastTense,,{}
+767,Vegetable Gender,,{http://purl.org/linguistics/gold/VegetableGender},{},550,551,24,3,761,VegetableGender,,{}
+797,Person,,{},{},601,616,24,2,588,,,{}
+805,Polarity,,{},{},617,622,24,2,588,,,{}
+807,Positive Polarity,,{http://purl.org/linguistics/gold/PositivePolarity},{},620,621,24,3,805,PositivePolarity,,{}
+808,Evaluative,,{},{},479,484,24,2,588,,,{}
+810,Preferred Evaluative,,{http://purl.org/linguistics/gold/PreferredEvaluative},{},482,483,24,3,808,PreferredEvaluative,,{}
+823,is a supertype of,X is a supertype of Y,{},{},192,193,23,3,329,Hypernym,,{}
+626,Frequentive Aspect,,{http://purl.org/linguistics/gold/FrequentiveAspect},{},12,13,23,3,621,FrequentiveAspect,,{}
+281,voice,"Voice is typically a feature of verbs. It may also occur with other parts of speech (nouns, adjectives, adverbs), depending on whether borderline word forms such as gerunds and participles are classified as verbs or as the other category.",{https://universaldependencies.org/u/feat/Voice.html},{},343,364,24,2,125,Voice,Voice,{}
+446,numeric modifier governing the case of the noun,"",{https://universaldependencies.org/u/dep/nummod-gov.html},{},887,888,24,2,396,nummod:gov,nummod:gov,{}
+448,oblique nominal,"",{https://universaldependencies.org/u/dep/obl.html},{},893,894,24,2,396,obl,obl,{}
+82,Address,,{},{},764,765,24,3,81,NOUN.ADR,,{}
+824,is a part of,X is a part of Y,{},{},188,189,23,3,329,part holonym,,{}
+624,Distributive Aspect,,{http://purl.org/linguistics/gold/DistributiveAspect},{},8,9,23,3,621,DistributiveAspect,,{}
+620,Near Future Tense,,{http://purl.org/linguistics/gold/NearFutureTense},{},122,123,23,3,589,NearFutureTense,,{}
+610,Relative Future Tense,,{http://purl.org/linguistics/gold/RelativeFutureTense},{},152,153,23,3,589,RelativeFutureTense,,{}
+611,Relative Past Tense,,{http://purl.org/linguistics/gold/RelativePastTense},{},154,155,23,3,589,RelativePastTense,,{}
+618,Still Tense,,{http://purl.org/linguistics/gold/StillTense},{},168,169,23,3,589,StillTense,,{}
+680,Intertranslative Case,,{http://purl.org/linguistics/gold/IntertranslativeCase},{},428,429,24,3,649,IntertranslativeCase,,{}
+410,clausal complement,"",{https://universaldependencies.org/u/dep/ccomp.html},{},831,832,24,2,396,ccomp,ccomp,{}
+397,clausal modifier of noun (adnominal clause),"",{https://universaldependencies.org/u/dep/acl.html},{},833,834,24,2,396,acl,acl,{}
+401,"emphasizing word, intensifier","",{https://universaldependencies.org/u/dep/advmod-emph.html},{},853,854,24,2,396,advmod:emph,advmod:emph,{}
+458,vocative,"",{https://universaldependencies.org/u/dep/vocative.html},{},939,940,24,2,396,vocative,vocative,{}
+665,Elative Case,,{http://purl.org/linguistics/gold/ElativeCase},{},398,399,24,3,649,ElativeCase,,{}
+666,Ergative Case,,{http://purl.org/linguistics/gold/ErgativeCase},{},400,401,24,3,649,ErgativeCase,,{}
+675,Interallative Case,,{http://purl.org/linguistics/gold/InterallativeCase},{},418,419,24,3,649,InterallativeCase,,{}
+667,Essive Case,,{http://purl.org/linguistics/gold/EssiveCase},{},402,403,24,3,649,EssiveCase,,{}
+681,Intranslative Case,,{http://purl.org/linguistics/gold/IntranslativeCase},{},430,431,24,3,649,IntranslativeCase,,{}
+668,Genitive Case,,{http://purl.org/linguistics/gold/GenitiveCase},{},404,405,24,3,649,GenitiveCase,,{}
+683,Locative Case,,{http://purl.org/linguistics/gold/LocativeCase},{},434,435,24,3,649,LocativeCase,,{}
+625,Durative Aspect,,{http://purl.org/linguistics/gold/DurativeAspect},{},10,11,23,3,621,DurativeAspect,,{}
+630,Iterative Aspect,,{http://purl.org/linguistics/gold/IterativeAspect},{},26,27,23,3,621,IterativeAspect,,{}
+631,Non Progressive Aspect,,{http://purl.org/linguistics/gold/NonProgressiveAspect},{},28,29,23,3,621,NonProgressiveAspect,,{}
+632,Perfective Aspect,,{http://purl.org/linguistics/gold/PerfectiveAspect},{},32,33,23,3,621,PerfectiveAspect,,{}
+633,Phasal Aspect,,{http://purl.org/linguistics/gold/PhasalAspect},{},34,35,23,3,621,PhasalAspect,,{}
+634,Progressive Aspect,,{http://purl.org/linguistics/gold/ProgressiveAspect},{},38,39,23,3,621,ProgressiveAspect,,{}
+247,Nom,,{},{},84,85,24,3,243,Nom,Nom,{}
+690,Subablative Case,,{http://purl.org/linguistics/gold/SubablativeCase},{},448,449,24,3,649,SubablativeCase,,{}
+696,Superablative Case,,{http://purl.org/linguistics/gold/SuperablativeCase},{},460,461,24,3,649,SuperablativeCase,,{}
+697,Superallative Case,,{http://purl.org/linguistics/gold/SuperallativeCase},{},462,463,24,3,649,SuperallativeCase,,{}
+704,Vocative Case,,{http://purl.org/linguistics/gold/VocativeCase},{},476,477,24,3,649,VocativeCase,,{}
+698,Superessive Case,,{http://purl.org/linguistics/gold/SuperessiveCase},{},464,465,24,3,649,SuperessiveCase,,{}
+691,Suballative Case,,{http://purl.org/linguistics/gold/SuballativeCase},{},450,451,24,3,649,SuballativeCase,,{}
+699,Superlative Case,,{http://purl.org/linguistics/gold/SuperlativeCase},{},466,467,24,3,649,SuperlativeCase,,{}
+692,Subessive Case,,{http://purl.org/linguistics/gold/SubessiveCase},{},452,453,24,3,649,SubessiveCase,,{}
+693,Sublative Case,,{http://purl.org/linguistics/gold/SublativeCase},{},454,455,24,3,649,SublativeCase,,{}
+694,Subterminative Case,,{http://purl.org/linguistics/gold/SubterminativeCase},{},456,457,24,3,649,SubterminativeCase,,{}
+434,foreign words,"",{https://universaldependencies.org/u/dep/flat-foreign.html},{},861,862,24,2,396,flat:foreign,flat:foreign,{}
+447,object,"",{https://universaldependencies.org/u/dep/obj.html},{},889,890,24,2,396,obj,obj,{}
+635,Semelfactive Aspect,,{http://purl.org/linguistics/gold/SemelfactiveAspect},{},44,45,23,3,621,SemelfactiveAspect,,{}
+636,Simultaneous Aspect,,{http://purl.org/linguistics/gold/SimultaneousAspect},{},46,47,23,3,621,SimultaneousAspect,,{}
+637,Terminative Aspect,,{http://purl.org/linguistics/gold/TerminativeAspect},{},48,49,23,3,621,TerminativeAspect,,{}
+640,Dubitive Mood,,{http://purl.org/linguistics/gold/DubitiveMood},{},58,59,23,3,165,DubitiveMood,,{}
+641,Epistemic Modality,,{http://purl.org/linguistics/gold/EpistemicModality},{},60,61,23,3,165,EpistemicModality,,{}
+86,Measure,,{},{},772,773,24,3,81,NOUN.MEA,,{}
+455,punctuation,"",{https://universaldependencies.org/u/dep/punct.html},{},919,920,24,2,396,punct,punct,{}
+103,A mass media,,{},{},740,741,24,3,91,PROPN.MMD,,{}
+700,Superterminative Case,,{http://purl.org/linguistics/gold/SuperterminativeCase},{},468,469,24,3,649,SuperterminativeCase,,{}
+701,Supertranslative Case,,{http://purl.org/linguistics/gold/SupertranslativeCase},{},470,471,24,3,649,SupertranslativeCase,,{}
+695,Subtranslative Case,,{http://purl.org/linguistics/gold/SubtranslativeCase},{},458,459,24,3,649,SubtranslativeCase,,{}
+644,Optative Mood,,{http://purl.org/linguistics/gold/OptativeMood},{},78,79,23,3,165,OptativeMood,,{}
+645,Prohibitive Mood,,{http://purl.org/linguistics/gold/ProhibitiveMood},{},82,83,23,3,165,ProhibitiveMood,,{}
+293,definiteness or state,"Definiteness is typically a feature of nouns, adjectives and articles. Its value distinguishes whether we are talking about something known and concrete, or something general or unknown.",{https://universaldependencies.org/u/feat/Definite.html},{},115,126,24,2,125,Definite,Definite,{}
+131,Ind,,{},{},326,327,24,3,126,Ind,Ind,{}
+735,Nucleonic Middle Voice,,{http://purl.org/linguistics/gold/NucleonicMiddleVoice},{},664,665,24,3,719,NucleonicMiddleVoice,,{}
+736,Oblique Passive Voice,,{http://purl.org/linguistics/gold/ObliquePassiveVoice},{},666,667,24,3,719,ObliquePassiveVoice,,{}
+737,Passive Voice,,{http://purl.org/linguistics/gold/PassiveVoice},{},668,669,24,3,719,PassiveVoice,,{}
+738,Personal Passive Voice,,{http://purl.org/linguistics/gold/PersonalPassiveVoice},{},670,671,24,3,719,PersonalPassiveVoice,,{}
+739,Plain Middle Voice,,{http://purl.org/linguistics/gold/PlainMiddleVoice},{},672,673,24,3,719,PlainMiddleVoice,,{}
+740,Pragmatic Inverse Voice,,{http://purl.org/linguistics/gold/PragmaticInverseVoice},{},674,675,24,3,719,PragmaticInverseVoice,,{}
+741,Progressive Passive Voice,,{http://purl.org/linguistics/gold/ProgressivePassiveVoice},{},676,677,24,3,719,ProgressivePassiveVoice,,{}
+85,Email address,,{},{},768,769,24,3,81,NOUN.MAI,,{}
+88,Percentage,,{},{},776,777,24,3,81,NOUN.PCT,,{}
+80,interjection,"An interjection is a word that is used most often as an exclamation or part of an exclamation. It typically expresses an emotional reaction, is not syntactically related to other accompanying expressions, and may include a combination of sounds not otherwise found in the language.",{https://universaldependencies.org/u/pos/INTJ.html},{},795,796,24,2,77,INTJ,INTJ,{}
+436,goes with,"",{https://universaldependencies.org/u/dep/goeswith.html},{},863,864,24,2,396,goeswith,goeswith,{}
+825,is a member of,X is a member of Y,{},{},206,207,23,3,329,member holonym,,{}
+437,indirect object,"",{https://universaldependencies.org/u/dep/iobj.html},{},867,868,24,2,396,iobj,iobj,{}
+438,list,"",{https://universaldependencies.org/u/dep/list.html},{},871,872,24,2,396,list,list,{}
+451,locative modifier,"",{https://universaldependencies.org/u/dep/obl-lmod.html},{},875,876,24,2,396,obl:lmod,obl:lmod,{}
+440,nominal modifier,"",{https://universaldependencies.org/u/dep/nmod.html},{},881,882,24,2,396,nmod,nmod,{}
+445,numeric modifier,"",{https://universaldependencies.org/u/dep/nummod.html},{},885,886,24,2,396,nummod,nummod,{}
+459,open clausal complement,"",{https://universaldependencies.org/u/dep/xcomp.html},{},895,896,24,2,396,xcomp,xcomp,{}
+454,parataxis,"",{https://universaldependencies.org/u/dep/parataxis.html},{},901,902,24,2,396,parataxis,parataxis,{}
+648,Timitive Mood,,{http://purl.org/linguistics/gold/TimitiveMood},{},94,95,23,3,165,TimitiveMood,,{}
+747,Inverse Voice,,{http://purl.org/linguistics/gold/InverseVoice},{},654,655,24,3,719,InverseVoice,,{}
+748,Direct Voice,,{http://purl.org/linguistics/gold/DirectVoice},{},646,647,24,3,719,DirectVoice,,{}
+745,Reflexive Passive Voice,,{http://purl.org/linguistics/gold/ReflexivePassiveVoice},{},686,687,24,3,719,ReflexivePassiveVoice,,{}
+746,Semantic Inverse Voice,,{http://purl.org/linguistics/gold/SemanticInverseVoice},{},688,689,24,3,719,SemanticInverseVoice,,{}
+649,Case,,{},{},367,478,24,2,588,,,{}
+650,Abessive Case,,{http://purl.org/linguistics/gold/AbessiveCase},{},368,369,24,3,649,AbessiveCase,,{}
+651,Ablative Case,,{http://purl.org/linguistics/gold/AblativeCase},{},370,371,24,3,649,AblativeCase,,{}
+749,Referential Voice,,{http://purl.org/linguistics/gold/ReferentialVoice},{},682,683,24,3,719,ReferentialVoice,,{}
+727,Deponent Middle Voice,,{http://purl.org/linguistics/gold/DeponentMiddleVoice},{},644,645,24,3,719,DeponentMiddleVoice,,{}
+784,Size,,{},{},623,628,24,2,588,,,{}
+786,Diminuative Size,,{http://purl.org/linguistics/gold/DiminuativeSize},{},626,627,24,3,784,DiminuativeSize,,{}
+787,Number,,{},{},581,600,24,2,588,,,{}
+788,Dual Number,,{http://purl.org/linguistics/gold/DualNumber},{},582,583,24,3,787,DualNumber,,{}
+426,discourse element,"",{https://universaldependencies.org/u/dep/discourse.html},{},849,850,24,2,396,discourse,discourse,{}
+444,passive nominal subject,"",{https://universaldependencies.org/u/dep/nsubj-pass.html},{},905,906,24,2,396,nsubj:pass,nsubj:pass,{}
+826,is a substance of,X is a substance of Y,{},{},190,191,23,3,329,substance holonym,,{}
+643,Irrealis Mood,,{http://purl.org/linguistics/gold/IrrealisMood},{},70,71,23,3,165,IrrealisMood,,{}
+646,Realis Mood,,{http://purl.org/linguistics/gold/RealisMood},{},88,89,23,3,165,RealisMood,,{}
+647,Subjunctive Mood,,{http://purl.org/linguistics/gold/SubjunctiveMood},{},92,93,23,3,165,SubjunctiveMood,,{}
+588,Morphosyntactic Relationship,,{},{},366,691,24,1,13,mr,,{}
+652,Absolutive Case,,{http://purl.org/linguistics/gold/AbsolutiveCase},{},372,373,24,3,649,AbsolutiveCase,,{}
+827,is an instance,X is an instance of Y,{},{},194,195,23,3,329,instance of,,{}
+686,Oblique Case,,{http://purl.org/linguistics/gold/ObliqueCase},{},440,441,24,3,649,ObliqueCase,,{}
+687,Partitive Case,,{http://purl.org/linguistics/gold/PartitiveCase},{},442,443,24,3,649,PartitiveCase,,{}
+118,subordinating conjunction,A subordinating conjunction is a conjunction that links constructions by making one of them a constituent of the other. The subordinating conjunction typically marks the incorporated constituent which has the status of a (subordinate) clause.,{https://universaldependencies.org/u/pos/SCONJ.html},{},807,808,24,2,77,SCONJ,SCONJ,{}
+402,locative adverbial modifier,"",{https://universaldependencies.org/u/dep/advmod-lmod.html},{},873,874,24,2,396,advmod:lmod,advmod:lmod,{}
+406,passive auxiliary,"",{https://universaldependencies.org/u/dep/aux-pass.html},{},903,904,24,2,396,aux:pass,aux:pass,{}
+703,Translative Case,,{http://purl.org/linguistics/gold/TranslativeCase},{},474,475,24,3,649,TranslativeCase,,{}
+79,adverb,"Adverbs are words that typically modify verbs for such categories as time, place, direction or manner. They may also modify adjectives and other adverbs.",{https://universaldependencies.org/u/pos/ADV.html},{},787,788,24,2,77,ADV,ADV,{}
+431,reflexive clitic with an inherently reflexive verb,"",{https://universaldependencies.org/u/dep/expl-pv.html},{},923,924,24,2,396,expl:pv,expl:pv,{}
+709,Epistemic Necessity Modality,,{http://purl.org/linguistics/gold/EpistemicNecessityModality},{},562,563,24,3,705,EpistemicNecessityModality,,{}
+707,Conditional Physical Abilitive Modality,,{http://purl.org/linguistics/gold/ConditionalPhysicalAbilitiveModality},{},558,559,24,3,705,ConditionalPhysicalAbilitiveModality,,{}
+716,Conditional Modality,,{http://purl.org/linguistics/gold/ConditionalModality},{},556,557,24,3,705,ConditionalModality,,{}
+713,Permissive Modality,,{http://purl.org/linguistics/gold/PermissiveModality},{},572,573,24,3,705,PermissiveModality,,{}
+728,Focus Antipassive Voice,,{http://purl.org/linguistics/gold/FocusAntipassiveVoice},{},648,649,24,3,719,FocusAntipassiveVoice,,{}
+729,Impersonal Passive Voice,,{http://purl.org/linguistics/gold/ImpersonalPassiveVoice},{},650,651,24,3,719,ImpersonalPassiveVoice,,{}
+730,Incorporating Antipassive Voice,,{http://purl.org/linguistics/gold/IncorporatingAntipassiveVoice},{},652,653,24,3,719,IncorporatingAntipassiveVoice,,{}
+742,Promotional Inverse Voice,,{http://purl.org/linguistics/gold/PromotionalInverseVoice},{},678,679,24,3,719,PromotionalInverseVoice,,{}
+743,Reciprocal Middle Voice,,{http://purl.org/linguistics/gold/ReciprocalMiddleVoice},{},680,681,24,3,719,ReciprocalMiddleVoice,,{}
+731,Locative Passive Voice,,{http://purl.org/linguistics/gold/LocativePassiveVoice},{},656,657,24,3,719,LocativePassiveVoice,,{}
+732,Necessitative Passive Voice,,{http://purl.org/linguistics/gold/NecessitativePassiveVoice},{},658,659,24,3,719,NecessitativePassiveVoice,,{}
+733,Non Absolutive Antipassive Voice,,{http://purl.org/linguistics/gold/NonAbsolutiveAntipassiveVoice},{},660,661,24,3,719,NonAbsolutiveAntipassiveVoice,,{}
+734,Non Promotional Inverse Voice,,{http://purl.org/linguistics/gold/NonPromotionalInverseVoice},{},662,663,24,3,719,NonPromotionalInverseVoice,,{}
+744,Reflexive Middle Voice,,{http://purl.org/linguistics/gold/ReflexiveMiddleVoice},{},684,685,24,3,719,ReflexiveMiddleVoice,,{}
+201,Bantu21,,{},{},202,203,24,3,180,Bantu21,Bantu21,{}
+441,possessive nominal modifier,"",{https://universaldependencies.org/u/dep/nmod-poss.html},{},911,912,24,2,396,nmod:poss,nmod:poss,{}
+456,overridden disfluency,"",{https://universaldependencies.org/u/dep/reparandum.html},{},899,900,24,2,396,reparandum,reparandum,{}
+127,Art,,{},{},318,319,24,3,126,Art,Art,{}
+133,Neg,,{},{},330,331,24,3,126,Neg,Neg,{}
+291,Rcp,,{},{},362,363,24,3,281,Rcp,Rcp,{}
+726,Causative Voice,,{http://purl.org/linguistics/gold/CausativeVoice},{},642,643,24,3,719,CausativeVoice,,{}
+722,Agent Deletion Passive Voice,,{http://purl.org/linguistics/gold/AgentDeletionPassiveVoice},{},634,635,24,3,719,AgentDeletionPassiveVoice,,{}
+711,Necessity Modality,,{http://purl.org/linguistics/gold/NecessityModality},{},568,569,24,3,705,NecessityModality,,{}
+720,Absolutive Antipassive Voice,,{http://purl.org/linguistics/gold/AbsolutiveAntipassiveVoice},{},630,631,24,3,719,AbsolutiveAntipassiveVoice,,{}
+751,Actional Force,,{http://purl.org/linguistics/gold/ActionalForce},{},512,513,24,3,750,ActionalForce,,{}
+752,Commissive Force,,{http://purl.org/linguistics/gold/CommissiveForce},{},514,515,24,3,750,CommissiveForce,,{}
+705,Modality,,{},{},553,580,24,2,588,,,{}
+599,Non Future Tense,,{http://purl.org/linguistics/gold/NonFutureTense},{},124,125,23,3,589,NonFutureTense,,{}
+753,Declarative Force,,{http://purl.org/linguistics/gold/DeclarativeForce},{},516,517,24,3,750,DeclarativeForce,,{}
+712,Obligative Modality,,{http://purl.org/linguistics/gold/ObligativeModality},{},570,571,24,3,705,ObligativeModality,,{}
+710,Mental Abilitive Modality,,{http://purl.org/linguistics/gold/MentalAbilitiveModality},{},566,567,24,3,705,MentalAbilitiveModality,,{}
+714,Possibility Modality,,{http://purl.org/linguistics/gold/PossibilityModality},{},576,577,24,3,705,PossibilityModality,,{}
+270,Ill,,{},{},74,75,24,3,243,Ill,Ill,{}
+271,Ine,,{},{},76,77,24,3,243,Ine,Ine,{}
+756,Interrogative Force,,{http://purl.org/linguistics/gold/InterrogativeForce},{},524,525,24,3,750,InterrogativeForce,,{}
+757,Jussive Force,,{http://purl.org/linguistics/gold/JussiveForce},{},526,527,24,3,750,JussiveForce,,{}
+758,Speculative Force,,{http://purl.org/linguistics/gold/SpeculativeForce},{},528,529,24,3,750,SpeculativeForce,,{}
+760,Imperative Force,,{http://purl.org/linguistics/gold/ImperativeForce},{},520,521,24,3,750,ImperativeForce,,{}
+717,Physical Abilitive Modality,,{http://purl.org/linguistics/gold/PhysicalAbilitiveModality},{},574,575,24,3,705,PhysicalAbilitiveModality,,{}
+718,Epistemic Possibility Modality,,{http://purl.org/linguistics/gold/EpistemicPossibilityModality},{},564,565,24,3,705,EpistemicPossibilityModality,,{}
+762,Animate Gender,,{http://purl.org/linguistics/gold/AnimateGender},{},534,535,24,3,761,AnimateGender,,{}
+763,Arabic Numeral Gender,,{http://purl.org/linguistics/gold/ArabicNumeralGender},{},536,537,24,3,761,ArabicNumeralGender,,{}
+764,Feminine Gender,,{http://purl.org/linguistics/gold/FeminineGender},{},538,539,24,3,761,FeminineGender,,{}
+725,Applicative Voice,,{http://purl.org/linguistics/gold/ApplicativeVoice},{},640,641,24,3,719,ApplicativeVoice,,{}
+272,Lat,,{},{},80,81,24,3,243,Lat,Lat,{}
+772,Assumptive Evidentiality,,{http://purl.org/linguistics/gold/AssumptiveEvidentiality},{},486,487,24,3,771,AssumptiveEvidentiality,,{}
+773,Auditory Evidentiality,,{http://purl.org/linguistics/gold/AuditoryEvidentiality},{},488,489,24,3,771,AuditoryEvidentiality,,{}
+754,Hortatory Force,,{http://purl.org/linguistics/gold/HortatoryForce},{},518,519,24,3,750,HortatoryForce,,{}
+119,punctuation,Punctuation marks are non-alphabetical characters and character groups used in many languages to delimit linguistic units in printed text.,{https://universaldependencies.org/u/pos/PUNCT.html},{},805,806,24,2,77,PUNCT,PUNCT,{}
+91,proper noun,"A proper noun is a noun (or nominal content word) that is the name (or part of the name) of a specific individual, place, or object.",{https://universaldependencies.org/u/pos/PROPN.html},{},725,762,24,2,77,PROPN,PROPN,{}
+273,Loc,,{},{},82,83,24,3,243,Loc,Loc,{}
+324,Ex,,{},{},110,111,24,3,323,Ex,Ex,{}
+774,Deductive Evidentiality,,{http://purl.org/linguistics/gold/DeductiveEvidentiality},{},490,491,24,3,771,DeductiveEvidentiality,,{}
+775,Direct Evidentiality,,{http://purl.org/linguistics/gold/DirectEvidentiality},{},492,493,24,3,771,DirectEvidentiality,,{}
+776,Folklore Evidentiality,,{http://purl.org/linguistics/gold/FolkloreEvidentiality},{},494,495,24,3,771,FolkloreEvidentiality,,{}
+719,Voice,,{},{},629,690,24,2,588,,,{}
+13,Syntatic,study of how individual words and their most basic meaningful units are combined to create sentences is known as syntax.,{},{},1,942,24,0,,,,{}
+777,Hearsay Evidentiality,,{http://purl.org/linguistics/gold/HearsayEvidentiality},{},496,497,24,3,771,HearsayEvidentiality,,{}
+724,Anti Passive Voice,,{http://purl.org/linguistics/gold/AntiPassiveVoice},{},638,639,24,3,719,AntiPassiveVoice,,{}
+778,Indirect Evidentiality,,{http://purl.org/linguistics/gold/IndirectEvidentiality},{},498,499,24,3,771,IndirectEvidentiality,,{}
+765,Inanimate Gender,,{http://purl.org/linguistics/gold/InanimateGender},{},542,543,24,3,761,InanimateGender,,{}
+121,other,The tag X is used for words that for some reason cannot be assigned a real part-of-speech category. It should be used very restrictively.,{https://universaldependencies.org/u/pos/X.html},{},799,800,24,2,77,X,X,{}
+408,coordinating conjunction,"",{https://universaldependencies.org/u/dep/cc.html},{},843,844,24,2,396,cc,cc,{}
+781,Other Than Visual Evidentiality,,{http://purl.org/linguistics/gold/OtherThanVisualEvidentiality},{},504,505,24,3,771,OtherThanVisualEvidentiality,,{}
+792,Plural Number,,{http://purl.org/linguistics/gold/PluralNumber},{},594,595,24,3,787,PluralNumber,,{}
+782,Second Hand Evidentiality,,{http://purl.org/linguistics/gold/SecondHandEvidentiality},{},506,507,24,3,771,SecondHandEvidentiality,,{}
+771,Evidentiality,,{},{},485,510,24,2,588,,,{}
+783,Visual Evidentiality,,{http://purl.org/linguistics/gold/VisualEvidentiality},{},508,509,24,3,771,VisualEvidentiality,,{}
+790,Greater Plural Number,,{http://purl.org/linguistics/gold/GreaterPluralNumber},{},588,589,24,3,787,GreaterPluralNumber,,{}
+791,Multal Number,,{http://purl.org/linguistics/gold/MultalNumber},{},590,591,24,3,787,MultalNumber,,{}
+795,General Number,,{http://purl.org/linguistics/gold/GeneralNumber},{},584,585,24,3,787,GeneralNumber,,{}
+793,Trial Number,,{http://purl.org/linguistics/gold/TrialNumber},{},598,599,24,3,787,TrialNumber,,{}
+794,Singular Number,,{http://purl.org/linguistics/gold/SingularNumber},{},596,597,24,3,787,SingularNumber,,{}
+796,Paucal Number,,{http://purl.org/linguistics/gold/PaucalNumber},{},592,593,24,3,787,PaucalNumber,,{}
+798,First Person,,{http://purl.org/linguistics/gold/FirstPerson},{},602,603,24,3,797,FirstPerson,,{}
+803,First Person Exclusive,,{http://purl.org/linguistics/gold/FirstPersonExclusive},{},604,605,24,3,797,FirstPersonExclusive,,{}
+809,Pejorative Evaluative,,{http://purl.org/linguistics/gold/PejorativeEvaluative},{},480,481,24,3,808,PejorativeEvaluative,,{}
+755,Informational Force,,{http://purl.org/linguistics/gold/InformationalForce},{},522,523,24,3,750,InformationalForce,,{}
+789,Greater Paucal Number,,{http://purl.org/linguistics/gold/GreaterPaucalNumber},{},586,587,24,3,787,GreaterPaucalNumber,,{}
+770,Roman Numeral Gender,,{http://purl.org/linguistics/gold/RomanNumeralGender},{},548,549,24,3,761,RomanNumeralGender,,{}
+779,Inferential Evidentiality,,{http://purl.org/linguistics/gold/InferentialEvidentiality},{},500,501,24,3,771,InferentialEvidentiality,,{}
+780,Other Source Evidentiality,,{http://purl.org/linguistics/gold/OtherSourceEvidentiality},{},502,503,24,3,771,OtherSourceEvidentiality,,{}
+211,Wol8,,{},{},242,243,24,3,180,Wol8,Wol8,{}
+104,A human being,,{},{},736,737,24,3,91,PROPN.NPH,,{}
+25,Bound morphemes,"appear only as parts of words, always in conjunction with a root and sometimes with other bound morphemes.",{},{},707,708,24,4,16,,,{}
+21,Phrase,A phrase is a group of two or more words functioning as a meaningful unit within a sentence or clause.,{},{},716,717,24,3,12,,,{}
+20,Term(Constituent),One re more words conveying a meaning.,{},{},712,713,24,3,12,,,{}
+11,Morphology,Study of words and it's changes.,{},{},692,723,24,1,13,,,{}
+144,Conv,,{},{},146,147,24,3,143,Conv,Conv,{}
+141,Masc,,{},{},168,169,24,3,138,Masc,Masc,{}
+142,Neut,,{},{},170,171,24,3,138,Neut,Neut,{}
+154,Dist,,{},{},274,275,24,3,152,Dist,Dist,{}
+77,Part Of Speech,,{},{},724,813,24,1,13,pos,,{}
+83,Date,,{},{},766,767,24,3,81,NOUN.DAT,,{}
+143,form of verb or deverbative,"Some verb forms in some languages actually form a gray zone between verbs and other parts of speech (nouns, adjectives and adverbs).",{https://universaldependencies.org/u/feat/VerbForm.html},{},145,162,24,2,125,VerbForm,VerbForm,{}
+155,Frac,,{},{},276,277,24,3,152,Frac,Frac,{}
+330,Instance,,{},{},175,176,23,2,327,,,{}
+169,Imp,,{},{},62,63,23,3,165,Imp,Imp,{}
+241,Prosp,,{},{},40,41,23,3,621,Prosp,Prosp,{}
+166,Adm,,{},{},52,53,23,3,165,Adm,Adm,{}
+172,Jus,,{},{},72,73,23,3,165,Jus,Jus,{}
+173,Nec,,{},{},74,75,23,3,165,Nec,Nec,{}
+213,Wol10,,{},{},224,225,24,3,180,Wol10,Wol10,{}
+170,Ind,,{},{},64,65,23,3,165,Ind,Ind,{}
+174,Opt,,{},{},76,77,23,3,165,Opt,Opt,{}
+175,Pot,,{},{},80,81,23,3,165,Pot,Pot,{}
+176,Prp,,{},{},84,85,23,3,165,Prp,Prp,{}
+177,Qot,,{},{},86,87,23,3,165,Qot,Qot,{}
+165,mood,Mood is a feature that expresses modality and subclassifies finite verb forms.,{https://universaldependencies.org/u/feat/Mood.html},{},51,96,23,2,326,Mood,Mood,{}
+238,Iter,,{},{},24,25,23,3,621,Iter,Iter,{}
+219,Past,,{},{},128,129,23,3,589,Past,Past,{}
+253,Com,,{},{},56,57,24,3,243,Com,Com,{}
+223,number,"Number is usually an inflectional feature of nouns and, depending on language, other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",{https://universaldependencies.org/u/feat/Number.html},{},247,270,24,2,125,Number,Number,{}
+12,Units,,{},{},693,722,24,2,11,,,{}
+132,Int,,{},{},328,329,24,3,126,Int,Int,{}
+305,Cmp,,{},{},130,131,24,3,303,Cmp,Cmp,{}
+196,Bantu16,,{},{},190,191,24,3,180,Bantu16,Bantu16,{}
+204,Wol1,,{},{},222,223,24,3,180,Wol1,Wol1,{}
+208,Wol5,,{},{},236,237,24,3,180,Wol5,Wol5,{}
+209,Wol6,,{},{},238,239,24,3,180,Wol6,Wol6,{}
+287,Inv,,{},{},354,355,24,3,281,Inv,Inv,{}
+251,Cmp,,{},{},52,53,24,3,243,Cmp,Cmp,{}
+252,Cns,,{},{},54,55,24,3,243,Cns,Cns,{}
+325,In,,{},{},112,113,24,3,323,In,In,{}
+147,Ger,,{},{},152,153,24,3,143,Ger,Ger,{}
+93,A building,,{},{},730,731,24,3,91,PROPN.BLD,,{}
+265,Ade,,{},{},44,45,24,3,243,Ade,Ade,{}
+246,Erg,,{},{},68,69,24,3,243,Erg,Erg,{}
+117,pronoun,"Pronouns are words that substitute for nouns or noun phrases, whose meaning is recoverable from the linguistic or extralinguistic context.",{https://universaldependencies.org/u/pos/PRON.html},{},803,804,24,2,77,PRON,PRON,{}
+120,symbol,"A symbol is a word-like entity that differs from ordinary words by form, function, or both.",{https://universaldependencies.org/u/pos/SYM.html},{},809,810,24,2,77,SYM,SYM,{}
+89,Phone number,,{},{},778,779,24,3,81,NOUN.PHO,,{}
+28,Infix,,{},{},700,701,24,5,26,infix,,{}
+326,Morphosemantic Property,,{},{},2,171,23,1,14,,,{}
+1,Phonology,"The study of speech structure within a language, including both the patterns of basic speech units and the accepted rules of pronunciation, is known as phonology.",{},{},1,20,25,0,,,,{}
+2,Properties,The class of properties used to describe speech sounds.,{},{},2,3,25,1,1,,,{}
+8,Foot,,{},{},5,6,25,2,3,,,{}
+9,Mora,,{},{},7,8,25,2,3,,,{}
+3,units,,{},{},4,19,25,1,1,,,{}
+4,Segment,,{},{},11,12,25,2,3,,,{}
+5,Suprasegmental,,{},{},13,14,25,2,3,,,{}
+327,Ontology,,{},{},172,245,23,1,14,onto,,{}
+231,Plural Number,,{https://universaldependencies.org/u/feat/Number.html#Plur},{},260,261,24,3,223,Plur,Plur,{}
+99,A physical geographic feature,,{},{},746,747,24,3,91,PROPN.GEA,,{}
+183,Bantu3,,{},{},208,209,24,3,180,Bantu3,Bantu3,{}
+288,Lfoc,,{},{},356,357,24,3,281,Lfoc,Lfoc,{}
+289,Mid,,{},{},358,359,24,3,281,Mid,Mid,{}
+24,Free Morpheme,can function independently as words and can appear within lexemes.,{},{},709,710,24,4,16,,,{}
+26,Affix,,{},{},697,706,24,4,16,affix,,{}
+307,Pos,,{},{},134,135,24,3,303,Pos,Pos,{}
+222,reflexive,"It tells whether the word is reflexive, i.e. refers to the subject of its clause.",{https://universaldependencies.org/u/feat/Reflex.html},{},341,342,24,2,125,Reflex,Reflex,{}
+283,Antip,,{},{},346,347,24,3,281,Antip,Antip,{}
+27,Suffix,,{},{},704,705,24,5,26,suffix,,{}
+17,Letter,,{},{},694,695,24,3,12,,,{}
+22,Clause,Groups of words that contain both a subject and a predicate. a clause has all the components of a potentially independent sentence.,{},{},718,719,24,3,12,,,{}
+29,Circumfix,,{},{},698,699,24,5,26,circumfix,,{}
+30,Prefix,,{},{},702,703,24,5,26,prefix,,{}
+16,Morpheme,,{},{},696,711,24,3,12,,,{}
+320,Form,,{},{},308,309,24,3,318,Form,Form,{}
+282,Act,,{},{},344,345,24,3,281,Act,Act,{}
+255,Dis,,{},{},62,63,24,3,243,Dis,Dis,{}
+294,Com,,{},{},116,117,24,3,293,Com,Com,{}
+295,Cons,,{},{},118,119,24,3,293,Cons,Cons,{}
+205,Wol2,,{},{},230,231,24,3,180,Wol2,Wol2,{}
+98,A food/beverage,,{},{},734,735,24,3,91,PROPN.FDD,,{}
+108,A vehicle,,{},{},742,743,24,3,91,PROPN.VCL,,{}
+81,noun,"Nouns are a part of speech typically denoting a person, place, thing, animal or idea.",{https://universaldependencies.org/u/pos/NOUN.html},{},763,782,24,2,77,NOUN,NOUN,{}
+217,Fut,,{},{},100,101,23,3,589,Fut,Fut,{}
+262,Voc,,{},{},106,107,24,3,243,Voc,Voc,{}
+150,Sup,,{},{},158,159,24,3,143,Sup,Sup,{}
+151,Vnoun,,{},{},160,161,24,3,143,Vnoun,Vnoun,{}
+139,Common Gender,,{https://universaldependencies.org/u/feat/Gender.html#Com},{},164,165,24,3,138,Com,Com,{}
+313,0,,{},{},288,289,24,3,312,0,0,{}
+311,Pos,,{},{},302,303,24,3,309,Pos,Pos,{}
+136,Rel,,{},{},336,337,24,3,126,Rel,Rel,{}
+107,A product,,{},{},744,745,24,3,91,PROPN.PRD,,{}
+14,Semantics,Semantics refers to the ways in which a language conveys meaning.,{},{},1,246,23,0,,,,{}
+135,Rcp,,{},{},334,335,24,3,126,Rcp,Rcp,{}
+149,Part,,{},{},156,157,24,3,143,Part,Part,{}
+206,Wol3,,{},{},232,233,24,3,180,Wol3,Wol3,{}
+207,Wol4,,{},{},234,235,24,3,180,Wol4,Wol4,{}
+228,Grpl,,{},{},254,255,24,3,223,Grpl,Grpl,{}
+156,Mult,,{},{},278,279,24,3,152,Mult,Mult,{}
+315,2,,{},{},292,293,24,3,312,2,2,{}
+286,Dir,,{},{},352,353,24,3,281,Dir,Dir,{}
+323,clusivity,"Clusivity is a feature of first-person plural personal pronouns. As such, it can also be reflected by inflection of verbs.",{https://universaldependencies.org/u/feat/Clusivity.html},{},109,114,24,2,125,Clusivity,Clusivity,{}
+148,Inf,,{},{},154,155,24,3,143,Inf,Inf,{}
+198,Bantu18,,{},{},194,195,24,3,180,Bantu18,Bantu18,{}
+102,A legal/fiscal entity,,{},{},738,739,24,3,91,PROPN.LEN,,{}
+116,particle,"Particles are function words that must be associated with another word or phrase to impart meaning and that do not satisfy definitions of other universal parts of speech (e.g. adpositions, coordinating conjunctions, subordinating conjunctions or auxiliary verbs). Particles may encode grammatical categories such as negation, mood, tense etc. Particles are normally not inflected, although exceptions may occur.",{https://universaldependencies.org/u/pos/PART.html},{},801,802,24,2,77,PART,PART,{}
+19,Word,A meaningfull collection of letters.,{},{},714,715,24,3,12,,,{}
+23,Sentence,,{},{},720,721,24,3,12,,,{}
+239,Perf,,{},{},30,31,23,3,621,Perf,Perf,{}
+168,Des,,{},{},56,57,23,3,165,Des,Des,{}
+178,Sub,,{},{},90,91,23,3,165,Sub,Sub,{}
+221,Pres,,{},{},144,145,23,3,589,Pres,Pres,{}
+328,Concept,,{},{},173,174,23,2,327,,,{}
+181,Bantu1,,{},{},176,177,24,3,180,Bantu1,Bantu1,{}
+285,Cau,,{},{},350,351,24,3,281,Cau,Cau,{}
+258,Ins,,{},{},78,79,24,3,243,Ins,Ins,{}
+193,Bantu13,,{},{},184,185,24,3,180,Bantu13,Bantu13,{}
+203,Bantu23,,{},{},206,207,24,3,180,Bantu23,Bantu23,{}
+185,Bantu5,,{},{},212,213,24,3,180,Bantu5,Bantu5,{}
+215,Wol12,,{},{},228,229,24,3,180,Wol12,Wol12,{}
+158,Range,,{},{},282,283,24,3,152,Range,Range,{}
+319,Elev,,{},{},306,307,24,3,318,Elev,Elev,{}
+232,Plurale Tantum Number,,{https://universaldependencies.org/u/feat/Number.html#Ptan},{},262,263,24,3,223,Ptan,Ptan,{}
+256,Equ,,{},{},66,67,24,3,243,Equ,Equ,{}
+243,case,"Case is usually an inflectional feature of nouns and, depending on language, other parts of speech (pronouns, adjectives, determiners, numerals, verbs) that mark agreement with nouns.",{https://universaldependencies.org/u/feat/Case.html},{},33,108,24,2,125,Case,Case,{}
+140,Fem,,{},{},166,167,24,3,138,Fem,Fem,{}
+113,coordinating conjunction,A coordinating conjunction is a word that links words or larger constituents without syntactically subordinating one to the other and expresses a semantic relationship between them.,{https://universaldependencies.org/u/pos/CCONJ.html},{},791,792,24,2,77,CCONJ,CCONJ,{}
+269,Ess,,{},{},70,71,24,3,243,Ess,Ess,{}
+200,Bantu20,,{},{},200,201,24,3,180,Bantu20,Bantu20,{}
+137,Tot,,{},{},338,339,24,3,126,Tot,Tot,{}
+268,Ela,,{},{},64,65,24,3,243,Ela,Ela,{}
+261,Tra,,{},{},104,105,24,3,243,Tra,Tra,{}
+304,Abs,,{},{},128,129,24,3,303,Abs,Abs,{}
+300,Fh,,{},{},140,141,24,3,299,Fh,Fh,{}
+299,evidentiality,"Evidentiality is the morphological marking of a speakerâ€™s source of information (Aikhenvald, 2004). It is sometimes viewed as a category of mood and modality.",{https://universaldependencies.org/u/feat/Evident.html},{},139,144,24,2,125,Evident,Evident,{}
+145,Fin,,{},{},148,149,24,3,143,Fin,Fin,{}
+234,Tri,,{},{},268,269,24,3,223,Tri,Tri,{}
+6,Syllable,,{},{},15,16,25,2,3,,,{}
+236,Hab,,{},{},14,15,23,3,621,Hab,Hab,{}
+7,Toneme,,{},{},17,18,25,2,3,,,{}
+10,Phoneme,,{},{},9,10,25,2,3,,,{}
+245,Acc,,{},{},40,41,24,3,243,Acc,Acc,{}
+146,Gdv,,{},{},150,151,24,3,143,Gdv,Gdv,{}
+184,Bantu4,,{},{},210,211,24,3,180,Bantu4,Bantu4,{}
+188,Bantu8,,{},{},218,219,24,3,180,Bantu8,Bantu8,{}
+290,Pass,,{},{},360,361,24,3,281,Pass,Pass,{}
+115,numeral,"A numeral is a word, functioning most typically as a determiner, adjective or pronoun, that expresses a number and a relation to the number, such as quantity, sequence, frequency or fraction.",{https://universaldependencies.org/u/pos/NUM.html},{},797,798,24,2,77,NUM,NUM,{}
+106,An physical phenomena,,{},{},758,759,24,3,91,PROPN.PPH,,{}
+266,All,,{},{},46,47,24,3,243,All,All,{}
+260,Tem,,{},{},100,101,24,3,243,Tem,Tem,{}
+301,Nfh,,{},{},142,143,24,3,299,Nfh,Nfh,{}
+186,Bantu6,,{},{},214,215,24,3,180,Bantu6,Bantu6,{}
+180,noun class,"NounClass is similar to Gender and Animacy because it is to a large part a lexical category of nouns and other parts of speech inflect for it to show agreement (pronouns, adjectives, determiners, numerals, verbs).",{https://universaldependencies.org/u/feat/NounClass.html},{},175,246,24,2,125,NounClass,NounClass,{}
+195,Bantu15,,{},{},188,189,24,3,180,Bantu15,Bantu15,{}
+114,determiner,"Determiners are words that modify nouns or noun phrases and express the reference of the noun phrase in context. That is, a determiner may indicate whether the noun is referring to a definite or indefinite element of a class, to a closer or more distant element, to an element belonging to a specified person or thing, to a particular number or quantity, etc. Includes pro-adjectives, indefinite articles, definite articles.",{https://universaldependencies.org/u/pos/DET.html},{},793,794,24,2,77,DET,DET,{}
+94,A business/company,,{},{},726,727,24,3,91,PROPN.COM,,{}
+95,A device,,{},{},728,729,24,3,91,PROPN.DEV,,{}
+96,A document,,{},{},732,733,24,3,91,PROPN.DOC,,{}
+302,misspelled word,"Indicates bad spelling, grammatical error etc.",{https://universaldependencies.org/u/feat/Typo.html},{},173,174,24,2,125,Typo,Typo,{}
+329,Relation,"Relations, Classes, Attributes of concepts",{},{},177,228,23,2,327,,,{}
+167,Cnd,,{},{},54,55,23,3,165,Cnd,Cnd,{}
+171,Irr,,{},{},68,69,23,3,165,Irr,Irr,{}
+218,Imp,,{},{},120,121,23,3,589,Imp,Imp,{}
+220,Pqp,,{},{},140,141,23,3,589,Pqp,Pqp,{}
+162,Hum,,{},{},26,27,24,3,160,Hum,Hum,{}
+244,Abs,,{},{},38,39,24,3,243,Abs,Abs,{}
+297,Ind,,{},{},122,123,24,3,293,Ind,Ind,{}
+303,degree of comparison,Degree of comparison is typically an inflectional feature of some adjectives and adverbs.,{https://universaldependencies.org/u/feat/Degree.html},{},127,138,24,2,125,Degree,Degree,{}
+314,1,,{},{},290,291,24,3,312,1,1,{}
+317,4,,{},{},296,297,24,3,312,4,4,{}
+312,person,"Person is typically feature of personal and possessive pronouns / determiners, and of verbs. On verbs it is in fact an agreement feature that marks the person of the verbâ€™s subject.",{https://universaldependencies.org/u/feat/Person.html},{},287,298,24,2,125,Person,Person,{}
+318,politeness,Various languages have various means to express politeness or respect; some of the means are morphological. Three to four dimensions of politeness are distinguished in linguistic literature.,{https://universaldependencies.org/u/feat/Polite.html},{},305,314,24,2,125,Polite,Polite,{}
+128,Dem,,{},{},320,321,24,3,126,Dem,Dem,{}
+129,Emp,,{},{},322,323,24,3,126,Emp,Emp,{}
+134,Prs,,{},{},332,333,24,3,126,Prs,Prs,{}
+126,pronominal type,"This feature typically applies to pronouns, pronominal adjectives (determiners), pronominal numerals (quantifiers) and pronominal adverbs.",{https://universaldependencies.org/u/feat/PronType.html},{},317,340,24,2,125,PronType,PronType,{}
+229,Inverse Number,,{https://universaldependencies.org/u/feat/Number.html#Inv},{},256,257,24,3,223,Inv,Inv,{}
+84,Hour,,{},{},770,771,24,3,81,NOUN.HOU,,{}
+298,Spec,,{},{},124,125,24,3,293,Spec,Spec,{}
+225,Count Plural,,{},{},248,249,24,3,223,Count,Count,{https://universaldependencies.org/u/feat/Number.html#Count}
+248,Abe,,{},{},34,35,24,3,243,Abe,Abe,{}
+249,Ben,,{},{},48,49,24,3,243,Ben,Ben,{}
+254,Dat,,{},{},58,59,24,3,243,Dat,Dat,{}
+278,Sub,,{},{},96,97,24,3,243,Sub,Sub,{}
+308,Sup,,{},{},136,137,24,3,303,Sup,Sup,{}
+187,Bantu7,,{},{},216,217,24,3,180,Bantu7,Bantu7,{}
+331,Axiom,Axiom are the properties of relations used for constrain values for classes or instances.,{},{},243,244,23,2,327,,,{}
+237,Imp,,{},{},18,19,23,3,621,Imp,Imp,{}
+240,Prog,,{},{},36,37,23,3,621,Prog,Prog,{}
+242,a foreign word,"Is this a foreign word? Not a loan word and not a foreign name but a genuinely foreign word appearing inside native text, e.g. inside direct speech, titles of books etc.",{https://universaldependencies.org/u/feat/Foreign.html},{},19,20,24,2,125,Foreign,Foreign,{}
+163,Inan,,{},{},28,29,24,3,160,Inan,Inan,{}
+164,Nhum,,{},{},30,31,24,3,160,Nhum,Nhum,{}
+263,Abl,,{},{},36,37,24,3,243,Abl,Abl,{}
+292,abbreviation,Is this an abbreviation? Note that the abbreviated word(s) typically belongs to a part of speech other than X.,{https://universaldependencies.org/u/feat/Abbr.html},{},21,22,24,2,125,Abbr,Abbr,{}
+161,Anim,,{},{},24,25,24,3,160,Anim,Anim,{}
+257,Gen,,{},{},72,73,24,3,243,Gen,Gen,{}
+279,Sup,,{},{},98,99,24,3,243,Sup,Sup,{}
+191,Bantu11,,{},{},180,181,24,3,180,Bantu11,Bantu11,{}
+189,Bantu9,,{},{},220,221,24,3,180,Bantu9,Bantu9,{}
+210,Wol7,,{},{},240,241,24,3,180,Wol7,Wol7,{}
+152,numeral type,"It includes almost everything where counting is involved and there are various subtypes and applies to seral part-of-speach tags(NUM, DET, ADJ, ADV).",{https://universaldependencies.org/u/feat/NumType.html},{},271,286,24,2,125,NumType,NumType,{}
+125,Morphosyntactic Property,,{},{},18,365,24,1,13,syn,,{}
+78,adjective,Adjectives are words that typically modify nouns and specify their properties or attributes.,{https://universaldependencies.org/u/pos/ADJ.html},{},783,784,24,2,77,ADJ,ADJ,{}
+111,adposition,"Adposition is a cover term for prepositions and postpositions. Adpositions belong to a closed set of items that occur before (preposition) or after (postposition) a complement composed of a noun phrase, noun, pronoun, or clause that functions as a noun phrase, and that form a single structure with the complement to express its grammatical and semantic relation to another unit within a clause.",{https://universaldependencies.org/u/pos/ADP.html},{},785,786,24,2,77,ADP,ADP,{}
+90,Web address,,{},{},780,781,24,3,81,NOUN.WEB,,{}
