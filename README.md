@@ -4,7 +4,7 @@ Several NLP frameworks (E.g. Stanza, Spacy, Etc) are already implemented in this
 Elevate NLP is accessible via it's responsive and progressive frontend, Restful-API, or Jupyter Notebooks with access to Django ORM.
 
 Description:
-ElevateNLP is an NLP Platform built with Django(a python framework) 
+ElevateNLP is an NLP Platform built with Django(a python framework)
 
 # Features:
 * Create and manage corpora, by adding documents and phrase collections to them with frontend UI or create imports using python or iPython notebooks.
@@ -52,4 +52,3 @@ I've used This framework for following tasks:
 * As a database accessible with Django ORM for performing NLP workflow tasks such as natural language pre-processing, statistical analysis of large corpora, and linguistic analysis workflows.
 * As a tool for linguistic pattern recognition, visualization and reporting
 * I've also created a language learning app for my personal use which generates usage frequency for words and sentence patterns from an imported german corpus, then generates meaningful phrases as quize data based on combination of usage frequency and syntax complexity.
-

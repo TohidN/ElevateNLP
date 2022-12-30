@@ -5,7 +5,7 @@
 **Ontology learning:** automatic or semi-automatic creation of ontologies, including extracting a domain's terms from natural language text.
 
 **Domain:** A subject area. can be general or specific to a single subject.
- 
+
 **Instance(Object, Individual, Named Entity):** it is derived from ontology classes(Concept) and inherits its properties.
 > Instance data model is named Instance. however NamedEntity data model is created to store entities discovered in NER until they are defined as ontology instances.
 
@@ -17,7 +17,7 @@ attributes consist of:
  1. Concept or Instance
  2. Property
  3. Value: another concept or variable defined in specific data type
- 
+
  E.g.
 >  concept(Apple)
 >> has property("has_color") => value(concept:red, concept:green)

@@ -58,7 +58,7 @@ b → p;
 ch $apostrophe → t͡ʃʼ;
 ch → t͡ʃʰ;
 dl → tˡ;
-dz → t͡s; 
+dz → t͡s;
 d → t;
 gh → ɣ;
 g → k;
@@ -91,6 +91,6 @@ z → z;
 {ɣ} [{ṍ} {ó} {õ} {o}] → ɣʷ;
 
 			]]></tRule>
-		</transform> 
+		</transform>
 	</transforms>
 </supplementalData>

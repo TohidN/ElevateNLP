@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="yi" /> 
+		<language type="yi" />
 	</identity>
 	<collations>
 		<collation type="search">
@@ -17,7 +17,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					‎&׳	# 05F3 HEBREW PUNCTUATION GERESH, ignorable
 						<<''	# APOSTROPHE, Hebrew-specific addition, should match GERESH
 					‎&״	# 05F4 HEBREW PUNCTUATION GERSHAYIM, ignorable
-						<<'\"'	# QUOTATION MARK, Hebrew-specific addition, should match GERSHAYIM 
+						<<'\"'	# QUOTATION MARK, Hebrew-specific addition, should match GERSHAYIM
 				]]></cr>
 		</collation>
 		<collation type="standard">

@@ -96,7 +96,7 @@ class Component(MPTTModel):
         try:
             ancestors = self.get_ancestors(include_self=True)
             ancestors = [i.slug for i in ancestors]
-        except:
+        except Exception:
             ancestors = []
         return "/".join(ancestors)
 
@@ -211,8 +211,8 @@ class WordRelationType(models.Model):
     description = models.TextField(default="")
 
     # example for "Lemma" relation type using descriptor and reverse_descriptor:
-    # descriptor:			<Word:buy>		"is a lemma of"	<Word:bought>
-    # reverse_descriptor:	<Word:bought>	"is a form of"	<Word:buy>
+    # descriptor:            <Word:buy>       "is a lemma of"   <Word:bought>
+    # reverse_descriptor:    <Word:bought>    "is a form of"    <Word:buy>
     direction_type = models.CharField(
         max_length=1, choices=DIRECTIONS, null=True, blank=True
     )
@@ -399,7 +399,7 @@ class Example(models.Model):
 
 # TODO: add it with empty db
 # class Meta:
-# 	unique_together = (("text", "language"),)
+#     unique_together = (("text", "language"),)
 
 
 class Definition(models.Model):
@@ -416,7 +416,7 @@ class Definition(models.Model):
 
     # TODO: add it with empty db
     # class Meta:
-    # 	unique_together = (("text", "language"),)
+    #     unique_together = (("text", "language"),)
 
     def __str__(self):
         return self.text
@@ -451,16 +451,16 @@ class Concept(models.Model):
         "DomainOntology", on_delete=models.SET_NULL, null=True, blank=True
     )
     """
-	Each concept can have it's own domain which is often used in Upper Ontology.
-	Ontology Domains are considered domains of discource(a formal discussion or analysis of a specific subject).
-	E.g. Biology, Computer Science
-	"""
+    Each concept can have it's own domain which is often used in Upper Ontology.
+    Ontology Domains are considered domains of discource(a formal discussion or analysis of a specific subject).
+    E.g. Biology, Computer Science
+    """
 
     axiom = models.ForeignKey("Axiom", on_delete=models.SET_NULL, null=True, blank=True)
     """
-	Axioms are theorems on relations.
-	axioms for asserting facts about concepts, roles and instances.
-	"""
+    Axioms are theorems on relations.
+    axioms for asserting facts about concepts, roles and instances.
+    """
 
     usage_count = models.BigIntegerField(default=0)  # usage frequency in parsed text
 
@@ -468,18 +468,18 @@ class Concept(models.Model):
     data_sources = models.ManyToManyField("DataSource", blank=True)
     data = JSONField(default=dict)
     """
-	data is used to store extra detail about class such as:
-	* it's unique ids in other data sources E.G., wordnet offset
-	"""
+    data is used to store extra detail about class such as:
+    * it's unique ids in other data sources E.G., wordnet offset
+    """
 
     def __str__(self):
         definitions = ""  # TODO: "{}".format(" ,".join([d.text for d in Definition.objects.filter(concept=self)]))
         return "{}: {}\n".format(
-            " ,".join([l.text for l in self.synonyms.all()]), definitions
+            " ,".join([synonym.text for synonym in self.synonyms.all()]), definitions
         )
 
     def get_title(self):
-        return " ,".join([l.text for l in self.synonyms.all()])
+        return " ,".join([synonym.text for synonym in self.synonyms.all()])
 
     # TODO: remove since no longer used, definition and example are m2m now
     def get_definitions(self):
@@ -530,24 +530,24 @@ class Attribute(models.Model):
         "Property", blank=True, null=True, on_delete=models.CASCADE
     )
     """
-	properties describe attribute. E.G., hasChild, isColored,
-	"""
+    properties describe attribute. E.G., hasChild, isColored,
+    """
     values = JSONField(default=dict)
     """
-	TODO: use TextField for value and add ranges and value types to components and use two fields to point to them
-	example: Ontology with class(synnonym:apple) has attribute(value:red) with property(title:color)
-	structure example, pointing to a class(Object Property):
-	{
-		'value': '123'
-		'type': 'class'
-	}
-	where 123 is the id of class.
-	or value(DataType Property):
-	{
-		'value': 1999/9/9
-		'type': 'datetype'
-	}
-	"""
+    TODO: use TextField for value and add ranges and value types to components and use two fields to point to them
+    example: Ontology with class(synnonym:apple) has attribute(value:red) with property(title:color)
+    structure example, pointing to a class(Object Property):
+    {
+        'value': '123'
+        'type': 'class'
+    }
+    where 123 is the id of class.
+    or value(DataType Property):
+    {
+        'value': 1999/9/9
+        'type': 'datetype'
+    }
+    """
 
 
 class Property(models.Model):
@@ -567,16 +567,16 @@ class Property(models.Model):
         default="n",
     )
     """
-	Each propery is expressed as an adjective or noun. E.G., apple's color is adjective, Joe's father is Poe.
-	"""
+    Each propery is expressed as an adjective or noun. E.G., apple's color is adjective, Joe's father is Poe.
+    """
     # TODO: data_type = component.datatypes ~~~ can point to an ontology class to show it's a data object
     parent = TreeForeignKey("self", on_delete=models.SET_NULL, null=True, blank=True)
     """
-	Propertie can be nested, this is for ease of use by knowledge experts:
-	<hasChild,type,familyProperty>
-	<hasDaughter,subPropertyOf,hasChild>
-	<hasSon,subPropertyOf,hasChild>
-	"""
+    Propertie can be nested, this is for ease of use by knowledge experts:
+    <hasChild,type,familyProperty>
+    <hasDaughter,subPropertyOf,hasChild>
+    <hasSon,subPropertyOf,hasChild>
+    """
 
 
 # restrictions = models.ManyToManyField("Restriction")
@@ -648,7 +648,7 @@ class Event(models.Model):
     the changing of attributes or relations.
     E.G., an instance(class:Woman) trigered Action("givingBirth"). now she should have the attribute "isMother".
     """
-    
+
     pass
 
 
@@ -754,8 +754,8 @@ class PhraseAnalysis(models.Model):
         "Analyzer", on_delete=models.CASCADE, null=True, blank=True
     )  # TODO: , null=False, blank=False
     """
-	analyzer can be specific NLP framework or a user with this string format: <user:USER_ID>
-	"""
+    analyzer can be specific NLP framework or a user with this string format: <user:USER_ID>
+    """
     sentiment = models.FloatField(
         default=0, validators=[MaxValueValidator(1.0), MinValueValidator(-1.0)]
     )
@@ -776,8 +776,8 @@ class PhraseAnalysis(models.Model):
 
     data = JSONField(default=dict)
     """
-	data is used to store analysis data in json format.
-	"""
+    data is used to store analysis data in json format.
+    """
 
     def __str__(self):
         return "({}) {}".format(self.analyzer.title, self.phrase.text)
@@ -837,29 +837,29 @@ class Template(MPTTModel):
     title = models.CharField(max_length=1024, null=True, blank=True)
     pos = models.TextField(null=False, blank=False)
     """
-	only Part of Speach tags.
-	"""
+    only Part of Speach tags.
+    """
     xpos = models.TextField(null=True, blank=True)
     """
-	treebank-specific POS which exists for some languages, also called Fine-grained part-of-speech.
-	"""
+    treebank-specific POS which exists for some languages, also called Fine-grained part-of-speech.
+    """
     feats = models.TextField(null=True, blank=True)
     """
-	universal morphological features: https://universaldependencies.org/u/feat/index.html
-	"""
+    universal morphological features: https://universaldependencies.org/u/feat/index.html
+    """
     constituency = models.TextField(null=True, blank=True)
     """
-	Constituency parsing template
-	"""
+    Constituency parsing template
+    """
 
     dep = models.TextField(null=True, blank=True)
     """
-	dependency template.
-	format:
-	(wordID,wordPOS,depRelation,depID)-(...)-...
-	example:
-	(1,PROPN,compound,2)-(2,PROPN,nsubj,4)-(3,AUX,cop,4)-(4,ADV,root,0)-(5,ADP,case,6)-(6,PROPN,obl,4)-(7,PUNCT,punct,4)
-	"""
+    dependency template.
+    format:
+    (wordID,wordPOS,depRelation,depID)-(...)-...
+    example:
+    (1,PROPN,compound,2)-(2,PROPN,nsubj,4)-(3,AUX,cop,4)-(4,ADV,root,0)-(5,ADP,case,6)-(6,PROPN,obl,4)-(7,PUNCT,punct,4)
+    """
     from datacore.components import PHRASE
 
     phrase_type = models.CharField(max_length=64, choices=PHRASE, null=True, blank=True)
@@ -872,12 +872,12 @@ class Template(MPTTModel):
         related_name="t_children",
     )  # for sub-templates
     """
-	indicates a sub-template or child-template
-	"""
+    indicates a sub-template or child-template
+    """
     data = JSONField(default=dict, blank=True)
     """
-	general structure of template and specifications about rules and axioms regarding parent
-	"""
+    general structure of template and specifications about rules and axioms regarding parent
+    """
     language = models.ForeignKey(
         "Language", on_delete=models.SET_NULL, null=True, blank=True
     )

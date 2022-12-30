@@ -22,21 +22,21 @@ draft="unconfirmed" alt="proposed">
 # the independent vowels. CANDRABINDU is secondary
 # different from ANUSVARA. This gives a sort order
 # similar to Hindi.
-# 
+#
 &ॐ<ं<<ँ<ः
 #
 # The following tailoring is an adjustment of the
 # DUCET collation order for LLA. Instead of being
 # sorted after LA, LLA is sorted after HA.
-# 
+#
 &ह<ळ
 #
 # KSSA is sorted after LLA.
-# 
+#
 <क्ष
 #
 # JNYA is sorted after KSSA.
-# 
+#
 <ज्ञ
 ]]></cr>
 </collation>
@@ -45,7 +45,7 @@ references="
 Report on the Cologne Sanskrit Dictionary Project
 http://www.uni-koeln.de/phil-fak/indologie/tamil/mwreport.html
 1.6 Alphabetical order and sorting of Sanskrit
-Monier-Williams: Sanskrit-English Dictionary 
+Monier-Williams: Sanskrit-English Dictionary
 http://www.ibiblio.org/sripedia/ebooks/mw/
 http://www.ibiblio.org/sripedia/ebooks/mw/0000/mw__0033.html"
 draft="unconfirmed" alt="proposed">
@@ -667,7 +667,7 @@ draft="unconfirmed" alt="proposed">
 &ह्औ=हौ
 #
 # Strict nasalization.
-# 
+#
 &ङ्क<<<ंक
 &ङ्ख<<<ंख
 &ङ्ग<<<ंग
@@ -695,7 +695,7 @@ draft="unconfirmed" alt="proposed">
 &म्म<<<ंम
 #
 # Nukta combinations included for completeness.
-# 
+#
 &क<<<क़
 &का<<<क़ा
 &कि<<<क़ि
@@ -852,4 +852,3 @@ draft="unconfirmed" alt="proposed">
 </collation>
 		</collations>
 </ldml>
-

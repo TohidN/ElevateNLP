@@ -8,9 +8,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldmlBCP47>
 	<version number="$Revision$" />
 	<keyword>
-		<key extension="t" name="k0" description="Keyboard transform: 
-		Used to indicate a keyboard transformation, such as one used by a client-side virtual keyboard. 
-		The first subfield in a sequence would typically be a 'platform' designation, 
+		<key extension="t" name="k0" description="Keyboard transform:
+		Used to indicate a keyboard transformation, such as one used by a client-side virtual keyboard.
+		The first subfield in a sequence would typically be a 'platform' designation,
 		representing the platform that the keyboard is intended for.
 		The keyboard might or might not correspond to a keyboard mapping shipped by the vendor for the platform.
 		One or more subsequent fields may occur, but are only added where needed to distinguish from others." since="21.0.2">

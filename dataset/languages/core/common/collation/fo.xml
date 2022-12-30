@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="fo" /> 
+		<language type="fo" />
 	</identity>
 		<collations>
 			<collation type="search">

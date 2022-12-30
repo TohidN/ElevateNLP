@@ -1,11 +1,10 @@
 import re
 
+import account.settings as account_settings
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import UserManager
 from django.utils import timezone
 from django.utils.encoding import smart_str
-
-import account.settings as account_settings
 
 from .modules.functions import generate_sha1
 
@@ -59,16 +58,14 @@ class AccountManager(UserManager):
             signedup_user = self.get(activation_key=activation_key)
         except self.model.DoesNotExist:
             return False
-        try:
-            salt, new_activation_key = generate_sha1(signedup_user.user.username)
-            signedup_user.activation_key = new_activation_key
-            signedup_user.save(using=self._db)
-            signedup_user.user.date_joined = timezone.now()
-            signedup_user.user.save(using=self._db)
-            signedup_user.send_activation_email()
-            return True
-        except:
-            return False
+
+        salt, new_activation_key = generate_sha1(signedup_user.user.username)
+        signedup_user.activation_key = new_activation_key
+        signedup_user.save(using=self._db)
+        signedup_user.user.date_joined = timezone.now()
+        signedup_user.user.save(using=self._db)
+        signedup_user.send_activation_email()
+        return True
 
     def activate_user(self, activation_key):
         """
@@ -111,7 +108,7 @@ class AccountManager(UserManager):
                 return False
             else:
                 user = signedup_user.user
-                old_email = user.email
+                # old_email = user.email
                 user.email = signedup_user.email_unconfirmed
                 (
                     signedup_user.email_unconfirmed,

@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="ur" /> 
+		<language type="ur" />
 	</identity>
 	<collations>
 		<collation type="standard" references="http://www.panl10n.net/english/outputs/Pakistan/Urdu-Encoding-Collation.pdf">

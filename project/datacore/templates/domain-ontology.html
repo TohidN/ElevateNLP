@@ -24,7 +24,7 @@
 			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:domain_ontology_delete' domain.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
 		</div>
 	</h1>
-	
+
 	{% if concepts|length == 0 %}
 		<div class="content">
 			No concepts found!

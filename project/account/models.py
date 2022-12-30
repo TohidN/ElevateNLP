@@ -1,6 +1,7 @@
 import datetime
 import os
 
+import account.settings as profile_settings
 from django.conf import settings
 from django.contrib.auth.models import AnonymousUser, User
 from django.db import models
@@ -9,8 +10,6 @@ from django.template.loader import render_to_string
 from django.utils import timezone, translation
 from django.utils.translation import gettext_lazy as _
 from sorl.thumbnail import get_thumbnail
-
-import account.settings as profile_settings
 
 from .managers import AccountManager
 from .modules.functions import generate_sha1

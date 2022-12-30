@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
@@ -8,9 +8,8 @@ class Command(BaseCommand):
         import json
         import os
 
-        from django.conf import settings
-
         from datacore.models import Component, Reference
+        from django.conf import settings
 
         # Reading file and loading JSON content
         path = os.path.join(
@@ -86,7 +85,7 @@ class Command(BaseCommand):
         # 	d_relation = Component(title=data[rel]["title"], code=rel, ud_code=data[rel]["ud-code"], description=data[rel]["description"], url=[data[rel]["url"]], parent=udp)
         # 	d_relation.save()
         #
-        ##import word relationship types(Morphological Paterns)
+        # #import word relationship types(Morphological Paterns)
         # path = os.path.join(settings.BASE_DIR, '../dataset/linguistics/morpheme-types.json')
         # data = json.loads(open(path, "r").read())
         # mr = Component.objects.create(title="Morphosemantic Relationship", code="mr", parent=syntatic)
@@ -142,7 +141,7 @@ class Command(BaseCommand):
         # 	d_relation = DependencyRelation(title=data[rel]["title"], code=rel, ud_code=data[rel]["ud-code"], description=data[rel]["description"], url=data[rel]["url"])
         # 	d_relation.save()
         #
-        ## import word relationship types(Morphological Paterns)
+        # # import word relationship types(Morphological Paterns)
         # path = os.path.join(settings.BASE_DIR, '../dataset/linguistics/morpheme-types.json')
         # data = json.loads(open(path, "r").read())
         # for item in data:

@@ -45,9 +45,16 @@ def spacy_phrase_analysis(
     """
     from datacore.functions.spacy import get_spacy
     from datacore.functions.utils import strip_word
-    from datacore.models import (Analyzer, Component, Language, NamedEntity,
-                                 Phrase, PhraseAnalysis, Template, Word,
-                                 WordRelation, WordRelationType)
+    from datacore.models import (
+        Analyzer,
+        Language,
+        NamedEntity,
+        PhraseAnalysis,
+        Template,
+        Word,
+        WordRelation,
+        WordRelationType,
+    )
 
     lemma_relation, created = WordRelationType.objects.get_or_create(
         title="Lemma",

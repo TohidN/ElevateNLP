@@ -51,13 +51,19 @@ def stanza_phrase_analysis(phrase_item=None, language="en", sentence=None):
     sentence: cached sentence in case it's already generated
     phrase_item: reference to loaded phrase object, instead of loading it
     """
-    import copy
 
     from datacore.functions.stanza import get_stanza
     from datacore.functions.utils import strip_word
-    from datacore.models import (Analyzer, Component, Language, NamedEntity,
-                                 Phrase, PhraseAnalysis, Template, Word,
-                                 WordRelation, WordRelationType)
+    from datacore.models import (
+        Analyzer,
+        Language,
+        NamedEntity,
+        PhraseAnalysis,
+        Template,
+        Word,
+        WordRelation,
+        WordRelationType,
+    )
 
     # TODO: cache this three lines
     lemma_relation, created = WordRelationType.objects.get_or_create(

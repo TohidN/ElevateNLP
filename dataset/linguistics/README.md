@@ -7,7 +7,7 @@ more info on different grammatical depency: https://en.wikipedia.org/wiki/Depend
 
 
 ## Universal POS tags
-These tags mark the core part-of-speech categories. 
+These tags mark the core part-of-speech categories.
 Extracted from https://universaldependencies.org/u/pos/index.html
 
 ## Universal Features
@@ -39,4 +39,3 @@ Gold: http://linguistics-ontology.org/gold
 Universal Dependencies: https://universaldependencies.org
 
 Glossary of Linguistic Terms: https://glossary.sil.org/term
-

@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="pl" /> 
+		<language type="pl" />
 	</identity>
 	<collations  >
 		<collation type="standard" references="Wielki slownik polsko-angielski ISBN 83-85840-15-X">

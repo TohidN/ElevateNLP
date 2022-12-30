@@ -5,17 +5,17 @@
 #
 # This file provides general information about scripts that may be useful to implementations processing text.
 # The information is the best currently available, and may change between versions of CLDR.
-# 
+#
 # Format:
 #	The data is not in XML; instead it uses the semicolon-delimited format from the Unicode Character Database (UCD).
-#	This is so that parsers of the UCD can more easily be adapted to read the data. 
+#	This is so that parsers of the UCD can more easily be adapted to read the data.
 #	Additional fields may be added in future versions; parsers may be designed to ignore those fields until they are revised.
 #
 # Field - Description
 #
 # 0 - Script Identifier
 # 1 - Web Rank:
-#		The approximate rank of this script from a large sample of the web, 
+#		The approximate rank of this script from a large sample of the web,
 #		in terms of the number of characters found in that script.
 #		Below 32 the ranking is not statistically significant.
 # 2 - Sample Character:
@@ -34,11 +34,11 @@
 #		YES if the script is RTL
 #		Derived from whether the script contains RTL letters according to the Bidi_Class property
 # 7 - LB letters:
-#		YES if the major languages using the script allow linebreaks between letters (excluding hyphenation). 
+#		YES if the major languages using the script allow linebreaks between letters (excluding hyphenation).
 #		Derived from LB property.
 # 8 - Shaping Required:
 #		YES if shaping is required for the major languages using that script for NFC text.
-#			This includes not only ligation (and Indic conjuncts), Indic vowel splitting/reordering, and 
+#			This includes not only ligation (and Indic conjuncts), Indic vowel splitting/reordering, and
 #			Arabic-style contextual shaping, but also cases where NSM placement is required, like Thai.
 #		MIN if NSM placement is sufficient, not the more complex shaping.
 #			The NSM placement may only be necessary for some major languages using the script.
@@ -52,7 +52,7 @@
 # Sometimes a script is included here before it is added in the Unicode Standard.
 # Such scripts are marked with a "provisional" comment.
 #
-# Note: For the most likely language for each script, see 
+# Note: For the most likely language for each script, see
 #		https://unicode-org.github.io/cldr-staging/charts/latest/supplemental/likely_subtags.html
 #
 Zyyy; 1; 0040; ZZ; -1; RECOMMENDED; UNKNOWN; UNKNOWN; UNKNOWN; UNKNOWN; UNKNOWN

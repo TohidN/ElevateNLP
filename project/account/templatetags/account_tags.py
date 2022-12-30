@@ -1,7 +1,5 @@
-from django import template
-from sorl.thumbnail import get_thumbnail
-
 from account.models import Profile
+from django import template
 
 register = template.Library()
 

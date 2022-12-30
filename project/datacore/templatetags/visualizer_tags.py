@@ -1,5 +1,4 @@
 from django import template
-from django.template.defaulttags import register
 
 register = template.Library()
 
@@ -60,5 +59,5 @@ def visualize_displacy_dep(analysis):
         }
         html = displacy.render(content, style="dep", manual=True, options=options)
         return html
-    except:
+    except Exception:
         return ""

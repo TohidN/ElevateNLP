@@ -21,18 +21,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 # and VISARGA. Instead of being sorted with secondary
 # weights, they are collated on primary level between
 # the independent vowels and the consonants.
-# 
+#
 &ঔ<ং<ঁ<ঃ
 #
 # KHANDA-TA is sorted before TA.
-# 
+#
 &[before 1]ত<ৎ=ত্\u200D
 #
 # KSSA is sorted after HA.
-# 
+#
 &হ<ক্ষ
 ]]></cr>
 </collation>
 		</collations>
 </ldml>
-

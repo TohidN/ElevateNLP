@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
@@ -9,10 +9,9 @@ class Command(BaseCommand):
         import os
 
         import pandas as pd
+        from datacore.models import Language
         from django.conf import settings
         from tqdm.auto import tqdm
-
-        from datacore.models import Language
 
         # Importing Languages.
         # import alpha2, alpha3b, en_name
@@ -48,8 +47,8 @@ class Command(BaseCommand):
                         alpha3b=row[1]["alpha3-b"], en_name=row[1]["English"]
                     )
                     language.save()
-            except:
-                tqdm.write(f"Error in importing row: {row[1]}")
+            except Exception:
+                tqdm.write(f"Error {Exception} in importing row: {row[1]}")
 
         # import custom data(for now: language in native and number of speakers)
         lang_file_json = os.path.join(
@@ -65,8 +64,8 @@ class Command(BaseCommand):
                     language.native_speakers = lang_data_json[lang]["speakers"]
                 language.native_name = lang_data_json[lang]["nativeName"]
                 language.save()
-            except:
-                print(f"Error in importing: {lang_data_json[lang]}")
+            except Exception:
+                print(f"Error {Exception} in importing: {lang_data_json[lang]}")
 
         # TODO: import dialect, territory, and other language data from ietf-language-tags.csv and it's link to 'core' dataset
         # TODO: locations can be imported from http://www.geonames.org/

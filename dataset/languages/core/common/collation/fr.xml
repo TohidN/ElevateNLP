@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="fr" /> 
+		<language type="fr" />
 	</identity>
 	<!-- The root collation order is valid for this language. -->
 </ldml>

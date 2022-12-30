@@ -10,7 +10,7 @@
 # Format:
 #   Field 0: a hex Unicode character, or a hex Unicode character range, or a UnicodeSet.
 #   Field 1: a label that applies to that character.
-#   Field 2: a second-level label (optional) that applies to that character. 
+#   Field 2: a second-level label (optional) that applies to that character.
 # Any field that would contain a literal ‘;’ has that replaced by \u003B.
 # Note that characters may get multiple labels.
 

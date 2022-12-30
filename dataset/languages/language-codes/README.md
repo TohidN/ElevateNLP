@@ -4,11 +4,11 @@ Comprehensive language code information, consisting of ISO 639-1, ISO 639-2 and 
 
 Data is taken from the [Library of Congress](http://www.loc.gov/standards/iso639-2/iso639-2ra.html) as the ISO 639-2 Registration Authority, and from the [Unicode Common Locale Data Repository](http://cldr.unicode.org/).
 
-### data/language-codes.csv 
+### data/language-codes.csv
 
 This file contains the 184 languages with __ISO 639-1__ (alpha 2 / two letter) codes and their English names.
 
-### data/language-codes-3b2.csv 
+### data/language-codes-3b2.csv
 
 This file contains the 184 languages with both __ISO 639-2__ (alpha 3 / three letter) bibliographic codes and ISO 639-1 codes, and their English names.
 
@@ -27,7 +27,7 @@ There are four special codes: *mul*, *und*, *mis*, *zxx*; and a reserved range *
 
 ### data/ietf-language-tags.csv
 
-This file lists all IETF language tags of the official resource indicated by http://www.iana.org/assignments/language-tag-extensions-registry 
+This file lists all IETF language tags of the official resource indicated by http://www.iana.org/assignments/language-tag-extensions-registry
 that into the `/main` folder of http://www.unicode.org/Public/cldr/latest/core.zip (project [cldr.unicode.org](http://cldr.unicode.org)).
 
 ## Preparation

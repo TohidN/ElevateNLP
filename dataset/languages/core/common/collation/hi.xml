@@ -24,7 +24,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				#	from ANUSVARA. This gives a sort order very close to the referenced
 				#	dictionaries. The sort order in the dictionaries, which by the way
 				#	are not exactly the same, require quite extensive tailoring.
-				# 
+				#
 				&ॐ<ं<<ँ<ः
 			]]></cr>
 		</collation>

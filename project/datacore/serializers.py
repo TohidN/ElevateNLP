@@ -77,7 +77,7 @@ class ConceptSerializer(serializers.ModelSerializer):
 class DomainOntologySerializer(serializers.ModelSerializer):
     class Meta:
         model = models.DomainOntology
-        fields =  [
+        fields = [
             "id",
             "title",
             "description",

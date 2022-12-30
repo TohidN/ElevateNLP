@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
@@ -7,9 +7,8 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         import os
 
-        from django.conf import settings
-
         from datacore.models import Component
+        from django.conf import settings
 
         def get_component(code, include_self=False):
             coms = (

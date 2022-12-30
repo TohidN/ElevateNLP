@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="sv"/> 
+		<language type="sv"/>
 	</identity>
 	<collations>
 		<defaultCollation>reformed</defaultCollation>

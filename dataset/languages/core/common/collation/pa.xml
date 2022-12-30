@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="pa" /> 
+		<language type="pa" />
 	</identity>
 	<collations>
 		<collation type="standard" references="Punjabi University: Punjabi-English Dictionary ISBN:8173800960">

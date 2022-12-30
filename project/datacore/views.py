@@ -1,13 +1,9 @@
-from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import get_object_or_404, redirect, render
+from datacore.functions.utils import prepare_pagination
+from datacore.models import Concept, Document, Example, Phrase, Relation, Template, Word
+from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
-from django.views.decorators.http import require_http_methods
-
-from datacore.functions.utils import prepare_pagination
-from datacore.models import (Concept, Document, Example, Phrase, Relation,
-                             Template, Word)
 
 
 def index(request):
@@ -43,7 +39,7 @@ def search(request):
             words = Word.objects.filter(text=query)
             concepts = Concept.objects.filter(synonyms__in=words)
         except Word.DoesNotExist or Concept.DoesNotExist:
-            word = None
+            words = None
             concepts = []
         context = {
             "type": querytype,
@@ -95,7 +91,7 @@ def analyze(request):
                 phrase, created = Phrase.objects.get_or_create(
                     text=sentence.text, document=document
                 )
-                if created and not phrase in document.phrases.all():
+                if created and phrase not in document.phrases.all():
                     document.phrases.add(phrase)
                 phrases.append(phrase)
                 result, analysis = stanza_phrase_analysis(
@@ -135,7 +131,6 @@ def corpora_add(request):
 
 
 def corpus(request, id=None):
-    from datacore.forms import CorpusForm
     from datacore.models import Corpora
 
     corpus = Corpora.objects.get(id=id)
@@ -364,7 +359,7 @@ def phrase_collection_delete(request, id=None):
 
 
 def words(request):
-    from datacore.forms import WordForm, WordsFilter
+    from datacore.forms import WordsFilter
     from datacore.models import Word
 
     queryset, parameters = None, ""
@@ -593,34 +588,19 @@ def domain_ontology_concept_add(request, id=None):
             concept = form.save()
             return HttpResponseRedirect(reverse("datacore:concept", args=[concept.id]))
         # else:
-        # 	concept, created = Concept.objects.get_or_create(pos=form.cleaned_data["text"], language=form.cleaned_data["language"])
-        # 	phrase.data_sources.set(form.cleaned_data['data_sources'])
-        # 	return HttpResponseRedirect(reverse('datacore:concept', args=[concept.id]))
+        #     concept, created = Concept.objects.get_or_create(pos=form.cleaned_data["text"], language=form.cleaned_data["language"])
+        #     phrase.data_sources.set(form.cleaned_data['data_sources'])
+        #     return HttpResponseRedirect(reverse('datacore:concept', args=[concept.id]))
 
     context = {
         "title": _("Add Concept to Domain Ontology"),
+        "item": item,
         "url": reverse("datacore:domain_ontology_concept_add", args=[id]),
         "back_url": reverse("datacore:domain_ontology", args=[id]),
         "form": form,
     }
     context["base_template"] = "partial.html" if request.htmx else "base.html"
     return render(request, "modal-body.html", context)
-
-    from datacore.forms import ConceptForm
-    from datacore.models import DomainOntology
-
-    domain = DomainOntology.objects.get(id=id)
-    # set domain's id and hide it's field
-    form = ConceptForm(request.POST or None, initial={"ontology_domain": id})
-    field = form.fields["ontology_domain"]
-    field.widget = field.hidden_widget()
-
-    context = {
-        "form": form,
-        "domain": domain,
-    }
-    context["base_template"] = "partial.html" if request.htmx else "base.html"
-    return render(request, "domain-ontologies-concept-add.html", context)
 
 
 def domain_ontology_edit(request, id=None):
@@ -838,7 +818,7 @@ def get_concept_tab_data(id=None):
 
 
 def concept(request, id=None):
-    from datacore.models import Component, Concept, Word
+    from datacore.models import Concept
 
     concept = Concept.objects.get(id=id)
 
@@ -853,7 +833,7 @@ def concept(request, id=None):
 
 
 def concept_synonyms(request, id=None):
-    from datacore.models import Component, Concept
+    from datacore.models import Concept
 
     concept = Concept.objects.get(id=id)
 
@@ -904,7 +884,7 @@ def concept_synonym_edit(request, id=None, rel_id=None):
 
 
 def concept_antonyms(request, id=None):
-    from datacore.models import Component, Concept
+    from datacore.models import Concept
 
     concept = Concept.objects.get(id=id)
 
@@ -1008,7 +988,7 @@ def concept_definition_edit(request, id=None, rel_id=None):
 
 
 def concept_examples(request, id=None):
-    from datacore.models import Component, Concept
+    from datacore.models import Concept
 
     concept = Concept.objects.get(id=id)
 
@@ -1094,11 +1074,11 @@ def concept_relationships(request, id=None):
     if len(concept_rels) != len(related_concept_rels):
         raise Exception(
             f"""
-			All queried relations where not found.
-			Queried relations:  {concept_rels}
-			Relations Found: {related_concept_rels}
-			You might need to add missing relationships to `Linguistic Components > Ontology > Relation`
-			\n"""
+            All queried relations where not found.
+            Queried relations:  {concept_rels}
+            Relations Found: {related_concept_rels}
+            You might need to add missing relationships to `Linguistic Components > Ontology > Relation`
+            \n"""
         )
 
     context = {
@@ -1122,7 +1102,7 @@ def concept_relationships_add(request, id=None):
 
     if request.method == "POST":
         if form.is_valid():
-            item = form.save()
+            form.save()
             return HttpResponseRedirect(
                 reverse("datacore:concept_relationships", args=[id])
             )
@@ -1138,16 +1118,17 @@ def concept_relationships_add(request, id=None):
 
 
 def concept_visualization(request, id=None):
+    from datacore.models import Concept
     from django.core.files.storage import default_storage
-
-    from datacore.models import Component, Concept
 
     concept = Concept.objects.get(id=id)
 
     if request.method == "POST":
         from datacore.functions.visualization import (
-            generate_hierarchy_graph, generate_neighborhood_graph,
-            generate_relation_graph)
+            generate_hierarchy_graph,
+            generate_neighborhood_graph,
+            generate_relation_graph,
+        )
 
         if request.POST.get("regenerate-relation") == "1" or (
             request.htmx and request.htmx.trigger_name == "regenerate-relation"
@@ -1222,7 +1203,7 @@ def template(request, id=None):
             .all()
         ]
         phrases = Phrase.objects.filter(id__in=analysis_ids)
-    except:
+    except Exception:
         phrases = []
     context = {
         "id": id,
@@ -1394,7 +1375,7 @@ def word_relation_type_delete(request, id=None):
 
 
 def word_relations(request, id=None):
-    from datacore.models import WordRelation, WordRelationType
+    from datacore.models import WordRelation
 
     relations = WordRelation.objects.all()
     relations, paginator_range = prepare_pagination(
@@ -1443,7 +1424,6 @@ def word_relations_add(request):
 
     if request.method == "POST":
         if form.is_valid():
-            language_one = form.cleaned_data["data_sources"]
             word_one, created = Word.objects.get_or_create(
                 text=form.cleaned_data["word_one"],
                 language=form.cleaned_data["word_one_language"],
@@ -1698,7 +1678,7 @@ def lexical_data(request):
             for f in files
             if os.path.isfile(path + "/" + f) and f.endswith(".csv")
         }
-    except:
+    except Exception:
         files = {}
 
     context = {
@@ -1756,7 +1736,7 @@ def textual_data(request):
                 if os.path.isfile(path + "/" + f) and f.endswith(".zip")
             }
             return files
-        except:
+        except Exception:
             return {}
 
     files = {
@@ -1810,7 +1790,7 @@ def ontological_data(request):
             for f in files
             if os.path.isfile(path + "/" + f) and f.endswith(".csv")
         }
-    except:
+    except Exception:
         files = {}
 
     context = {
@@ -1896,9 +1876,8 @@ def edit_object(cls_form, cls_item, url_success_redirect, title, url, request, i
     request: default view parameters
     id: id of item which is being edited
     """
-    from django.apps import apps
-
     from datacore import forms
+    from django.apps import apps
 
     ItemModel = apps.get_model("datacore", cls_item)
     FormClass = getattr(forms, cls_form)
@@ -1981,9 +1960,8 @@ def edit_relationship(
     back_url: url for button to go back to item's page
     request, id: default view parameters
     """
-    from django.apps import apps
-
     from datacore import forms
+    from django.apps import apps
 
     ItemModel = apps.get_model("datacore", cls_item)
     RelationModel = apps.get_model("datacore", cls_relation)
@@ -1996,14 +1974,13 @@ def edit_relationship(
         form.parent_initialize(parent=item)
 
     if request.method == "POST":
-        valid = form.is_valid()
         if form.is_valid():
             # check if item already is associated with other ItemModel relations; if so, create new item
             count = ItemModel.objects.filter(**{relation + "__id": rel_item.id}).count()
             form = (
                 FormClass(request.POST or None) if count > 1 else form
             )  # create new item, otherwise edit
-            relation_item = form.save()
+            form.save()
             return HttpResponseRedirect(reverse(back_url, args=[id]))
 
     context = {
@@ -2030,9 +2007,8 @@ def add_relationship(
     back_url: url for button to go back to item's page
     request, id: default view parameters
     """
-    from django.apps import apps
-
     from datacore import forms
+    from django.apps import apps
 
     ItemModel = apps.get_model("datacore", cls_item)
     RelationModel = apps.get_model("datacore", cls_relation)

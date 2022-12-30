@@ -48,4 +48,3 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!-- likelySubtags result attributes -->
 <!ATTLIST result add NMTOKEN #IMPLIED>
 <!ATTLIST result remove NMTOKEN #IMPLIED>
-

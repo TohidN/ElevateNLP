@@ -16,12 +16,12 @@
 							{% in_relation item relation search_item as added %}
 							{% if added %}
 								<button hx-indicator="closest button" hx-target="closest li" hx-swap="outerHTML swap:1s" hx-post="{{ url }}" name="remove-relation-item" value="{{ search_item.id }}" type="submit" class="btn btn-danger btn-sm" force-refresh="true">
-									{% trans "Remove" %} 
+									{% trans "Remove" %}
 									<div class="htmx-indicator hidden-loading spinner-border spinner-border-sm" role="status"></div>
 								</button>
 							{% else %}
 								<button hx-indicator="closest button" hx-target="closest li" hx-swap="outerHTML swap:1s" hx-post="{{ url }}" name="add-relation-item" value="{{ search_item.id }}" type="submit" class="btn btn-success btn-sm" force-refresh="true">
-									{% trans "Add" %} 
+									{% trans "Add" %}
 									<div class="htmx-indicator hidden-loading spinner-border spinner-border-sm" role="status"></div>
 								</button>
 							{% endif %}

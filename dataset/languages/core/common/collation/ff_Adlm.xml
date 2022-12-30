@@ -8,8 +8,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="ff" /> 
-		<script type="Adlm" /> 
+		<language type="ff" />
+		<script type="Adlm" />
 	</identity>
 	<collations>
 		<collation type="standard" draft="contributed">
@@ -186,7 +186,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 					&𞤓<𞤓𞥅
 					&𞤓𞥅<<𞤓𞤓
 					&𞤵<𞤵𞥅
-					&𞤵𞥅<<𞤵𞤵					
+					&𞤵𞥅<<𞤵𞤵
 				]]></cr>
 		</collation>
 	</collations>

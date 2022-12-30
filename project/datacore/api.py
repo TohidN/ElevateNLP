@@ -1,5 +1,4 @@
-from django.db.models.functions import Length
-from rest_framework import filters, permissions, viewsets
+from rest_framework import filters, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
@@ -51,12 +50,18 @@ class WordViewSet(viewsets.ModelViewSet):
     queryset = Word.objects.all()
     serializer_class = serializers.WordSerializer
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
-    ordering_fields = ["id", "text", "frequency_distribution", "lemma_frequency_distribution", "language"]
+    ordering_fields = [
+        "id",
+        "text",
+        "frequency_distribution",
+        "lemma_frequency_distribution",
+        "language",
+    ]
     search_fields = ["text"]
 
     @action(detail=False)
     def longest(self, request):
-        queryset = models.Word.filter_words(sort_by='wrd_len', sort_type="dsc")
+        queryset = models.Word.filter_words(sort_by="wrd_len", sort_type="dsc")
         page = self.paginate_queryset(queryset)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
@@ -72,12 +77,14 @@ class WordViewSet(viewsets.ModelViewSet):
         queryset = models.Word.objects
         list_type = self.request.query_params.get("list-type")
         if list_type == "longest":
-            queryset = models.Word.filter_words(sort_by='wrd_len', sort_type="dsc")
+            queryset = models.Word.filter_words(sort_by="wrd_len", sort_type="dsc")
         else:
             starts_with = self.request.query_params.get("starts_with")
             ends_with = self.request.query_params.get("ends_with")
             contains = self.request.query_params.get("contains")
-            queryset = models.Word.filter_words(start=starts_with, contain=contains, end=ends_with)
+            queryset = models.Word.filter_words(
+                start=starts_with, contain=contains, end=ends_with
+            )
 
         page = self.paginate_queryset(queryset)
         if page is not None:
@@ -85,11 +92,6 @@ class WordViewSet(viewsets.ModelViewSet):
             return self.get_paginated_response(serializer.data)
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
-
-
-class DefinitionViewSet(viewsets.ModelViewSet):
-    queryset = models.Definition.objects.all()
-    serializer_class = serializers.DefinitionSerializer
 
 
 class ConceptViewSet(viewsets.ModelViewSet):
@@ -170,5 +172,3 @@ class PhraseViewSet(viewsets.ModelViewSet):
 class TemplateViewSet(viewsets.ModelViewSet):
     queryset = models.Template.objects.all()
     serializer_class = serializers.TemplateSerializer
-
-

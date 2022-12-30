@@ -18,21 +18,21 @@ For terms of use, see http://www.unicode.org/copyright.html
         <unitConstant constant="gal_imp_to_m3" value="0.00454609"/>
         <unitConstant constant="glucose_molar_mass" value="180.1557" description="derivation from the mean atomic weights according to STANDARD ATOMIC WEIGHTS 2019 on https://ciaaw.org/atomic-weights.htm"/>
         <unitConstant constant="item_per_mole" value="6.02214076E+23"/>
-        
-        
+
+
         <unitConstant constant="gravity" value="9.80665"/>
         <unitConstant constant="PI" value="411557987 / 131002976" status='approximate'/>
         <unitConstant constant="G" value="6.67408E-11" status='approximate'/>   <!-- https://arxiv.org/pdf/1510.07674.pdf see 2014 CODATA -->
     </unitConstants>
-    <unitQuantities> 
+    <unitQuantities>
         <!-- NB: quantity ordering is used in canonical order of derived units. -->
-        
+
         <!-- SI Base Units -->
-        
+
         <unitQuantity baseUnit='candela' quantity='luminous-intensity' status='simple'/>
         <unitQuantity baseUnit='candela-per-square-meter' quantity='illuminance'/>
         <unitQuantity baseUnit='candela-square-meter-per-square-meter' quantity='luminous-flux'/>
-        
+
         <unitQuantity baseUnit='kilogram' quantity='mass' status='simple'/>
         <unitQuantity baseUnit='kilogram-per-kilogram' quantity='mass-fraction'/>
         <unitQuantity baseUnit='kilogram-per-cubic-meter' quantity='mass-density'/>
@@ -45,7 +45,7 @@ For terms of use, see http://www.unicode.org/copyright.html
         <unitQuantity baseUnit='kilogram-square-meter-per-square-second' quantity='energy'/>
         <unitQuantity baseUnit='kilogram-square-meter-per-square-second-ampere' quantity='magnetic-flux'/>
         <unitQuantity baseUnit='kilogram-square-meter-per-square-second-square-ampere' quantity='electric-inductance'/>
-        
+
         <unitQuantity baseUnit='cubic-meter' quantity='volume'/>
         <unitQuantity baseUnit='cubic-meter-per-kilogram' quantity='specific-volume'/>
         <unitQuantity baseUnit='cubic-meter-per-meter' quantity='consumption'/>
@@ -54,24 +54,24 @@ For terms of use, see http://www.unicode.org/copyright.html
         <unitQuantity baseUnit='meter' quantity='length' status='simple'/>
         <unitQuantity baseUnit='meter-per-second' quantity='speed'/>
         <unitQuantity baseUnit='meter-per-square-second' quantity='acceleration'/>
-        
+
         <unitQuantity baseUnit='kilogram-per-square-meter-square-second' quantity='pressure-per-length'/> <!-- special ordering for ofhg -->
-        
+
         <unitQuantity baseUnit='pow4-second-square-ampere-per-kilogram-square-meter' quantity='electric-capacitance'/>
         <unitQuantity baseUnit='cubic-second-square-ampere-per-kilogram-square-meter' quantity='electric-conductance'/>
         <unitQuantity baseUnit='second' quantity='duration' status='simple'/> <!-- use duration because 'time' can mean absolute time -->
         <unitQuantity baseUnit='second-ampere' quantity='electric-charge'/>
 
         <unitQuantity baseUnit='year' quantity='year-duration' status='simple'/> <!-- non-SI but here for ordering -->
-        
+
         <unitQuantity baseUnit='ampere' quantity='electric-current' status='simple'/>
         <unitQuantity baseUnit='ampere-per-square-meter' quantity='current-density'/>
         <unitQuantity baseUnit='ampere-per-meter' quantity='magnetic-field-strength'/>
 
         <unitQuantity baseUnit='kelvin' quantity='temperature' status='simple'/>
-        
+
         <!-- Non-SI base units -->
-        
+
         <unitQuantity baseUnit='square-revolution' quantity='solid-angle'/>
         <unitQuantity baseUnit='revolution' quantity='angle' status='simple'/> <!-- = circle, cycle for base instead of radian -->
         <unitQuantity baseUnit='revolution-per-meter' quantity='wave-number'/>
@@ -82,19 +82,19 @@ For terms of use, see http://www.unicode.org/copyright.html
         <unitQuantity baseUnit='item-per-cubic-meter' quantity='concentration'/>
 
         <unitQuantity baseUnit='portion' quantity='portion' status='simple'/>
-        
+
         <unitQuantity baseUnit='bit' quantity='digital' status='simple'/>
-        
+
         <unitQuantity baseUnit='pixel' quantity='graphics' status='simple'/>
 
         <unitQuantity baseUnit='pixel-per-meter' quantity='resolution'/>
 
         <unitQuantity baseUnit='em' quantity='typewidth' status='simple'/>
-        
-    </unitQuantities>    
+
+    </unitQuantities>
     <convertUnits>
         <!-- Values where possible from:
-        a) NIST Special Publication 1038 
+        a) NIST Special Publication 1038
         https://www.govinfo.gov/content/pkg/GOVPUB-C13-f10c2ff9e7af2091314396a2d53213e4/pdf/GOVPUB-C13-f10c2ff9e7af2091314396a2d53213e4.pdf
         b) https://arxiv.org/pdf/1510.07674.pdf
         See also https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes
@@ -102,7 +102,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 
         <!-- luminous-intensity -->
         <convertUnit source='candela' baseUnit='candela' systems="metric si"/>
-        
+
         <!-- mass -->
         <convertUnit source='grain' baseUnit='kilogram' factor='lb_to_kg/7000' systems="ussystem uksystem"/>
         <convertUnit source='carat' baseUnit='kilogram' factor='0.0002' systems="metric"/>
@@ -116,7 +116,7 @@ For terms of use, see http://www.unicode.org/copyright.html
         <convertUnit source='metric-ton' baseUnit='kilogram' factor='1000' systems="metric"/>
         <convertUnit source='earth-mass' baseUnit='kilogram' factor='5.9722E+24'/>
         <convertUnit source='solar-mass' baseUnit='kilogram' factor='1.98847E+30'/>
-        
+
         <!-- volume -->
         <convertUnit source='drop' baseUnit='cubic-meter' factor='gal_to_m3/128*576' systems="ussystem"/>
         <convertUnit source='pinch' baseUnit='cubic-meter' factor='gal_to_m3/128*128' systems="ussystem"/>
@@ -139,12 +139,12 @@ For terms of use, see http://www.unicode.org/copyright.html
         <convertUnit source='gallon-imperial' baseUnit='cubic-meter' factor='gal_imp_to_m3' systems="uksystem"/>
         <convertUnit source='bushel' baseUnit='cubic-meter' factor='2150.42*in3_to_m3' systems="ussystem"/>
         <convertUnit source='barrel' baseUnit='cubic-meter' factor='42*gal_to_m3' systems="ussystem"/> <!-- oil -->
-        
+
         <!-- area -->
         <convertUnit source='dunam' baseUnit='square-meter' factor='1000'/>
         <convertUnit source='acre' baseUnit='square-meter' factor='ft2_to_m2 * 43560' systems="ussystem uksystem"/>
         <convertUnit source='hectare' baseUnit='square-meter' factor='10000' systems="metric"/>
-        
+
         <!-- length -->
         <convertUnit source='point' baseUnit='meter' factor='ft_to_m/864' systems="ussystem uksystem"/>
         <convertUnit source='inch' baseUnit='meter' factor='ft_to_m/12' systems="ussystem uksystem"/>
@@ -162,7 +162,7 @@ For terms of use, see http://www.unicode.org/copyright.html
         <convertUnit source='astronomical-unit' baseUnit='meter' factor='149597900000'/>
         <convertUnit source='light-year' baseUnit='meter' factor='9460730000000000'/>
         <convertUnit source='parsec' baseUnit='meter' factor='30856780000000000'/>
-        
+
         <!-- time -->
         <convertUnit source='second' baseUnit='second' systems="si metric ussystem uksystem"/>
         <convertUnit source='minute' baseUnit='second' factor='60' systems="metric ussystem uksystem"/>
@@ -171,7 +171,7 @@ For terms of use, see http://www.unicode.org/copyright.html
         <convertUnit source='day-person' baseUnit='second' factor='86400' systems="metric ussystem uksystem"/>
         <convertUnit source='week' baseUnit='second' factor='604800'/>
         <convertUnit source='week-person' baseUnit='second' factor='604800'/>
-        
+
         <!-- year-duration -->
         <convertUnit source='month' baseUnit='year' factor='1/12'/>
         <convertUnit source='month-person' baseUnit='year' factor='1/12'/>
@@ -179,26 +179,26 @@ For terms of use, see http://www.unicode.org/copyright.html
         <convertUnit source='year-person' baseUnit='year'/>
         <convertUnit source='decade' baseUnit='year' factor='10'/>
         <convertUnit source='century' baseUnit='year' factor='100'/>
-        
+
         <!-- electric-current -->
         <convertUnit source='ampere' baseUnit='ampere' systems="metric si"/>
-        
+
         <!-- temperature -->
         <convertUnit source='fahrenheit' baseUnit='kelvin' factor='5/9' offset='2298.35/9' systems="ussystem uksystem"/>
         <convertUnit source='kelvin' baseUnit='kelvin' systems="metric si"/>
         <convertUnit source='celsius' baseUnit='kelvin' offset='273.15' systems="metric"/>
-        
+
         <!-- angle -->
         <convertUnit source='arc-second' baseUnit='revolution' factor='1/360*60*60'/>
         <convertUnit source='arc-minute' baseUnit='revolution' factor='1/360*60'/>
         <convertUnit source='degree' baseUnit='revolution' factor='1/360'/>
         <convertUnit source='radian' baseUnit='revolution' factor='1/2*PI' systems="metric si"/>
         <convertUnit source='revolution' baseUnit='revolution'/>
-        
+
         <!-- substance-amount -->
         <convertUnit source='item' baseUnit='item'/>
         <convertUnit source='mole' baseUnit='item' factor='item_per_mole' systems="metric si"/>
-        
+
         <!-- portion -->
         <convertUnit source='permillion' baseUnit='portion' factor='1/1000000'/>
         <convertUnit source='permyriad' baseUnit='portion' factor='1/10000'/>
@@ -206,25 +206,25 @@ For terms of use, see http://www.unicode.org/copyright.html
         <convertUnit source='percent' baseUnit='portion' factor='1/100'/>
         <convertUnit source='karat' baseUnit='portion' factor='1/24'/>
         <convertUnit source='portion' baseUnit='portion'/>
-        
+
         <!-- digital -->
         <convertUnit source='bit' baseUnit='bit'/>
         <convertUnit source='byte' baseUnit='bit' factor='8'/>
-        
+
         <!-- graphics -->
         <convertUnit source='dot' baseUnit='pixel'/>
         <convertUnit source='pixel' baseUnit='pixel'/>
-        
+
         <!-- typewidth -->
         <convertUnit source='em' baseUnit='em'/>
-        
+
         <!-- frequency -->
         <convertUnit source='hertz' baseUnit='revolution-per-second' systems="metric si"/>
-        
+
         <!-- force -->
         <convertUnit source='newton' baseUnit='kilogram-meter-per-square-second' systems="metric si"/>
         <convertUnit source='pound-force' baseUnit='kilogram-meter-per-square-second' factor='lb_to_kg * gravity' systems="ussystem uksystem"/>
-        
+
         <!-- pressure -->
         <convertUnit source='pascal' baseUnit='kilogram-per-meter-square-second' systems="metric si"/>
         <convertUnit source='bar' baseUnit='kilogram-per-meter-square-second' factor='100000' systems="metric"/>
@@ -246,28 +246,28 @@ For terms of use, see http://www.unicode.org/copyright.html
         <convertUnit source='watt' baseUnit='kilogram-square-meter-per-cubic-second' systems="metric si"/>
         <convertUnit source='horsepower' baseUnit='kilogram-square-meter-per-cubic-second' factor='ft_to_m * lb_to_kg * gravity * 550' systems="ussystem uksystem"/>
         <convertUnit source='solar-luminosity' baseUnit='kilogram-square-meter-per-cubic-second' factor='3.828E+26'/>
-        
+
         <!-- voltage -->
         <convertUnit source='volt' baseUnit='kilogram-square-meter-per-cubic-second-ampere' systems="metric si"/>
-        
+
         <!-- electric-resistance -->
         <convertUnit source='ohm' baseUnit='kilogram-square-meter-per-cubic-second-square-ampere' systems="metric si"/>
-        
+
         <!-- speed -->
         <convertUnit source='knot' baseUnit='meter-per-second' factor='1852/3600' systems="ussystem uksystem"/>
-        
+
         <!-- acceleration -->
         <convertUnit source='g-force' baseUnit='meter-per-square-second' factor='gravity'/>
-        
+
         <!-- luminance -->
         <convertUnit source='lux' baseUnit='candela-per-square-meter' systems="metric si"/>
 
         <!-- luminous-flux -->
         <convertUnit source='lumen' baseUnit='candela-square-meter-per-square-meter' systems="metric si"/>
-        
+
         <!-- concentration-mass -->
         <convertUnit source='ofglucose' baseUnit='item-per-kilogram' factor='1000*item_per_mole/glucose_molar_mass'/>
-        
+
     </convertUnits>
     <unitPreferenceData draft="contributed">
         <unitPreferences category="area" usage="default">

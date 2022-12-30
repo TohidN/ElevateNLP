@@ -8,20 +8,20 @@ For terms of use, see http://www.unicode.org/copyright.html -->
 	<transforms>
 		<transform source="ug" target="ug_FONIPA" direction="forward" draft="contributed" alias="ug-fonipa-t-ug">
 			<tRule><![CDATA[
-# Uyghur to phonemic transcription 
+# Uyghur to phonemic transcription
 # Alphabet http://learn101.org/uyghur_alphabet.php + youtube video https://youtu.be/dw1DVFgC8x0
-# Vowel-consonant harmony in Uyghur. Laura Becker http://home.uni-leipzig.de/lbecker/papers/VowelConsHarmonyUyghur.pdf 
-# Shadike, Muhetaer & Wasili, Buheliqiguli. (2014). Acoustic Articulatory of Uyghur Phonetics. Applied Mechanics and Materials. 519→520. 762→766. 10.4028/www.scientific.net/AMM.519→520.762. 
+# Vowel-consonant harmony in Uyghur. Laura Becker http://home.uni-leipzig.de/lbecker/papers/VowelConsHarmonyUyghur.pdf
+# Shadike, Muhetaer & Wasili, Buheliqiguli. (2014). Acoustic Articulatory of Uyghur Phonetics. Applied Mechanics and Materials. 519→520. 762→766. 10.4028/www.scientific.net/AMM.519→520.762.
 # https://kuscholarworks.ku.edu/bitstream/handle/1808/5624/EngYakDwy2009_Uyg1full_10.pdf?seque
 #
-# Originally prepared by Alina Korshunova <alinakor2202@gmail.com> 
+# Originally prepared by Alina Korshunova <alinakor2202@gmail.com>
 # as part of her internship at PanLex (panlex.org)
 
-ئ → ʔ; 
+ئ → ʔ;
 ا → a;
 ە → ‎ɛ;
 ب‎ → b;
-پ → p; 
+پ → p;
 ت → t;
 ج → d͡ʒ;
 چ → t͡ʃ;
@@ -39,9 +39,9 @@ For terms of use, see http://www.unicode.org/copyright.html -->
 گ → ɡ;
 ڭ → ŋ;
 ل → l;
-م → m; 
-ن → n; 
-ھ → h; 
+م → m;
+ن → n;
+ھ → h;
 و → o;
 ۇ → u;
 ۆ → ø;
@@ -49,7 +49,7 @@ For terms of use, see http://www.unicode.org/copyright.html -->
 ۋ → w;
 ې → e;
 ى → i;
-ي → j; 
+ي → j;
 
 # Handle geminated consonants
 ::Null;

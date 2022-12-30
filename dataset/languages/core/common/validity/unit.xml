@@ -75,13 +75,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				pressure-ofhg
 				speed-kilometer-per-hour speed-knot speed-meter-per-second speed-mile-per-hour
 				temperature-celsius temperature-fahrenheit temperature-generic temperature-kelvin
-				torque-pound-force-foot 
+				torque-pound-force-foot
 				torque-newton-meter
 				volume-acre-foot volume-bushel volume-centiliter volume-cubic-centimeter volume-cubic-foot
 				volume-cubic-inch
 				volume-cubic-kilometer volume-cubic-meter volume-cubic-mile volume-cubic-yard
 				volume-cup volume-cup-metric
-				volume-deciliter 
+				volume-deciliter
 				volume-dessert-spoon volume-dessert-spoon-imperial  volume-drop  volume-dram  volume-jigger  volume-pinch  volume-quart-imperial
 				volume-fluid-ounce volume-fluid-ounce-imperial
 				volume-gallon volume-gallon-imperial volume-hectoliter
@@ -93,7 +93,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				acceleration-meter-per-second-squared
 				consumption-liter-per-100kilometers
 				concentr-part-per-million
-				pressure-inch-hg 
+				pressure-inch-hg
 				pressure-pound-per-square-inch
 				pressure-millimeter-of-mercury
 				proportion-karat

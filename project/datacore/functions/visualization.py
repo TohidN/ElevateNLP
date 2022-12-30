@@ -1,11 +1,8 @@
-import functools
-
 import matplotlib.pyplot as plt
 import networkx as nx
-from django.conf import settings
-
 from datacore.components import POS, RELATION
 from datacore.models import Concept, Relation
+from django.conf import settings
 
 """
 Note: to get node data try
@@ -46,7 +43,7 @@ def draw_graph(graph, path="", name="graph.png", layout="spring_layout"):
     else:
         raise Exception("Please enter a valid NetworkX layout.")
 
-    limits = plt.axis("off")
+    plt.axis("off")
     for node in graph.nodes:
         graph.nodes[node]["color"] = graph_attribute_color[
             graph.nodes[node]["attribute"]

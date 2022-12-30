@@ -248,7 +248,7 @@ $wspace = [\u0020\u00a0\u1680\u2000-\u200d\u2060\u202f\u205f\u3000\ufeff];
 
 ####
 #### Stage 5.  More reorderings
-#### Vowel signs after medials, sort medials, 
+#### Vowel signs after medials, sort medials,
 ####
 ::Null;
 

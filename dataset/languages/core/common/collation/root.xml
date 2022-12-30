@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="root" /> 
+		<language type="root" />
 	</identity>
 	<collations>
 			<defaultCollation>standard</defaultCollation>
@@ -147,7 +147,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</collation>
 			<collation type="eor" references="European Standard EN13710:2011-06 - European Ordering Rules - Ordering of characters from Latin, Greek, Cyrillic, Georgian, and Armenian scripts">
 				<cr><![CDATA[
-				# 
+				#
 				#Latin letters: only a-z + þ are basic letters
 				&a
 				<<ᴀ # U+1D00
@@ -606,7 +606,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				&tɕ<<ʨ # U+02A8
 				&ue<<ᵫ # U+1D6B
 
-				# Letters and modifiers not associated with a specific first or second 
+				# Letters and modifiers not associated with a specific first or second
 				# level letter are ignored.
 				&[last tertiary ignorable]
 				=ʻ # U+02BB
@@ -1356,4 +1356,3 @@ For terms of use, see http://www.unicode.org/copyright.html
 </collation>
 </collations>
 </ldml>
-

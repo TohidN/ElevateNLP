@@ -6,7 +6,6 @@ from . import models
 # from django_summernote.admin import SummernoteModelAdmin
 
 
-
 class AnalyzerAdmin(admin.ModelAdmin):
     search_fields = ["title", "version", "description"]
 

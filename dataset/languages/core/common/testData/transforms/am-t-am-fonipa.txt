@@ -449,7 +449,7 @@ le̯o̯arkə	ሌዎዋርከ
 kàɴ.t͡ɕí.da̰ʊ̯ɴ.mjo̰	ካጝቺዳውጝምዮ
 ʔə.pʰjaʊ̯ʔ.mjo̰	አጵያውእምዮ
 #
-# https://en.wikipedia.org/wiki/Voiceless_bilabial_nasal 
+# https://en.wikipedia.org/wiki/Voiceless_bilabial_nasal
 m̥ə m̥əː əm̥ː əm̥ːə əm̥ːəː	መ መ፞ ኧም፟ ኧመ፟ ኧመ፝
 m̥u m̥uː um̥ː um̥ːu um̥ːuː	ሙ ሙ፞ ኡም፟ ኡሙ፟ ኡሙ፝
 m̥i m̥iː im̥ː im̥ːi im̥ːiː	ሚ ሚ፞ ኢም፟ ኢሚ፟ ኢሚ፝
@@ -1301,7 +1301,7 @@ t͜ɕo t͜ɕoː ot͜ɕː ot͜ɕːo ot͜ɕːoː	ቾ ቾ፞ ኦች፟ ኦቾ፟ �
 ʨe ʨeː eʨː eʨːe eʨːeː	ቼ ቼ፞ ኤች፟ ኤቼ፟ ኤቼ፝
 ʨɨ ʨɨː ɨʨː ɨʨːɨ ɨʨːɨː	ች ች፞ እች፟ እች፟ እች፝
 ʨo ʨoː oʨː oʨːo oʨːoː	ቾ ቾ፞ ኦች፟ ኦቾ፟ ኦቾ፝
-# 
+#
 # https://en.wikipedia.org/wiki/Voiced_alveolo-palatal_affricate
 d͡ʑə d͡ʑəː əd͡ʑː əd͡ʑːə əd͡ʑːəː	ጀ ጀ፞ ኧጅ፟ ኧጀ፟ ኧጀ፝
 d͡ʑu d͡ʑuː ud͡ʑː ud͡ʑːu ud͡ʑːuː	ጁ ጁ፞ ኡጅ፟ ኡጁ፟ ኡጁ፝

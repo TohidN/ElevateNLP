@@ -26,16 +26,6 @@
     entry: check-case-conflict
     language: python
 
--   id: isort
-    name: isort
-    entry: isort
-    require_serial: true
-    language: python
-    types: [python]
-    args:
-    -   --filter-files
-    -   --profile=black
-
 -   id: black
     name: black
     description: The uncompromising Python code formatter
@@ -57,11 +47,22 @@
     types_or: [python, pyi, jupyter]
     additional_dependencies: [".[jupyter]"]
 
+-   id: isort
+    name: isort
+    entry: isort
+    require_serial: true
+    language: python
+    types: [python]
+    args:
+    -   --filter-files
+    -   --profile=black
+
 -   id: flake8
     name: flake8
     description: flake8 - Python style guide enforcement
     language: python
     entry: flake8
+    require_serial: true
     types: [python]
     files: ^project/
 

@@ -52,9 +52,7 @@ class SignupForm(forms.Form):
         Validate that the username is alphanumeric and is not already in use.
         """
         try:
-            user = get_user_model().objects.get(
-                username__iexact=self.cleaned_data["username"]
-            )
+            get_user_model().objects.get(username__iexact=self.cleaned_data["username"])
         except get_user_model().DoesNotExist:
             pass
         else:

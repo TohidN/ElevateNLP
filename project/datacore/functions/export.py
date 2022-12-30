@@ -3,7 +3,6 @@ import re
 import unicodedata
 from datetime import datetime
 
-from django.core.files import File
 from django.core.files.storage import default_storage
 
 
@@ -155,7 +154,7 @@ def export_textual_data(import_type):
 
 
 def export_ontological_data(ontology_domain, language):
-    from datacore.models import Concept, Relation, Word
+    from datacore.models import Concept, Relation
 
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M")
     concepts = Concept.objects.filter(ontology_domain=ontology_domain)

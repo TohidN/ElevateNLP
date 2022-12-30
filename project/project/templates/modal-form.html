@@ -79,7 +79,7 @@
 				{% for error in field.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
 			{% else %}
 				{% render_field field class="form-control" %}
-			{% endif %}		
+			{% endif %}
 		{% endif %}
 		{% if field.help_text %}
 			<div id="{{ field.id_for_label }}-help" class="form-text">{{ field.help_text|safe }}</div>

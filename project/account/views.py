@@ -6,8 +6,13 @@ from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
-from .forms import (EditAccountForm, EditProfileForm, EditSettingsForm,
-                    SignupForm, SinginForm)
+from .forms import (
+    EditAccountForm,
+    EditProfileForm,
+    EditSettingsForm,
+    SignupForm,
+    SinginForm,
+)
 from .models import AccountSignup, Profile
 from .settings import LOGIN_REDIRECT_URL, REMEMBER_ME_DAYS
 
@@ -144,7 +149,7 @@ def signup(request):
     if request.method == "POST":
         form = SignupForm(request.POST, request.FILES)
         if form.is_valid():
-            user = form.save()
+            form.save()
             redirect_url = "/"
             return redirect(redirect_url)
 

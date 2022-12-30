@@ -8,7 +8,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="ro" /> 
+		<language type="ro" />
 	</identity>
 		<collations >
 			<collation type="standard" references="Academia Română: DEX - Dicționarul explicativ al limbii române ISBN 973-924-329-2">

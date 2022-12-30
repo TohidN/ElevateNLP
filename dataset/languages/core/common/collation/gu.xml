@@ -21,7 +21,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				#	sorted with secondary weights, they are collated on primary level
 				#	before the independent vowels. CANDRABINDU is secondary different
 				#	from ANUSVARA.
-				# 
+				#
 				&ૐ<ં<<ઁ<ઃ
 			]]></cr>
 		</collation>
@@ -36,13 +36,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 				#	sorted with secondary weights, they are collated on primary level
 				#	before the independent vowels. CANDRABINDU is secondary different
 				#	from ANUSVARA.
-				# 
+				#
 				&ૐ<ં<<ઁ<ઃ
 				#
 				#	The following tailoring is an adjustment of the DUCET collation
 				#	order for LLA. Instead of being sorted after LA, LLA is sorted
 				#	after HA.
-				# 
+				#
 				&હ<ળ
 			]]></cr>
 		</collation>

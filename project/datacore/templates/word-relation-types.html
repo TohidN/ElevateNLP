@@ -20,7 +20,7 @@
 		<div id="loading-indicator" class="htmx-indicator spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
 		<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:word_relation_types_add' %}" class="float-end btn btn-outline-success mx-2 my-2" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
 	</h1>
-	
+
 	{% if relation_types|length == 0 %}
 		<div class="content">
 			No Lexical Relation Types found!

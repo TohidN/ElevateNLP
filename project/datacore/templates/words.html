@@ -35,7 +35,7 @@
 
 				<div class="row">
 					<div class="col">
-						{{ filter_form.start.errors }} 
+						{{ filter_form.start.errors }}
 						<label for="{{ filter_form.start.id_for_label }}" class="form-label">{{ filter_form.start.label }}</label>
 						<input name="{{ filter_form.start.html_name }}" type="text" class="form-control" id="{{ filter_form.start.id_for_label }}" aria-describedby="{{ filter_form.start.id_for_label }}-help" value="{% if filter_form.start.value %}{{ filter_form.start.value }}{% endif %}">
 						{% if filter_form.start.help_text %}
@@ -43,7 +43,7 @@
 						{% endif %}
 					</div>
 					<div class="col">
-						{{ filter_form.contain.errors }} 
+						{{ filter_form.contain.errors }}
 						<label for="{{ filter_form.contain.id_for_label }}" class="form-label">{{ filter_form.contain.label }}</label>
 						<input name="{{ filter_form.contain.html_name }}" type="text" class="form-control" id="{{ filter_form.contain.id_for_label }}" aria-describedby="{{ filter_form.contain.id_for_label }}-help" value="{% if filter_form.contain.value %}{{ filter_form.contain.value }}{% endif %}">
 						{% if filter_form.contain.help_text %}
@@ -51,7 +51,7 @@
 						{% endif %}
 					</div>
 					<div class="col">
-						{{ filter_form.end.errors }} 
+						{{ filter_form.end.errors }}
 						<label for="{{ filter_form.end.id_for_label }}" class="form-label">{{ filter_form.end.label }}</label>
 						<input name="{{ filter_form.end.html_name }}" type="text" class="form-control" id="{{ filter_form.end.id_for_label }}" aria-describedby="{{ filter_form.end.id_for_label }}-help" value="{% if filter_form.end.value %}{{ filter_form.end.value }}{% endif %}">
 						{% if filter_form.end.help_text %}
@@ -109,7 +109,7 @@
 			<a hx-indicator="#loading-indicator" hx-push-url="false" hx-boost="true" hx-target="#modal-container" href="{% url 'datacore:words_add' %}" class="float-end btn btn-outline-success mx-2 my-2" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-add"></i></a>
 			<button class="btn btn-primary float-end my-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter-offcanvas" aria-controls="filter-offcanvas">Filters</button>
 	</h1>
-	
+
 	{% if words|length == 0 %}
 		<div class="content">
 			No words found!

@@ -22,7 +22,7 @@ es-Cyrl-MX; Spanish (Cyrillic, Mexico)
 en-Latn-GB-scouse-fonipa; English (Latin, United Kingdom, IPA Phonetics, Scouse)
 
 # Add extensions, and verify their order
- 
+
 en-u-nu-thai-ca-islamic-civil; English (Islamic Calendar [tabular, civil epoch], Thai Digits)
 hi-u-nu-latn-t-en-h0-hybrid; Hindi (Hybrid: English, Western Digits)
 en-u-nu-deva-t-de; English (Transform: German, Devanagari Digits)

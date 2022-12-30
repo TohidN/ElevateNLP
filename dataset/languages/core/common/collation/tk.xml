@@ -6,7 +6,7 @@
 <ldml>
 	<identity>
 		<version number="$Revision$"/>
-		<language type="tk"/> 
+		<language type="tk"/>
 	</identity>
 	<collations>
 		<collation type="standard">

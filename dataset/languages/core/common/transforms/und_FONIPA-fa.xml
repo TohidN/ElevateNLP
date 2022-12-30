@@ -135,7 +135,7 @@ j $IVowel? ː? → ی;
 ::NULL;
 
 # Strip off syllable markers
-\. → ;  
+\. → ;
 
 # Sequences of three or more ووو look very confusing; we shorten them.
 # Polish Darłowo [darwɔvɔ] → داروو → داروووو

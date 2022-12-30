@@ -23,7 +23,7 @@
 			<a hx-push-url="false" hx-boost="true" hx-indicator="#loading-indicator" hx-target="#modal-container" href="{% url 'datacore:phrase_collection_delete' phrase_collection.id %}" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#page-modal"><i class="fa fa-trash-can"></i></a>
 		</div>
 	</h1>
-	
+
 	{% if phrase_collection.description %}<h4>Description: {{ phrase_collection.description }}</h4>{% endif %}
 	{% if phrase_collection.data_source.title %}<h5>Source: {{ phrase_collection.data_source.title }}</h5>{% endif %}
 	<hr>

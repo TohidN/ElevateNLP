@@ -6,7 +6,7 @@ data from WikiPedia and in ISO format, includes extra data such as native name a
 https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers
 
 ### language-codes
-ISO Language Codes (639-1 and 693-2) and IETF Language Types("language-codes" directory): 
+ISO Language Codes (639-1 and 693-2) and IETF Language Types("language-codes" directory):
 https://datahub.io/core/language-codes
 more on specific standards:
 https://www.iso.org/iso-639-language-codes.html

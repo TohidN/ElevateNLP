@@ -1,11 +1,25 @@
+from datacore.models import (
+    Component,
+    Concept,
+    Corpora,
+    DataSource,
+    Definition,
+    Document,
+    DomainOntology,
+    Example,
+    Language,
+    NamedEntity,
+    Phrase,
+    PhraseCollection,
+    Reference,
+    Relation,
+    Word,
+    WordList,
+    WordRelation,
+    WordRelationType,
+)
 from django import forms
 from mptt.forms import TreeNodeChoiceField
-
-from datacore.models import (Component, Concept, Corpora, DataSource,
-                             Definition, Document, DomainOntology, Example,
-                             Language, NamedEntity, Phrase, PhraseCollection,
-                             Reference, Relation, Word, WordList, WordRelation,
-                             WordRelationType)
 
 
 class CorpusForm(forms.ModelForm):
@@ -231,9 +245,8 @@ class ExampleForm(forms.ModelForm):
 
 
 class RelationForm(forms.ModelForm):
-    from django.contrib.postgres.forms import SplitArrayField
-
     from datacore.components import RELATION
+    from django.contrib.postgres.forms import SplitArrayField
 
     concepts = SplitArrayField(
         forms.IntegerField(), size=2, required=True, help_text="Enter two concept IDs."
