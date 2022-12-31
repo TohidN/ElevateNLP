@@ -2,13 +2,15 @@ exclude: ^\. # Exclude every file or folder starting with a dot.
 
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v4.4.0
     hooks:
     -   id: trailing-whitespace
         exclude: ^datasets/
         types: [text]
     -   id: end-of-file-fixer
         types: [text]
+    -   id: requirements-txt-fixer 
+        files: /requirements.*.txt$
     -   id: check-added-large-files
     -   id: check-case-conflict
 
